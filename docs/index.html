@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Event-Driven Storytelling</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300;400;500;600&family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Architects Daughter" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" />
+
+    <!-- Bulma -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./js/bulma_toggle.js"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/5fd1dd8417.js" crossorigin="anonymous"></script>
+
+    <!-- Academicons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
+    <link rel="icon" href="./assets/favicon.png" />
+
+    <!-- MathJax -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [
+            ["$", "$"],
+            ["\\(", "\\)"],
+          ],
+        },
+      };
+    </script>
+  </head>
+
+  <body>
+    <!-- title / authors / icons -->
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-widescreen has-text-centered">
+          <!-- title -->
+          <h1 class="title is-size-1 is-size-2-mobile publication-title">
+            Event-Driven Storytelling<br />
+            with Multiple Lifelike Humans in a 3D scene
+          </h1>
+          <div class="is-size-4-tablet publication-institute">
+            <span class="author-block">ICCV 2025</span>
+          </div>
+
+          <!-- authors -->
+          <div class="container is-max-desktop has-text-centered author-list">
+            <div class="columns is-mobile is-centered is-gapless">
+              <div class="column is-2-tablet is-size-6-tablet publication-authors">
+                <a class="author-blocks" href="https://rms0329.github.io/">Donggeun Lim<sup>1</sup></a>
+              </div>
+              <div class="column is-2-tablet is-size-6-tablet publication-authors">
+                <a class="author-blocks" href="https://jinseokbae.github.io/">Jinseok Bae<sup>1</sup></a>
+              </div>
+              <div class="column is-2-tablet is-size-6-tablet publication-authors">
+                <a class="author-blocks" href="https://woo0818.github.io/">Inwoo Hwang<sup>1</sup></a>
+              </div>
+              <div class="column is-2-tablet is-size-6-tablet publication-authors">
+                <a class="author-blocks" href="">Seungmin Lee<sup>1</sup></a>
+              </div>
+              <div class="column is-2-tablet is-size-6-tablet publication-authors">
+                <a class="author-blocks" href="https://hwanheelee1993.github.io/">Hwanhee Lee<sup>2</sup></a>
+              </div>
+              <div class="column is-2-tablet is-size-6-tablet publication-authors">
+                <a class="author-blocks" href="http://3d.snu.ac.kr/members">Young Min Kim<sup>1</sup></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="columns is-mobile is-centered is-size-6-tablet publication-institute">
+            <div class="column is-narrow">
+              <span class="author-block">Seoul National University<sup>1</sup></span>
+            </div>
+            <div class="column is-narrow">
+              <span class="author-block">Chung-Ang University<sup>2</sup></span>
+            </div>
+          </div>
+
+          <div class="logo-list">
+            <a class="lab-logo" href="https://3d.snu.ac.kr">
+              <img src="./assets/3dv.png" />
+            </a>
+            <span class="affiliation-num"> 1 </span>
+            <a class="lab-logo" href="https://sites.google.com/view/cau-li">
+              <img src="./assets/lilab.png" />
+            </a>
+            <span class="affiliation-num-right"> 2 </span>
+          </div>
+
+          <!-- icons -->
+          <div class="is-size-5 link-blocks">
+            <a class="button link-button is-rounded" href="">
+              <span class="icon">
+                <i class="fa-solid fa-file"></i>
+              </span>
+              <span>Paper</span>
+            </a>
+            <a class="button link-button is-rounded" href="">
+              <span class="icon">
+                <i class="ai ai-arxiv"></i>
+              </span>
+              <span>arXiv</span>
+            </a>
+            <a class="button link-button is-rounded" href="">
+              <span class="icon">
+                <i class="fa-brands fa-youtube"></i>
+              </span>
+              <span>Video</span>
+            </a>
+            <a class="button link-button is-rounded" href="">
+              <span class="icon">
+                <i class="fab fa-github"></i>
+              </span>
+              <span>Code (TBD)</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- teasor -->
+    <section class="hero">
+      <div class="container is-max-desktop">
+        <div class="hero-body">
+          <video class="teasor_video" autoplay controls muted loop playsinline width="100%">
+            <source src="./assets/videos/teaser.mp4" type="video/mp4" />
+          </video>
+          <h2 class="tldr">
+            Our framework can automatically creates behavioral plans and corresponding motions for
+            <b>multiple characters</b>, taking into account the <b>3D scene</b> and the behaviors of
+            <b>other characters</b>.
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container is-max-desktop">
+        <div class="column is-full-width is-centered has-text-centered has-text-left-mobile">
+          <h2 class="subtitle is-size-3 has-text-weight-medium publication-keywords">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              In this work, we propose a framework that creates a lively virtual dynamic scene with contextual motions
+              of multiple humans. Generating multi-human contextual motion requires holistic reasoning over dynamic
+              relationships among human-human and human-scene interactions. We adapt the power of a large language model
+              (LLM) to digest the contextual complexity within textual input and convert the task into tangible
+              subproblems such that we can generate multi-agent behavior beyond the scale that was not considered
+              before. Specifically, our event generator formulates the temporal progression of a dynamic scene into a
+              sequence of small events. Each event calls for a well-defined motion involving relevant characters and
+              objects. Next, we synthesize the motions of characters at positions sampled based on spatial guidance. We
+              employ a high-level module to deliver scalable yet comprehensive context, translating events into relative
+              descriptions that enable the retrieval of precise coordinates. As the first to address this problem at
+              scale and with diversity, we offer a benchmark to assess diverse aspects of contextual reasoning.
+              Benchmark results and user studies show that our framework effectively captures scene context with high
+              scalability.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--
+    <section class="section">
+      <div class="container is-max-desktop">
+        <div class="column is full-width is-centered has-text-centered">
+          <h2 class="subtitle is-size-3 has-text-weight-medium publication-keywords">
+            Video (todo)
+          </h2>
+        </div>
+        <div class="publication-video">
+          <iframe
+            src="https://www.youtube.com/embed/7mWPYGRfk-I?si=x0xlB16kK1TOXN_I"
+            allow="autoplay; encrypted-media"
+            allowfullscreen="true"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+-->
+    <section class="section">
+      <div class="container is-max-desktop">
+        <div class="column is full-width is-centered has-text-centered">
+          <h2 class="subtitle is-size-3 has-text-weight-medium publication-keywords">Method</h2>
+          <img src="./assets/overview.png" width="75%" style="display: block; margin: auto" />
+        </div>
+        <p class="normal-text">
+          Generating multi-human contextual motions in a holistic manner imposes prohibitive reasoning complexities. To
+          address this, our framework operates on an <b>event</b> basis, decomposing the entire problem into manageable
+          complexities. Powered by large language models (LLMs), the action planning module generates a sequence of
+          events in an online manner, considering the dynamic relationships amoung human-human and human-scene
+          interactions. Receiving the events, the motion synthesis module realizes the events into 3D motions of
+          characters.
+          <br />
+        </p>
+      </div>
+
+      <div class="container is-max-desktop">
+        <div class="column is full-width is-centered has-text-centered">
+          <img src="./assets/action_planning.png" width="100%" style="display: block; margin: auto" />
+        </div>
+        <p class="normal-text">
+          We have three LLM submodules in our action planning module: the scene describer, the narrator, and the event
+          parser. The scene describer generates a textual scene description from the given 3D scene such that our
+          planning modules can understand the necessary context from the spatial arrangement. The narrator generates a
+          sequence of events, which are converted into detailed information by the event parser. Each module is assigned
+          to smaller, well-defined tasks such that the system stays performant and scalable for multi-human behavior
+          planning.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container is-max-desktop">
+        <div class="column is full-width is-centered has-text-centered">
+          <h2 class="subtitle is-size-3 has-text-weight-medium publication-keywords">Results</h2>
+        </div>
+
+        <!--qualitative results-->
+        <div class="fixed-grid has-1-cols">
+          <div class="grid row-gap-0">
+            <div class="cell" align="center">
+              <video class="results_video" autoplay controls muted loop playsinline height="100%">
+                <source src="./assets/videos/house-2_2x.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="cell" align="center">
+              <video class="results_video" autoplay controls muted loop playsinline height="100%">
+                <source src="./assets/videos/office-1_2x.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="cell" align="center">
+              <video class="results_video" autoplay controls muted loop playsinline height="100%">
+                <source src="./assets/videos/restaurant-1_2x.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <p align="center" class="normal-text">
+              <b>Results on House, Office, and Restaurant scenes.</b> <br />
+              Our framework can create contextually relevant motions of multiple characters in 3D scenes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container is-max-desktop">
+        <div class="column is full-width is-centered has-text-centered">
+          <h2 class="subtitle is-size-3 has-text-weight-medium publication-keywords">Ablation Study</h2>
+        </div>
+
+        <!--House Scenario-->
+        <div class="column is full-width is-centered has-text-centered">
+          <h3
+            class="subtitle has-text-left is-size-4 has-text-weight-medium publication-keywords toggle-button"
+            data-target="house-scenario-content"
+          >
+            House Scenario
+            <span class="icon">
+              <i class="fas fa-caret-down"></i>
+            </span>
+          </h3>
+        </div>
+        <div id="house-scenario-content" class="is-hidden">
+          <div class="content has-text-justified">
+            <p class="normal-text has-text-centered ablation-subtitle">Initial Setting and Input Storytelling</p>
+            <div style="text-align: center">
+              <img src="assets/ablation_house.png" alt="House" style="width: 70%; max-width: 800px; margin: 0 auto" />
+            </div>
+
+            <p></p>
+            <strong><span style="color: rgb(203, 16, 16)">{character_A}</span></strong> and
+            <strong><span style="color: rgb(16, 63, 203)">{character_B}</span></strong> have a conversation in the
+            living room, discussing their plans for the day.
+            <strong><span style="color: rgb(230, 139, 11)">{character_C}</span></strong> makes coffee and joins them,
+            sitting down and participating in the conversation.
+            <strong><span style="color: rgb(8, 144, 83)">{character_D}</span></strong
+            >, wanting to work on an assignment in a quiet place, sits on one of the chairs in a less crowded area and
+            works on his laptop.
+            <p></p>
+          </div>
+          <div class="fixed-grid has-2-cols">
+            <p class="normal-text has-text-centered ablation-subtitle">Comparison</p>
+            <div class="grid row-gap-0">
+              <div class="cell" align="center">
+                <video class="comparison_video" autoplay controls muted loop playsinline height="100%">
+                  <source src="./assets/videos/house-1-ours_color_4x_pb.mp4" type="video/mp4" />
+                </video>
+                <p class="normal-text ablation-setting-name">Ours</p>
+                <p class="text-blue has-text-left">- All events are represented properly</p>
+              </div>
+              <div class="cell" align="center">
+                <video class="comparison_video" autoplay controls muted loop playsinline height="100%">
+                  <source src="./assets/videos/house-1-no_event_color_4x_pb.mp4" type="video/mp4" />
+                </video>
+                <p class="normal-text ablation-setting-name">w/o Event</p>
+                <p class="text-red has-text-left">- {C} does not make coffee</p>
+              </div>
+              <div class="cell" align="center">
+                <video class="comparison_video" autoplay controls muted loop playsinline height="100%">
+                  <source src="./assets/videos/house-1-object_list_color_4x_pb.mp4" type="video/mp4" />
+                </video>
+                <p class="normal-text ablation-setting-name">Object List</p>
+                <p class="text-red has-text-left">- {B} is not seated in the living room</p>
+                <p class="text-red has-text-left">- {D} is not positioned in the less crowded area</p>
+                <p class="text-red has-text-left">- {A} and {D} have overlapping positions.</p>
+              </div>
+              <div class="cell" align="center">
+                <video class="comparison_video" autoplay controls muted loop playsinline height="100%">
+                  <source src="./assets/videos/house-1-scene_graph_color_4x_pb.mp4" type="video/mp4" />
+                </video>
+                <p class="normal-text ablation-setting-name">Scene Graph</p>
+                <p class="text-red has-text-left">
+                  - {C} goes to kitchen instead of the living room to join the conversation
+                </p>
+                <p class="text-red has-text-left">- {C} and {D} have overlapping positions.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Office Scenario-->
+        <div class="column is full-width is-centered has-text-centered">
+          <h3
+            class="subtitle has-text-left is-size-4 has-text-weight-medium publication-keywords toggle-button"
+            data-target="office-scenario-content"
+          >
+            Office Scenario
+            <span class="icon">
+              <i class="fas fa-caret-down"></i>
+            </span>
+          </h3>
+        </div>
+        <div id="office-scenario-content" class="is-hidden">
+          <div class="content has-text-justified">
+            <p class="normal-text has-text-centered ablation-subtitle">Initial Setting and Input Storytelling</p>
+            <div style="text-align: center">
+              <img src="assets/ablation_office.png" alt="Office" style="width: 70%; max-width: 800px; margin: 0 auto" />
+            </div>
+
+            <p></p>
+            <strong><span style="color: rgb(203, 16, 16)">{character_A}</span></strong> first takes out a drink from the
+            cabinet, which is in the rest area, and then drinks it while sitting on a seat in front of it.
+            <strong><span style="color: rgb(16, 63, 203)">{character_B}</span></strong> and
+            <strong><span style="color: rgb(230, 139, 11)">{character_C}</span></strong> meet each other in the rest
+            area with a handshake, and then chat with each other.
+            <p></p>
+          </div>
+          <div class="fixed-grid has-2-cols">
+            <p class="normal-text has-text-centered ablation-subtitle">Comparison</p>
+            <div class="grid row-gap-0">
+              <div class="cell" align="center">
+                <video class="comparison_video" autoplay controls muted loop playsinline height="100%">
+                  <source src="./assets/videos/office-2-ours_color_4x_pb.mp4" type="video/mp4" />
+                </video>
+                <p class="normal-text ablation-setting-name">Ours</p>
+                <p class="text-blue has-text-left">- All events are represented properly</p>
+              </div>
+              <div class="cell" align="center">
+                <video class="comparison_video" autoplay controls muted loop playsinline height="100%">
+                  <source src="./assets/videos/office-2-no_event_color_4x_pb.mp4" type="video/mp4" />
+                </video>
+                <p class="normal-text ablation-setting-name">w/o Event</p>
+                <p class="text-red has-text-left">- {A} does not take out a drink first</p>
+              </div>
+              <div class="cell" align="center">
+                <video class="comparison_video" autoplay controls muted loop playsinline height="100%">
+                  <source src="./assets/videos/office-2-object_list_color_4x_pb.mp4" type="video/mp4" />
+                </video>
+                <p class="normal-text ablation-setting-name">Object List</p>
+                <p class="text-red has-text-left">- {A} fails to locate the cabinet in the rest area</p>
+              </div>
+              <div class="cell" align="center">
+                <video class="comparison_video" autoplay controls muted loop playsinline height="100%">
+                  <source src="./assets/videos/office-2-scene_graph_color_4x_pb.mp4" type="video/mp4" />
+                </video>
+                <p class="normal-text ablation-setting-name">Scene Graph</p>
+                <p class="text-red has-text-left">- {A} fails to locate the cabinet in the rest area</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Restaurant Scenario-->
+        <div class="column is full-width is-centered has-text-centered">
+          <h3
+            class="subtitle has-text-left is-size-4 has-text-weight-medium publication-keywords toggle-button"
+            data-target="restaurant-scenario-content"
+          >
+            Restaurant Scenario
+            <span class="icon">
+              <i class="fas fa-caret-down"></i>
+            </span>
+          </h3>
+        </div>
+        <div id="restaurant-scenario-content" class="is-hidden">
+          <div class="content has-text-justified">
+            <p class="normal-text has-text-centered ablation-subtitle">Initial Setting and Input Storytelling</p>
+            <div style="text-align: center">
+              <img
+                src="assets/ablation_restaurant.png"
+                alt="MPH11"
+                style="width: 70%; max-width: 800px; margin: 0 auto"
+              />
+            </div>
+
+            <p></p>
+            <strong><span style="color: rgb(203, 16, 16)">{character_A}</span></strong> and
+            <strong><span style="color: rgb(16, 63, 203)">{character_B}</span></strong> eat dinner separately, sitting
+            at different tables in the dining area.
+            <strong><span style="color: rgb(230, 139, 11)">{character_C}</span></strong> takes a phone call in front of
+            the reception desk, and then joins
+            <strong><span style="color: rgb(203, 16, 16)">{character_A}</span></strong
+            >'s table to eat dinner together. On the other hand,
+            <strong><span style="color: rgb(8, 144, 83)">{character_D}</span></strong> dances for a while next to a
+            table in the bar area, then joins <strong><span style="color: rgb(16, 63, 203)">{character_B}</span></strong
+            >'s.
+            <p></p>
+          </div>
+          <div class="fixed-grid has-2-cols">
+            <p class="normal-text has-text-centered ablation-subtitle">Comparison</p>
+            <div class="grid row-gap-0">
+              <div class="cell" align="center">
+                <video class="comparison_video" autoplay controls muted loop playsinline height="100%">
+                  <source src="./assets/videos/restaurant-2-ours_color_4x_pb.mp4" type="video/mp4" />
+                </video>
+                <p class="normal-text ablation-setting-name">Ours</p>
+                <p class="text-blue has-text-left">- All events are represented properly</p>
+              </div>
+              <div class="cell" align="center">
+                <video class="comparison_video" autoplay controls muted loop playsinline height="100%">
+                  <source src="./assets/videos/restaurant-2-no_event_color_4x_pb.mp4" type="video/mp4" />
+                </video>
+                <p class="normal-text ablation-setting-name">w/o Event</p>
+                <p class="text-red has-text-left">- {C} does not take a phone call before joining {A}</p>
+                <p class="text-red has-text-left">- {D} does not dance first before joining {B}</p>
+                <p class="text-red has-text-left">- {A, B, C, D} fails to properly sit on 'chair's</p>
+              </div>
+              <div class="cell" align="center">
+                <video class="comparison_video" autoplay controls muted loop playsinline height="100%">
+                  <source src="./assets/videos/restaurant-2-object_list_color_4x_pb.mp4" type="video/mp4" />
+                </video>
+                <p class="normal-text ablation-setting-name">Object List</p>
+                <p class="text-red has-text-left">- {B} fails to locate the table in the dining area</p>
+                <p class="text-red has-text-left">- {D} does not join {B} after dancing</p>
+              </div>
+              <div class="cell" align="center">
+                <video class="comparison_video" autoplay controls muted loop playsinline height="100%">
+                  <source src="./assets/videos/restaurant-2-scene_graph_color_4x_pb.mp4" type="video/mp4" />
+                </video>
+                <p class="normal-text ablation-setting-name">Scene Graph</p>
+                <p class="text-red has-text-left">- {A, B} fails to properly sit on 'chair's</p>
+                <p class="text-red has-text-left">- {B} fails to locate the table in the dining area</p>
+                <p class="text-red has-text-left">- {D} does not dance in the bar area</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--MPH11 Scenario-->
+        <div class="column is full-width is-centered has-text-centered">
+          <h3
+            class="subtitle has-text-left is-size-4 has-text-weight-medium publication-keywords toggle-button"
+            data-target="mph11-scenario-content"
+          >
+            MPH11 Scenario
+            <span class="icon">
+              <i class="fas fa-caret-down"></i>
+            </span>
+          </h3>
+        </div>
+        <div id="mph11-scenario-content" class="is-hidden">
+          <div class="content has-text-justified">
+            <p class="normal-text has-text-centered ablation-subtitle">Initial Setting and Input Storytelling</p>
+            <div style="text-align: center">
+              <img src="assets/ablation_mph11.png" alt="MPH11" style="width: 70%; max-width: 800px; margin: 0 auto" />
+            </div>
+
+            <p></p>
+            <strong><span style="color: rgb(203, 16, 16)">{character_A}</span></strong> do his programming assignments
+            in the desk, while <strong><span style="color: rgb(16, 63, 203)">{character_B}</span></strong> and
+            <strong><span style="color: rgb(230, 139, 11)">{character_C}</span></strong> have a conversation in the
+            sofa.
+            <p></p>
+          </div>
+          <div class="fixed-grid has-2-cols">
+            <p class="normal-text has-text-centered ablation-subtitle">Comparison</p>
+            <div class="grid row-gap-0">
+              <div class="cell" align="center">
+                <video class="comparison_video" autoplay controls muted loop playsinline height="100%">
+                  <source src="./assets/videos/MPH11-2-ours_color_2x_pb.mp4" type="video/mp4" />
+                </video>
+                <p class="normal-text ablation-setting-name">Ours</p>
+                <p class="text-blue has-text-left">- All events are represented properly</p>
+              </div>
+              <div class="cell" align="center">
+                <video class="comparison_video" autoplay controls muted loop playsinline height="100%">
+                  <source src="./assets/videos/MPH11-2-no_event_color_2x_pb.mp4" type="video/mp4" />
+                </video>
+                <p class="normal-text ablation-setting-name">w/o Event</p>
+                <p class="text-blue has-text-left">- All events are represented properly</p>
+              </div>
+              <div class="cell" align="center">
+                <video class="comparison_video" autoplay controls muted loop playsinline height="100%">
+                  <source src="./assets/videos/MPH11-2-object_list_color_2x_pb.mp4" type="video/mp4" />
+                </video>
+                <p class="normal-text ablation-setting-name">Object List</p>
+                <p class="text-red has-text-left">- {A} fails to sit on the chair associated with desk</p>
+              </div>
+              <div class="cell" align="center">
+                <video class="comparison_video" autoplay controls muted loop playsinline height="100%">
+                  <source src="./assets/videos/MPH11-2-scene_graph_color_2x_pb.mp4" type="video/mp4" />
+                </video>
+                <p class="normal-text ablation-setting-name">Scene Graph</p>
+                <p class="text-blue has-text-left">- All events are represented properly</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BibTex sectoion -->
+    <section class="section">
+      <div class="container is-max-desktop">
+        <div class="column is-full-width is-centered has-text-centered">
+          <h2 class="subtitle is-size-3 has-text-weight-medium publication-keywords">BibTeX</h2>
+        </div>
+        <div class="box bibtex-box">
+          <pre></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer class="footer" style="padding-top: 1rem">
+      <!-- navigation -->
+      <a role="button" class="navbar-burger" data-target="moreResearch" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+      <div class="navbar-menu" id="moreResearch">
+        <div class="navbar-start" style="flex-grow: 1; justify-content: center">
+          <div class="block is-flex" style="margin-bottom: 0px">
+            <a class="navbar-item" href="https://rms0329.github.io/">
+              <span class="icon">
+                <i class="fas fa-home"></i>
+              </span>
+            </a>
+            <a class="navbar-item" href="https://github.com/rms0329">
+              <span class="icon">
+                <i class="fab fa-github"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- license -->
+      <div class="content has-text-centered" style="margin-top: 1.6rem">
+        <p>
+          This website is licensed under a
+          <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"
+            >Creative Commons Attribution-ShareAlike 4.0 International License</a
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
