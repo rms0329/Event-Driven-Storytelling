@@ -1,0 +1,52 @@
+{
+  "id": 62,
+  "tags": ["PI"],
+  "scene_name": "House",
+  "action_labels": [
+    "idle",
+    "drink",
+    "eat",
+    "watch_tv",
+    "dance",
+    "chat",
+    "handshake",
+    "turn_on_record_player",
+    "turn_off_record_player",
+    "turn_on_tv",
+    "turn_off_tv",
+    "open_fridge",
+    "close_fridge",
+    "open_cabinet",
+    "close_cabinet",
+    "use_coffee_maker",
+    "use_toaster",
+    "use_microwave",
+    "use_dishwasher",
+    "use_smartphone",
+    "use_laptop",
+    "read_book"
+  ],
+  "user_instruction": "Benjamin turns on the record player.",
+  "planning_history": [],
+  "current_states": [
+    {
+      "idx": 0,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Benjamin",
+      "state": "idle",
+      "current_action": "idle",
+      "position": [],
+      "orientation": []
+    }
+  ],
+  "expected_plans": [
+    {
+      "character": "Benjamin",
+      "target_action": null,
+      "relationships": null,
+      "sampled_position": "adjacent to record_player_1"
+    }
+  ],
+  "allow_null_plan": false
+}

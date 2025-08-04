@@ -1,0 +1,1 @@
+['cabinet_1', 'cabinet_2', 'chair_1', 'chair_2', 'clock_1', 'cooking_pot_1', 'flowers_1', 'kitchen_hood_1', 'lamp_1', 'oven_1', 'plant_1', 'shelf_1', 'shelf_2', 'sink_1', 'table_1', 'window_1']

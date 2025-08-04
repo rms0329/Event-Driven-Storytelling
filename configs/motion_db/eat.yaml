@@ -1,0 +1,25 @@
+human_scene_interaction: false
+human_human_interaction: false
+looping: true
+keyjoints:
+  - pelvis
+  - spine3
+  - right_wrist
+  - left_wrist
+  - right_foot
+  - left_foot
+matching_features:
+  - keyjoints
+motions:
+  - dataset: amass
+    motion_file: CMU/80/80_24_poses.npz
+    start_frame: 0
+    end_frame: 1781
+    match_start_frame: 0
+    match_end_frame: 102
+  - dataset: amass
+    motion_file: CMU/80/80_33_poses.npz
+    start_frame: 0
+    end_frame: 1936
+    match_start_frame: 0
+    match_end_frame: 62

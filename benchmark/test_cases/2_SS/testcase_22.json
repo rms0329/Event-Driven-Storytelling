@@ -1,0 +1,205 @@
+{
+  "id": 22,
+  "tags": ["SS"],
+  "scene_name": "Office",
+  "action_labels": [
+    "idle",
+    "drink",
+    "chat",
+    "discuss",
+    "handshake",
+    "open_cabinet",
+    "close_cabinet",
+    "use_smartphone",
+    "use_water_dispenser",
+    "work_on_computer",
+    "attend_meeting",
+    "take_out_drink",
+    "take_out_document",
+    "take_out_book",
+    "clean_white_board",
+    "read_book"
+  ],
+  "user_instruction": "Tyler takes out a drink from the cabinet_3. If the cabinet_3 is not opened, Tyler should open it first.",
+  "planning_history": [
+    {
+      "idx": 0,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "completed",
+      "characters": ["Cody"],
+      "activity": "open the cabinet_3",
+      "details": [
+        {
+          "character": "Cody",
+          "target_action": "open_cabinet",
+          "position": ["adjacent to cabinet_3"],
+          "orientation": ["look at cabinet_3"]
+        }
+      ]
+    },
+    {
+      "idx": 1,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "completed",
+      "characters": ["Cody"],
+      "activity": "take out a drink from the cabinet_3",
+      "details": [
+        {
+          "character": "Cody",
+          "target_action": "take_out_drink",
+          "position": ["adjacent to cabinet_3"],
+          "orientation": ["look at cabinet_3"]
+        }
+      ]
+    },
+    {
+      "idx": 2,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "completed",
+      "characters": ["Cody"],
+      "activity": "close the cabinet_3",
+      "details": [
+        {
+          "character": "Cody",
+          "target_action": "close_cabinet",
+          "position": ["adjacent to cabinet_3"],
+          "orientation": ["look at cabinet_3"]
+        }
+      ]
+    },
+    {
+      "idx": 3,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "ongoing",
+      "characters": ["Cody"],
+      "activity": "back to his seat to work on the computer",
+      "details": [
+        {
+          "character": "Cody",
+          "target_action": "work_on_computer",
+          "position": ["sit on chair_11"],
+          "orientation": ["look at laptop_8"]
+        }
+      ]
+    },
+    {
+      "idx": 4,
+      "type": "essential",
+      "distraction_level": 0,
+      "state": "completed",
+      "characters": ["Brenda"],
+      "activity": "open the cabinet_3 to take out a drink",
+      "details": [
+        {
+          "character": "Brenda",
+          "target_action": "open_cabinet",
+          "position": ["adjacent to cabinet_3"],
+          "orientation": ["look at cabinet_3"]
+        }
+      ]
+    },
+    {
+      "idx": 5,
+      "type": "essential",
+      "distraction_level": 0,
+      "state": "ongoing",
+      "characters": ["Brenda"],
+      "activity": "return to her seat to work on the computer",
+      "details": [
+        {
+          "character": "Brenda",
+          "target_action": "work_on_computer",
+          "position": ["sit on chair_6"],
+          "orientation": ["look at laptop_7"]
+        }
+      ]
+    },
+    {
+      "idx": 6,
+      "type": "distractor",
+      "distraction_level": 1,
+      "state": "ongoing",
+      "characters": ["Alexander", "Yvonne"],
+      "activity": "chat with each other, sitting on the rest area",
+      "details": [
+        {
+          "character": "Alexander",
+          "target_action": "chat",
+          "position": ["sit on couch_3"],
+          "orientation": ["look at Yvonne"]
+        },
+        {
+          "character": "Yvonne",
+          "target_action": "chat",
+          "position": ["sit on stool_3"],
+          "orientation": ["look at Alexander"]
+        }
+      ]
+    }
+  ],
+  "current_states": [
+    {
+      "idx": 0,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Tyler",
+      "state": "idle",
+      "current_action": "idle",
+      "position": [],
+      "orientation": []
+    },
+    {
+      "idx": 1,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Brenda",
+      "state": "interacting",
+      "current_action": "work_on_computer",
+      "position": ["sit on chair_6"],
+      "orientation": ["look at laptop_7"]
+    },
+    {
+      "idx": 2,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "Alexander",
+      "state": "interacting",
+      "current_action": "chat",
+      "position": ["sit on couch_3"],
+      "orientation": ["look at Yvonne"]
+    },
+    {
+      "idx": 3,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "Yvonne",
+      "state": "interacting",
+      "current_action": "chat",
+      "position": ["sit on stool_3"],
+      "orientation": ["look at Alexander"]
+    },
+    {
+      "idx": 4,
+      "type": "distractor",
+      "distraction_level": 2,
+      "name": "Cody",
+      "state": "interacting",
+      "current_action": "work_on_computer",
+      "position": ["sit on chair_11"],
+      "orientation": ["look at laptop_8"]
+    }
+  ],
+  "expected_plans": [
+    {
+      "character": "Tyler",
+      "target_action": "take_out_drink",
+      "relationships": "adjacent to cabinet_3 || close to cabinet_3 || in front of cabinet_3",
+      "sampled_position": null
+    }
+  ],
+  "allow_null_plan": false
+}

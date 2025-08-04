@@ -1,0 +1,73 @@
+scene_name: 0cac755a-8d6f-2d13-8fed-b1be02f4ef77 # lounge
+action_labels:
+  - idle
+  - handshake
+  - hug
+  - chat
+  - use_smartphone
+  - use_laptop
+  - make_coffee
+  - drink
+  - eat
+  - read_book
+  - open_commode
+  - close_commode
+  - take_out_drink
+  - take_out_snack
+
+user_instruction: |
+  After preparing coffee, David sits and drinks coffee using table_4.
+
+characters:
+  - name: David
+    state: idle
+    current_action: idle
+    position: [adjacent to coffee_machine_1]
+    orientation: []
+
+previous_events:
+  # event 0
+  - state: completed
+    characters: [David]
+    activity: makes coffee using coffee_machine_1
+    parsed:
+      - character: David
+        target_action: make_coffee
+        position: [adjacent to coffee_machine_1]
+        orientation: [look at coffee_machine_1]
+
+response:
+  reasoning: |
+    Since the user instruction is given, we need to determine how much of the instruction has been fulfilled by the previous event/plans and generate the next event/plan accordingly.
+    Given that David has already made coffee using coffee_machine_1, the next event/plan should involve David sitting and drinking coffee using table_4.
+
+  characters: [David]
+  activity: sit and drink coffee using table_4
+
+  parsed:
+    - character: David
+      target_action: drink
+      position: [sit on sofa_2]
+      orientation: []
+
+response_wo_event: |
+  ```python
+  def generate_next_plan():
+    # Since the user instruction is given, we need to determine how much of the instruction has been fulfilled by the previous plans and generate the next plan accordingly.
+    # Given that David has already made coffee using coffee_machine_1, the next plan should involve David sitting and drinking coffee using table_4.
+    david = get_character("David")
+
+    # Since we cannot use 'sit on' relationship for a table, we need to find the most suitable positions for 'David' to sit and drink coffee using table_4.
+    # According to the scene description, we can use the sofa that is more closely located to table_4 as the most suitable location for using table_4.
+    sofa_for_table_4 = get_closest_object("table_4", label="sofa")    
+    david_position = get_area_to_sit_on(sofa_for_table_4)
+
+    # The most appropriate action to represent drinking coffee is 'drink'.
+    david_target_action = "drink"
+
+    # Return the parsed information
+    david.set_position(david_position)
+    david.set_target_action(david_target_action)
+
+    return [david]
+  ```

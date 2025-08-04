@@ -1,0 +1,1723 @@
+human_scene_interaction: true
+human_human_interaction: false
+looping: false
+keyjoints:
+  - pelvis
+  - spine3
+  - right_knee
+  - right_foot
+  - left_knee
+  - left_foot
+matching_features:
+  - relative_position
+  - relative_direction
+  - root_height
+motions:
+  - dataset: samp
+    motion_file: data/SAMP/pkl/armchair001_stageII.pkl
+    start_frame: 1162
+    end_frame: 1785
+    match_start_frame: 1162
+    match_end_frame: 1785
+    target_root_position:
+      - - 0.029493121430277824
+        - 0.5241976380348206
+        - 0.6103931069374084
+    target_direction:
+      - - -0.1768360137939453
+        - -0.9838017821311951
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/armchair002_stageII.pkl
+    start_frame: 826
+    end_frame: 1357
+    match_start_frame: 826
+    match_end_frame: 1357
+    target_root_position:
+      - - -0.03729183226823807
+        - 0.494865745306015
+        - 0.6079149842262268
+    target_direction:
+      - - 0.18027140200138092
+        - -0.9833964705467224
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/armchair003_stageII.pkl
+    start_frame: 1211
+    end_frame: 1762
+    match_start_frame: 1211
+    match_end_frame: 1762
+    target_root_position:
+      - - 0.015436933375895023
+        - 0.5165776610374451
+        - 0.6022362112998962
+    target_direction:
+      - - -0.21684108674526215
+        - -0.9743695855140686
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/armchair004_stageII.pkl
+    start_frame: 1168
+    end_frame: 1733
+    match_start_frame: 1168
+    match_end_frame: 1733
+    target_root_position:
+      - - 0.0016564545221626759
+        - 0.5233169794082642
+        - 0.608244001865387
+    target_direction:
+      - - 0.11955732852220535
+        - -0.9911677837371826
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/armchair005_stageII.pkl
+    start_frame: 1186
+    end_frame: 1696
+    match_start_frame: 1186
+    match_end_frame: 1696
+    target_root_position:
+      - - -0.002536277985200286
+        - 0.5308078527450562
+        - 0.610174298286438
+    target_direction:
+      - - 0.22444525361061096
+        - -0.9731317162513733
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/armchair006_stageII.pkl
+    start_frame: 890
+    end_frame: 1443
+    match_start_frame: 890
+    match_end_frame: 1443
+    target_root_position:
+      - - -0.017895016819238663
+        - 0.5248531699180603
+        - 0.6076256632804871
+    target_direction:
+      - - 0.33911260962486267
+        - -0.9388677477836609
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/armchair007_stageII.pkl
+    start_frame: 1064
+    end_frame: 1712
+    match_start_frame: 1064
+    match_end_frame: 1712
+    target_root_position:
+      - - 0.001009957049973309
+        - 0.527252197265625
+        - 0.6114825010299683
+    target_direction:
+      - - 0.16363973915576935
+        - -0.9841141104698181
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/armchair008_stageII.pkl
+    start_frame: 554
+    end_frame: 1174
+    match_start_frame: 554
+    match_end_frame: 1174
+    target_root_position:
+      - - 0.0019971346482634544
+        - 0.35290607810020447
+        - 0.5988942384719849
+    target_direction:
+      - - 0.07828962057828903
+        - -0.9968043565750122
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/armchair009_stageII.pkl
+    start_frame: 544
+    end_frame: 1167
+    match_start_frame: 544
+    match_end_frame: 1167
+    target_root_position:
+      - - 0.05934153124690056
+        - 0.44071558117866516
+        - 0.6081057190895081
+    target_direction:
+      - - -0.4470267593860626
+        - -0.8934638500213623
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/armchair010_stageII.pkl
+    start_frame: 564
+    end_frame: 1213
+    match_start_frame: 564
+    match_end_frame: 1213
+    target_root_position:
+      - - -0.04897027835249901
+        - 0.4642307460308075
+        - 0.6099727153778076
+    target_direction:
+      - - 0.4117265045642853
+        - -0.9096551537513733
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/armchair011_stageII.pkl
+    start_frame: 884
+    end_frame: 1483
+    match_start_frame: 884
+    match_end_frame: 1483
+    target_root_position:
+      - - 0.00773481372743845
+        - 0.5182713866233826
+        - 0.617889404296875
+    target_direction:
+      - - -0.10239869356155396
+        - -0.9942992329597473
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/armchair012_stageII.pkl
+    start_frame: 1049
+    end_frame: 1698
+    match_start_frame: 1049
+    match_end_frame: 1698
+    target_root_position:
+      - - 0.013727884739637375
+        - 0.5150777101516724
+        - 0.6125938296318054
+    target_direction:
+      - - -0.19487588107585907
+        - -0.9806861877441406
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/armchair013_stageII.pkl
+    start_frame: 1156
+    end_frame: 1737
+    match_start_frame: 1156
+    match_end_frame: 1737
+    target_root_position:
+      - - -0.011220922693610191
+        - 0.4957271218299866
+        - 0.6058050990104675
+    target_direction:
+      - - 0.04711044207215309
+        - -0.9988558292388916
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/armchair014_stageII.pkl
+    start_frame: 1376
+    end_frame: 1977
+    match_start_frame: 1376
+    match_end_frame: 1977
+    target_root_position:
+      - - -0.010017004795372486
+        - 0.5320464372634888
+        - 0.6131719350814819
+    target_direction:
+      - - 0.041678477078676224
+        - -0.9989903569221497
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/armchair015_stageII.pkl
+    start_frame: 1261
+    end_frame: 1910
+    match_start_frame: 1261
+    match_end_frame: 1910
+    target_root_position:
+      - - -0.04197594150900841
+        - 0.46308469772338867
+        - 0.6062585711479187
+    target_direction:
+      - - 0.11460363864898682
+        - -0.9866862297058105
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/armchair016_stageII.pkl
+    start_frame: 1523
+    end_frame: 2087
+    match_start_frame: 1523
+    match_end_frame: 2087
+    target_root_position:
+      - - -0.010112465359270573
+        - 0.47366395592689514
+        - 0.6068685054779053
+    target_direction:
+      - - 0.029334889724850655
+        - -0.9995610117912292
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/armchair017_stageII.pkl
+    start_frame: 1581
+    end_frame: 2230
+    match_start_frame: 1581
+    match_end_frame: 2230
+    target_root_position:
+      - - -0.022882478311657906
+        - 0.43907395005226135
+        - 0.6188814043998718
+    target_direction:
+      - - 0.08275548368692398
+        - -0.9952195286750793
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/armchair018_stageII.pkl
+    start_frame: 1041
+    end_frame: 1638
+    match_start_frame: 1041
+    match_end_frame: 1638
+    target_root_position:
+      - - -0.0028732765931636095
+        - 0.5422231554985046
+        - 0.6094275712966919
+    target_direction:
+      - - 0.016115447506308556
+        - -0.9998301863670349
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/armchair019_stageII.pkl
+    start_frame: 952
+    end_frame: 1465
+    match_start_frame: 952
+    match_end_frame: 1465
+    target_root_position:
+      - - -0.016390154138207436
+        - 0.5198057889938354
+        - 0.6113725900650024
+    target_direction:
+      - - -0.07540744543075562
+        - -0.996236264705658
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/armchair_stageII.pkl
+    start_frame: 946
+    end_frame: 1535
+    match_start_frame: 946
+    match_end_frame: 1535
+    target_root_position:
+      - - 0.026043934747576714
+        - 0.504946231842041
+        - 0.6154255867004395
+    target_direction:
+      - - -0.266207754611969
+        - -0.9578825235366821
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/chair_mo001_stageII.pkl
+    start_frame: 1087
+    end_frame: 1663
+    match_start_frame: 1087
+    match_end_frame: 1663
+    target_root_position:
+      - - 0.08284984529018402
+        - 0.8714902997016907
+        - 0.5995654463768005
+    target_direction:
+      - - 0.9796695113182068
+        - -0.19728870689868927
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/chair_mo002_stageII.pkl
+    start_frame: 612
+    end_frame: 1261
+    match_start_frame: 612
+    match_end_frame: 1261
+    target_root_position:
+      - - 0.03708368167281151
+        - 0.9630811214447021
+        - 0.6093682050704956
+    target_direction:
+      - - -0.07880056649446487
+        - -0.9960609674453735
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/chair_mo003_stageII.pkl
+    start_frame: 1051
+    end_frame: 1700
+    match_start_frame: 1051
+    match_end_frame: 1700
+    target_root_position:
+      - - 0.03976113721728325
+        - 0.8650451898574829
+        - 0.5995661020278931
+    target_direction:
+      - - 0.061335816979408264
+        - -0.998034656047821
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/chair_mo004_stageII.pkl
+    start_frame: 1126
+    end_frame: 1734
+    match_start_frame: 1126
+    match_end_frame: 1734
+    target_root_position:
+      - - 0.06772547960281372
+        - 0.8652926087379456
+        - 0.5984820127487183
+    target_direction:
+      - - 0.2026241421699524
+        - -0.979215681552887
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/chair_mo005_stageII.pkl
+    start_frame: 1233
+    end_frame: 1882
+    match_start_frame: 1233
+    match_end_frame: 1882
+    target_root_position:
+      - - 0.0044589657336473465
+        - 0.9044310450553894
+        - 0.5941623449325562
+    target_direction:
+      - - 0.3084245026111603
+        - -0.9509579539299011
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/chair_mo006_stageII.pkl
+    start_frame: 1275
+    end_frame: 1868
+    match_start_frame: 1275
+    match_end_frame: 1868
+    target_root_position:
+      - - 0.02775612287223339
+        - 0.9461801052093506
+        - 0.5923460125923157
+    target_direction:
+      - - 0.09962817281484604
+        - -0.9950169324874878
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/chair_mo007_stageII.pkl
+    start_frame: 1067
+    end_frame: 1716
+    match_start_frame: 1067
+    match_end_frame: 1716
+    target_root_position:
+      - - -0.01303368341177702
+        - 0.9928964376449585
+        - 0.6015906929969788
+    target_direction:
+      - - 0.4252796173095703
+        - -0.9041369557380676
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/chair_mo008_stageII.pkl
+    start_frame: 736
+    end_frame: 1275
+    match_start_frame: 736
+    match_end_frame: 1275
+    target_root_position:
+      - - 0.0308244526386261
+        - 0.8194708228111267
+        - 0.5965255498886108
+    target_direction:
+      - - 0.10967288166284561
+        - -0.9923683404922485
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/chair_mo009_stageII.pkl
+    start_frame: 778
+    end_frame: 1323
+    match_start_frame: 778
+    match_end_frame: 1323
+    target_root_position:
+      - - 0.1109718307852745
+        - 0.9263511896133423
+        - 0.602591872215271
+    target_direction:
+      - - -0.9910783171653748
+        - 0.055387262254953384
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/chair_mo010_stageII.pkl
+    start_frame: 870
+    end_frame: 1476
+    match_start_frame: 870
+    match_end_frame: 1476
+    target_root_position:
+      - - 0.08113431930541992
+        - 0.9285674691200256
+        - 0.6000833511352539
+    target_direction:
+      - - -0.6202409863471985
+        - -0.7818037867546082
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/chair_mo011_stageII.pkl
+    start_frame: 1633
+    end_frame: 2246
+    match_start_frame: 1633
+    match_end_frame: 2246
+    target_root_position:
+      - - 0.021763278171420097
+        - 0.8879673480987549
+        - 0.6013085842132568
+    target_direction:
+      - - 0.2763127386569977
+        - -0.9599664807319641
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/chair_mo012_stageII.pkl
+    start_frame: 598
+    end_frame: 1247
+    match_start_frame: 598
+    match_end_frame: 1247
+    target_root_position:
+      - - 0.030375411733984947
+        - 0.9453024864196777
+        - 0.6051422357559204
+    target_direction:
+      - - 0.9725127220153809
+        - 0.21338161826133728
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/chair_mo013_stageII.pkl
+    start_frame: 1170
+    end_frame: 1819
+    match_start_frame: 1170
+    match_end_frame: 1819
+    target_root_position:
+      - - 0.006679896730929613
+        - 0.8772680163383484
+        - 0.6026204228401184
+    target_direction:
+      - - 0.023239213973283768
+        - -0.9988764524459839
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/chair_mo014_stageII.pkl
+    start_frame: 645
+    end_frame: 1294
+    match_start_frame: 645
+    match_end_frame: 1294
+    target_root_position:
+      - - 0.05984879657626152
+        - 0.8474149107933044
+        - 0.6193294525146484
+    target_direction:
+      - - -0.8581047058105469
+        - -0.5029125809669495
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/chair_mo015_stageII.pkl
+    start_frame: 1152
+    end_frame: 1801
+    match_start_frame: 1152
+    match_end_frame: 1801
+    target_root_position:
+      - - 0.052383534610271454
+        - 0.902302622795105
+        - 0.5961518287658691
+    target_direction:
+      - - 0.07987772673368454
+        - -0.9967822432518005
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/chair_mo016_stageII.pkl
+    start_frame: 942
+    end_frame: 1548
+    match_start_frame: 942
+    match_end_frame: 1548
+    target_root_position:
+      - - 0.03407324478030205
+        - 0.8978158831596375
+        - 0.5948271155357361
+    target_direction:
+      - - -0.8709937334060669
+        - -0.4910106360912323
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/chair_mo017_stageII.pkl
+    start_frame: 749
+    end_frame: 1398
+    match_start_frame: 749
+    match_end_frame: 1398
+    target_root_position:
+      - - 0.05675903707742691
+        - 0.9857044816017151
+        - 0.6042823195457458
+    target_direction:
+      - - -0.1619255393743515
+        - -0.9855126142501831
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/chair_mo018_stageII.pkl
+    start_frame: 1450
+    end_frame: 2099
+    match_start_frame: 1450
+    match_end_frame: 2099
+    target_root_position:
+      - - 0.024766720831394196
+        - 0.9737777709960938
+        - 0.5940157771110535
+    target_direction:
+      - - 0.029638729989528656
+        - -0.9995340704917908
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/chair_mo019_stageII.pkl
+    start_frame: 1000
+    end_frame: 1649
+    match_start_frame: 1000
+    match_end_frame: 1649
+    target_root_position:
+      - - 0.022311586886644363
+        - 0.9678743481636047
+        - 0.5965673923492432
+    target_direction:
+      - - 0.5503673553466797
+        - -0.8318485617637634
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/chair_mo_sit2sit_stageII.pkl
+    start_frame: 827
+    end_frame: 1376
+    match_start_frame: 827
+    match_end_frame: 1376
+    target_root_position:
+      - - 0.054888952523469925
+        - 0.9650173187255859
+        - 0.5997946858406067
+    target_direction:
+      - - -0.3369061052799225
+        - -0.7189752459526062
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/chair_mo_stageII.pkl
+    start_frame: 1117
+    end_frame: 1758
+    match_start_frame: 1117
+    match_end_frame: 1758
+    target_root_position:
+      - - 0.03915103152394295
+        - 0.8620213866233826
+        - 0.597778856754303
+    target_direction:
+      - - -0.007919208146631718
+        - -0.999931275844574
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/highstool001_stageII.pkl
+    start_frame: 979
+    end_frame: 1628
+    match_start_frame: 979
+    match_end_frame: 1628
+    target_root_position:
+      - - 0.03349059075117111
+        - 0.5687729120254517
+        - 0.78357994556427
+    target_direction:
+      - - -0.3512708842754364
+        - -0.9361366033554077
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/highstool002_stageII.pkl
+    start_frame: 1283
+    end_frame: 1874
+    match_start_frame: 1283
+    match_end_frame: 1874
+    target_root_position:
+      - - 0.02081027626991272
+        - 0.4700571894645691
+        - 0.7780964970588684
+    target_direction:
+      - - -0.0006149748805910349
+        - -0.9992717504501343
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/highstool003_stageII.pkl
+    start_frame: 1215
+    end_frame: 1864
+    match_start_frame: 1215
+    match_end_frame: 1864
+    target_root_position:
+      - - 0.021714206784963608
+        - 0.6236799359321594
+        - 0.7758960723876953
+    target_direction:
+      - - -0.09129361063241959
+        - -0.9956172108650208
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/highstool004_stageII.pkl
+    start_frame: 705
+    end_frame: 1349
+    match_start_frame: 705
+    match_end_frame: 1349
+    target_root_position:
+      - - 0.09514368325471878
+        - 0.5702766180038452
+        - 0.7840245962142944
+    target_direction:
+      - - 0.28107789158821106
+        - -0.9588097929954529
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/highstool005_stageII.pkl
+    start_frame: 579
+    end_frame: 1192
+    match_start_frame: 579
+    match_end_frame: 1192
+    target_root_position:
+      - - 0.0577436126768589
+        - 0.530056357383728
+        - 0.787487804889679
+    target_direction:
+      - - -0.46773484349250793
+        - -0.8827616572380066
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/highstool006_stageII.pkl
+    start_frame: 1038
+    end_frame: 1687
+    match_start_frame: 1038
+    match_end_frame: 1687
+    target_root_position:
+      - - -0.03488478809595108
+        - 0.6095776557922363
+        - 0.7797744870185852
+    target_direction:
+      - - 0.41787004470825195
+        - -0.9081419706344604
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/highstool007_stageII.pkl
+    start_frame: 761
+    end_frame: 1396
+    match_start_frame: 761
+    match_end_frame: 1396
+    target_root_position:
+      - - -0.05031862482428551
+        - 0.6218898892402649
+        - 0.7789528369903564
+    target_direction:
+      - - 0.461725115776062
+        - -0.8867181539535522
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/highstool008_stageII.pkl
+    start_frame: 942
+    end_frame: 1591
+    match_start_frame: 942
+    match_end_frame: 1591
+    target_root_position:
+      - - 0.031165678054094315
+        - 0.6629160642623901
+        - 0.7792659997940063
+    target_direction:
+      - - -0.15037402510643005
+        - -0.9870537519454956
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/highstool009_stageII.pkl
+    start_frame: 1049
+    end_frame: 1698
+    match_start_frame: 1049
+    match_end_frame: 1698
+    target_root_position:
+      - - 0.02561822161078453
+        - 0.6433407664299011
+        - 0.7826521396636963
+    target_direction:
+      - - -0.028223589062690735
+        - -0.9991468191146851
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/highstool010_stageII.pkl
+    start_frame: 990
+    end_frame: 1553
+    match_start_frame: 990
+    match_end_frame: 1553
+    target_root_position:
+      - - 0.030186662450432777
+        - 0.47522178292274475
+        - 0.7663751244544983
+    target_direction:
+      - - -0.021979667246341705
+        - -0.999213695526123
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/highstool011_stageII.pkl
+    start_frame: 875
+    end_frame: 1524
+    match_start_frame: 875
+    match_end_frame: 1524
+    target_root_position:
+      - - 0.049985647201538086
+        - 0.5770788192749023
+        - 0.7919824719429016
+    target_direction:
+      - - -0.3232889473438263
+        - -0.9454705715179443
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/highstool012_stageII.pkl
+    start_frame: 882
+    end_frame: 1531
+    match_start_frame: 882
+    match_end_frame: 1531
+    target_root_position:
+      - - 0.027714382857084274
+        - 0.6453160643577576
+        - 0.7806282043457031
+    target_direction:
+      - - -0.08584461361169815
+        - -0.9961627125740051
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/highstool013_stageII.pkl
+    start_frame: 1198
+    end_frame: 1847
+    match_start_frame: 1198
+    match_end_frame: 1847
+    target_root_position:
+      - - 0.026964856311678886
+        - 0.577800989151001
+        - 0.7744037508964539
+    target_direction:
+      - - -0.037758588790893555
+        - -0.9992153644561768
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/highstool014_stageII.pkl
+    start_frame: 1206
+    end_frame: 1855
+    match_start_frame: 1206
+    match_end_frame: 1855
+    target_root_position:
+      - - 0.06906329095363617
+        - 0.6544774770736694
+        - 0.7748402953147888
+    target_direction:
+      - - 0.03637635335326195
+        - -0.9816720485687256
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/highstool015_stageII.pkl
+    start_frame: 958
+    end_frame: 1564
+    match_start_frame: 958
+    match_end_frame: 1564
+    target_root_position:
+      - - 0.022090498358011246
+        - 0.6456590294837952
+        - 0.7766008377075195
+    target_direction:
+      - - -0.018868235871195793
+        - -0.9994466304779053
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/highstool016_stageII.pkl
+    start_frame: 1946
+    end_frame: 2595
+    match_start_frame: 1946
+    match_end_frame: 2595
+    target_root_position:
+      - - 0.03945837914943695
+        - 0.5715229511260986
+        - 0.7892511487007141
+    target_direction:
+      - - -0.29568782448768616
+        - -0.9549473524093628
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/highstool017_stageII.pkl
+    start_frame: 589
+    end_frame: 1174
+    match_start_frame: 589
+    match_end_frame: 1174
+    target_root_position:
+      - - 0.07381021231412888
+        - 0.6179800629615784
+        - 0.7775346040725708
+    target_direction:
+      - - -0.8746731877326965
+        - -0.48356616497039795
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/highstool018_stageII.pkl
+    start_frame: 1039
+    end_frame: 1688
+    match_start_frame: 1039
+    match_end_frame: 1688
+    target_root_position:
+      - - 0.009023892693221569
+        - 0.6043601632118225
+        - 0.7793041467666626
+    target_direction:
+      - - 0.03414130583405495
+        - -0.9990334510803223
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/highstool019_stageII.pkl
+    start_frame: 875
+    end_frame: 1524
+    match_start_frame: 875
+    match_end_frame: 1524
+    target_root_position:
+      - - 0.018800297752022743
+        - 0.5921421647071838
+        - 0.7829354405403137
+    target_direction:
+      - - -0.019350063055753708
+        - -0.9995856285095215
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/highstool_stageII.pkl
+    start_frame: 1104
+    end_frame: 1671
+    match_start_frame: 1104
+    match_end_frame: 1671
+    target_root_position:
+      - - 0.027326976880431175
+        - 0.551564633846283
+        - 0.7933366298675537
+    target_direction:
+      - - -0.2884000241756439
+        - -0.9537866711616516
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/reebokstep001_stageII.pkl
+    start_frame: 618
+    end_frame: 1187
+    match_start_frame: 618
+    match_end_frame: 1187
+    target_root_position:
+      - - 0.16017331182956696
+        - 0.7303200960159302
+        - 0.4051421582698822
+    target_direction:
+      - - -0.10958066582679749
+        - -0.9936081767082214
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/reebokstep002_stageII.pkl
+    start_frame: 788
+    end_frame: 1437
+    match_start_frame: 788
+    match_end_frame: 1437
+    target_root_position:
+      - - -0.09986333549022675
+        - 0.6404600143432617
+        - 0.38467133045196533
+    target_direction:
+      - - -0.06336451321840286
+        - -0.997543215751648
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/reebokstep003_stageII.pkl
+    start_frame: 735
+    end_frame: 1250
+    match_start_frame: 735
+    match_end_frame: 1250
+    target_root_position:
+      - - 0.21124038100242615
+        - 0.6782956123352051
+        - 0.39953258633613586
+    target_direction:
+      - - 0.04466439038515091
+        - -0.9989566206932068
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/reebokstep004_stageII.pkl
+    start_frame: 1135
+    end_frame: 1710
+    match_start_frame: 1135
+    match_end_frame: 1710
+    target_root_position:
+      - - 0.048246242105960846
+        - 0.7962467670440674
+        - 0.41300341486930847
+    target_direction:
+      - - -0.006622952874749899
+        - -0.9998756051063538
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/reebokstep005_stageII.pkl
+    start_frame: 935
+    end_frame: 1524
+    match_start_frame: 935
+    match_end_frame: 1524
+    target_root_position:
+      - - 0.03809361904859543
+        - 0.7071121335029602
+        - 0.4009968638420105
+    target_direction:
+      - - -0.013013032265007496
+        - -0.9998882412910461
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/reebokstep006_stageII.pkl
+    start_frame: 1142
+    end_frame: 1758
+    match_start_frame: 1142
+    match_end_frame: 1758
+    target_root_position:
+      - - 0.07303936779499054
+        - 0.7784788608551025
+        - 0.3992624580860138
+    target_direction:
+      - - -0.04848778620362282
+        - -0.9987648725509644
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/reebokstep007_stageII.pkl
+    start_frame: 975
+    end_frame: 1624
+    match_start_frame: 975
+    match_end_frame: 1624
+    target_root_position:
+      - - 0.05155641958117485
+        - 0.8267974853515625
+        - 0.3877212703227997
+    target_direction:
+      - - 0.034067388623952866
+        - -0.9990659356117249
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/reebokstep008_stageII.pkl
+    start_frame: 1468
+    end_frame: 2117
+    match_start_frame: 1468
+    match_end_frame: 2117
+    target_root_position:
+      - - 0.1909535527229309
+        - 0.8058413863182068
+        - 0.3981386125087738
+    target_direction:
+      - - -0.6430464386940002
+        - -0.7609074711799622
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/reebokstep009_stageII.pkl
+    start_frame: 2105
+    end_frame: 2715
+    match_start_frame: 2105
+    match_end_frame: 2715
+    target_root_position:
+      - - 0.08777764439582825
+        - 0.6951335668563843
+        - 0.39528945088386536
+    target_direction:
+      - - -0.2563866376876831
+        - -0.9644004702568054
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/reebokstep011_stageII.pkl
+    start_frame: 1334
+    end_frame: 1983
+    match_start_frame: 1334
+    match_end_frame: 1983
+    target_root_position:
+      - - 0.025516193360090256
+        - 0.7767226696014404
+        - 0.3852075934410095
+    target_direction:
+      - - -0.03472357243299484
+        - -0.9990527629852295
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/reebokstep012_stageII.pkl
+    start_frame: 755
+    end_frame: 1404
+    match_start_frame: 755
+    match_end_frame: 1404
+    target_root_position:
+      - - -0.017591387033462524
+        - 0.7117744088172913
+        - 0.40048733353614807
+    target_direction:
+      - - 0.6866123676300049
+        - -0.7262938618659973
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/reebokstep013_stageII.pkl
+    start_frame: 1389
+    end_frame: 1950
+    match_start_frame: 1389
+    match_end_frame: 1950
+    target_root_position:
+      - - 0.06239446625113487
+        - 0.8143238425254822
+        - 0.3928162753582001
+    target_direction:
+      - - -0.04061984270811081
+        - -0.9985165596008301
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/reebokstep014_stageII.pkl
+    start_frame: 725
+    end_frame: 1321
+    match_start_frame: 725
+    match_end_frame: 1321
+    target_root_position:
+      - - 0.08934713900089264
+        - 0.7815746068954468
+        - 0.3936275243759155
+    target_direction:
+      - - -0.1288863718509674
+        - -0.991426408290863
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/reebokstep015_stageII.pkl
+    start_frame: 668
+    end_frame: 1275
+    match_start_frame: 668
+    match_end_frame: 1275
+    target_root_position:
+      - - 0.0074761067517101765
+        - 0.732122004032135
+        - 0.3980242908000946
+    target_direction:
+      - - 0.28424733877182007
+        - 0.9503748416900635
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/reebokstep016_stageII.pkl
+    start_frame: 841
+    end_frame: 1490
+    match_start_frame: 841
+    match_end_frame: 1490
+    target_root_position:
+      - - 0.008932683616876602
+        - 0.847913384437561
+        - 0.4079074263572693
+    target_direction:
+      - - 0.1167023777961731
+        - 0.9929683804512024
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/reebokstep017_stageII.pkl
+    start_frame: 892
+    end_frame: 1541
+    match_start_frame: 892
+    match_end_frame: 1541
+    target_root_position:
+      - - -0.010851233266294003
+        - 0.8176317811012268
+        - 0.40723103284835815
+    target_direction:
+      - - 0.41275814175605774
+        - 0.9105836749076843
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/reebokstep018_stageII.pkl
+    start_frame: 855
+    end_frame: 1449
+    match_start_frame: 855
+    match_end_frame: 1449
+    target_root_position:
+      - - 0.03433418646454811
+        - 0.7886825799942017
+        - 0.41816508769989014
+    target_direction:
+      - - -0.26805633306503296
+        - 0.9504489302635193
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/reebokstep020_stageII.pkl
+    start_frame: 844
+    end_frame: 1416
+    match_start_frame: 844
+    match_end_frame: 1416
+    target_root_position:
+      - - 0.05953647941350937
+        - 0.7240757346153259
+        - 0.40264782309532166
+    target_direction:
+      - - -0.03557465225458145
+        - -0.9992685914039612
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/reebokstep021_stageII.pkl
+    start_frame: 1013
+    end_frame: 1662
+    match_start_frame: 1013
+    match_end_frame: 1662
+    target_root_position:
+      - - 0.06038493663072586
+        - 0.733291745185852
+        - 0.4015967845916748
+    target_direction:
+      - - -0.021326106041669846
+        - -0.9997186064720154
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/reebokstep022_stageII.pkl
+    start_frame: 1002
+    end_frame: 1651
+    match_start_frame: 1002
+    match_end_frame: 1651
+    target_root_position:
+      - - 0.15603795647621155
+        - 0.7157624363899231
+        - 0.39794549345970154
+    target_direction:
+      - - -0.5084764361381531
+        - -0.8591605424880981
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/reebokstep_stageII.pkl
+    start_frame: 745
+    end_frame: 1288
+    match_start_frame: 745
+    match_end_frame: 1288
+    target_root_position:
+      - - 0.04180574044585228
+        - 0.67340487241745
+        - 0.3998209834098816
+    target_direction:
+      - - -0.02265097014605999
+        - -0.9996917247772217
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/sofa001_stageII.pkl
+    start_frame: 1051
+    end_frame: 1554
+    match_start_frame: 1051
+    match_end_frame: 1554
+    target_root_position:
+      - - 0.21917329728603363
+        - 0.9209213256835938
+        - 0.4403857886791229
+    target_direction:
+      - - 0.010264496318995953
+        - -0.9986250996589661
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/sofa002_stageII.pkl
+    start_frame: 928
+    end_frame: 1427
+    match_start_frame: 928
+    match_end_frame: 1427
+    target_root_position:
+      - - 0.12170854955911636
+        - 0.9195491075515747
+        - 0.4432821571826935
+    target_direction:
+      - - 0.27928584814071655
+        - -0.9517797827720642
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/sofa003_stageII.pkl
+    start_frame: 854
+    end_frame: 1346
+    match_start_frame: 854
+    match_end_frame: 1346
+    target_root_position:
+      - - -0.32848110795021057
+        - 0.6693820953369141
+        - 0.47148412466049194
+    target_direction:
+      - - -0.06160794943571091
+        - -0.9979507923126221
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/sofa004_stageII.pkl
+    start_frame: 1299
+    end_frame: 1800
+    match_start_frame: 1299
+    match_end_frame: 1800
+    target_root_position:
+      - - 0.3051166832447052
+        - 0.6936087608337402
+        - 0.4599633812904358
+    target_direction:
+      - - -0.04737202450633049
+        - -0.9988425970077515
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/sofa005_stageII.pkl
+    start_frame: 848
+    end_frame: 1363
+    match_start_frame: 848
+    match_end_frame: 1363
+    target_root_position:
+      - - 0.010284827090799809
+        - 0.7941197752952576
+        - 0.44947749376296997
+    target_direction:
+      - - 0.6928117871284485
+        - -0.7144779562950134
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/sofa006_stageII.pkl
+    start_frame: 1030
+    end_frame: 1534
+    match_start_frame: 1030
+    match_end_frame: 1534
+    target_root_position:
+      - - 0.3428833782672882
+        - 0.769378125667572
+        - 0.45397162437438965
+    target_direction:
+      - - -0.0034957765601575375
+        - -0.9999123811721802
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/sofa007_stageII.pkl
+    start_frame: 865
+    end_frame: 1409
+    match_start_frame: 865
+    match_end_frame: 1409
+    target_root_position:
+      - - 0.9403494596481323
+        - 0.8193731307983398
+        - 0.45075592398643494
+    target_direction:
+      - - -0.7232356071472168
+        - -0.6672111749649048
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/sofa008_stageII.pkl
+    start_frame: 861
+    end_frame: 1327
+    match_start_frame: 861
+    match_end_frame: 1327
+    target_root_position:
+      - - 0.06952298432588577
+        - 0.8798911571502686
+        - 0.4489051103591919
+    target_direction:
+      - - -0.05697747692465782
+        - -0.9950099587440491
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/sofa009_stageII.pkl
+    start_frame: 806
+    end_frame: 1319
+    match_start_frame: 806
+    match_end_frame: 1319
+    target_root_position:
+      - - 0.7908324003219604
+        - 0.8681939244270325
+        - 0.4401724636554718
+    target_direction:
+      - - -0.6789159178733826
+        - -0.7081747651100159
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/sofa010_stageII.pkl
+    start_frame: 755
+    end_frame: 1294
+    match_start_frame: 755
+    match_end_frame: 1294
+    target_root_position:
+      - - 0.803343653678894
+        - 0.8298836946487427
+        - 0.4287627041339874
+    target_direction:
+      - - -0.7498974800109863
+        - -0.6000702381134033
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/sofa011_stageII.pkl
+    start_frame: 1368
+    end_frame: 1866
+    match_start_frame: 1368
+    match_end_frame: 1866
+    target_root_position:
+      - - -0.07579004019498825
+        - 0.93547523021698
+        - 0.4512178897857666
+    target_direction:
+      - - -0.10575579106807709
+        - -0.9934337735176086
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/sofa012_stageII.pkl
+    start_frame: 1017
+    end_frame: 1547
+    match_start_frame: 1017
+    match_end_frame: 1547
+    target_root_position:
+      - - 0.7136344313621521
+        - 0.6479859948158264
+        - 0.4706936478614807
+    target_direction:
+      - - -0.33440911769866943
+        - -0.9421128630638123
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/sofa014_stageII.pkl
+    start_frame: 1770
+    end_frame: 2230
+    match_start_frame: 1770
+    match_end_frame: 2230
+    target_root_position:
+      - - 0.8815633058547974
+        - 0.7938166856765747
+        - 0.4420212209224701
+    target_direction:
+      - - 0.030034683644771576
+        - -0.9980003237724304
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/sofa015_stageII.pkl
+    start_frame: 2609
+    end_frame: 3108
+    match_start_frame: 2609
+    match_end_frame: 3108
+    target_root_position:
+      - - -0.29908350110054016
+        - 0.8581042289733887
+        - 0.450533002614975
+    target_direction:
+      - - -0.06856442242860794
+        - -0.9961101412773132
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/sofa016_stageII.pkl
+    start_frame: 2455
+    end_frame: 2944
+    match_start_frame: 2455
+    match_end_frame: 2944
+    target_root_position:
+      - - 0.03503601998090744
+        - 0.6567983031272888
+        - 0.4736969769001007
+    target_direction:
+      - - 0.0228208489716053
+        - -0.9997006058692932
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/sofa017_stageII.pkl
+    start_frame: 1614
+    end_frame: 2164
+    match_start_frame: 1614
+    match_end_frame: 2164
+    target_root_position:
+      - - 0.6513363718986511
+        - 0.6224891543388367
+        - 0.47910794615745544
+    target_direction:
+      - - 0.02984357811510563
+        - -0.9994688630104065
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/sofa018_stageII.pkl
+    start_frame: 1448
+    end_frame: 1941
+    match_start_frame: 1448
+    match_end_frame: 1941
+    target_root_position:
+      - - 0.5674996972084045
+        - 0.621730625629425
+        - 0.46413740515708923
+    target_direction:
+      - - 0.010081999935209751
+        - -0.9986982345581055
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/sofa019_stageII.pkl
+    start_frame: 2256
+    end_frame: 2742
+    match_start_frame: 2256
+    match_end_frame: 2742
+    target_root_position:
+      - - 0.42103859782218933
+        - 0.8950638771057129
+        - 0.46115049719810486
+    target_direction:
+      - - -0.0900072455406189
+        - -0.9954397082328796
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/sofa020_stageII.pkl
+    start_frame: 709
+    end_frame: 1150
+    match_start_frame: 709
+    match_end_frame: 1150
+    target_root_position:
+      - - -0.06733554601669312
+        - 0.8884798884391785
+        - 0.44722431898117065
+    target_direction:
+      - - 0.44041353464126587
+        - -0.8778654932975769
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/sofa_stageII.pkl
+    start_frame: 918
+    end_frame: 1488
+    match_start_frame: 918
+    match_end_frame: 1488
+    target_root_position:
+      - - -0.3521706759929657
+        - 0.9325036406517029
+        - 0.4360155761241913
+    target_direction:
+      - - -0.4299668073654175
+        - -0.8866574168205261
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/table001_stageII.pkl
+    start_frame: 701
+    end_frame: 1350
+    match_start_frame: 701
+    match_end_frame: 1350
+    target_root_position:
+      - - 0.12423145771026611
+        - 0.8413285613059998
+        - 0.6530795097351074
+    target_direction:
+      - - 0.05110185965895653
+        - -0.9984573721885681
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/table002_stageII.pkl
+    start_frame: 1119
+    end_frame: 1768
+    match_start_frame: 1119
+    match_end_frame: 1768
+    target_root_position:
+      - - 0.26669102907180786
+        - 0.9708489775657654
+        - 0.6458853483200073
+    target_direction:
+      - - 0.9979456067085266
+        - -0.05840988829731941
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/table003_stageII.pkl
+    start_frame: 856
+    end_frame: 1336
+    match_start_frame: 856
+    match_end_frame: 1336
+    target_root_position:
+      - - 0.11794526875019073
+        - 0.803851306438446
+        - 0.6453035473823547
+    target_direction:
+      - - -3.528476008796133e-05
+        - -0.9999837875366211
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/table004_stageII.pkl
+    start_frame: 552
+    end_frame: 1107
+    match_start_frame: 552
+    match_end_frame: 1107
+    target_root_position:
+      - - -0.07908765971660614
+        - 1.0012112855911255
+        - 0.6470543146133423
+    target_direction:
+      - - -0.9967042207717896
+        - -0.08078207075595856
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/table005_stageII.pkl
+    start_frame: 760
+    end_frame: 1377
+    match_start_frame: 760
+    match_end_frame: 1377
+    target_root_position:
+      - - 0.2312028706073761
+        - 0.9217641353607178
+        - 0.6567186713218689
+    target_direction:
+      - - 0.999986469745636
+        - 0.002808373188599944
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/table006_stageII.pkl
+    start_frame: 505
+    end_frame: 1154
+    match_start_frame: 505
+    match_end_frame: 1154
+    target_root_position:
+      - - 0.13800972700119019
+        - 0.8616284728050232
+        - 0.6447098851203918
+    target_direction:
+      - - -0.22960686683654785
+        - -0.9731935858726501
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/table007_stageII.pkl
+    start_frame: 826
+    end_frame: 1453
+    match_start_frame: 826
+    match_end_frame: 1453
+    target_root_position:
+      - - 0.11860580742359161
+        - 1.0835782289505005
+        - 0.6734252572059631
+    target_direction:
+      - - 0.04403787478804588
+        - 0.9988367557525635
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/table008_stageII.pkl
+    start_frame: 818
+    end_frame: 1467
+    match_start_frame: 818
+    match_end_frame: 1467
+    target_root_position:
+      - - 0.09929395467042923
+        - 0.9448281526565552
+        - 0.6442651748657227
+    target_direction:
+      - - 0.030901018530130386
+        - -0.998902440071106
+        - 0.0
+  # - dataset: samp
+  #   motion_file: data/SAMP/pkl/table009_stageII.pkl
+  #   start_frame: 1148
+  #   end_frame: 1797
+  #   match_start_frame: 1148
+  #   match_end_frame: 1797
+  #   target_root_position:
+  #     - - 0.09869471937417984
+  #       - 0.9346840381622314
+  #       - 0.6540377140045166
+  #   target_direction:
+  #     - - -0.9898562431335449
+  #       - -0.0751696452498436
+  #       - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/table010_stageII.pkl
+    start_frame: 677
+    end_frame: 1207
+    match_start_frame: 677
+    match_end_frame: 1207
+    target_root_position:
+      - - 0.13531066477298737
+        - 0.7277978658676147
+        - 0.6537112593650818
+    target_direction:
+      - - -0.07938455045223236
+        - -0.994446873664856
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/table011_stageII.pkl
+    start_frame: 1935
+    end_frame: 2584
+    match_start_frame: 1935
+    match_end_frame: 2584
+    target_root_position:
+      - - 0.10359940677881241
+        - 0.8263129591941833
+        - 0.6505789160728455
+    target_direction:
+      - - -0.06460671871900558
+        - -0.997713565826416
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/table012_stageII.pkl
+    start_frame: 831
+    end_frame: 1422
+    match_start_frame: 831
+    match_end_frame: 1422
+    target_root_position:
+      - - 0.040000125765800476
+        - 0.8814317584037781
+        - 0.6577147841453552
+    target_direction:
+      - - -0.7793822884559631
+        - -0.6265383958816528
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/table013_stageII.pkl
+    start_frame: 390
+    end_frame: 1039
+    match_start_frame: 390
+    match_end_frame: 1039
+    target_root_position:
+      - - 0.12489093095064163
+        - 0.7405292987823486
+        - 0.6458624601364136
+    target_direction:
+      - - -0.006903405766934156
+        - -0.9995390772819519
+        - 0.0
+  # - dataset: samp
+  #   motion_file: data/SAMP/pkl/table014_stageII.pkl
+  #   start_frame: 731
+  #   end_frame: 1319
+  #   match_start_frame: 731
+  #   match_end_frame: 1319
+  #   target_root_position:
+  #     - - 0.16813771426677704
+  #       - 0.9005072116851807
+  #       - 0.6878557205200195
+  #   target_direction:
+  #     - - 0.2990672290325165
+  #       - -0.9462515711784363
+  #       - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/table015_stageII.pkl
+    start_frame: 1192
+    end_frame: 1841
+    match_start_frame: 1192
+    match_end_frame: 1841
+    target_root_position:
+      - - 0.10876595973968506
+        - 0.8639137744903564
+        - 0.647742748260498
+    target_direction:
+      - - 0.03073613904416561
+        - -0.9995021224021912
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/table016_stageII.pkl
+    start_frame: 1064
+    end_frame: 1573
+    match_start_frame: 1064
+    match_end_frame: 1573
+    target_root_position:
+      - - 0.09813863784074783
+        - 0.8268979787826538
+        - 0.6497317552566528
+    target_direction:
+      - - 0.13188883662223816
+        - -0.9909839034080505
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/table017_stageII.pkl
+    start_frame: 419
+    end_frame: 969
+    match_start_frame: 419
+    match_end_frame: 969
+    target_root_position:
+      - - 0.10933995991945267
+        - 0.8985521793365479
+        - 0.6593725681304932
+    target_direction:
+      - - -0.04495349898934364
+        - -0.9989613890647888
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/table018_stageII.pkl
+    start_frame: 892
+    end_frame: 1452
+    match_start_frame: 892
+    match_end_frame: 1452
+    target_root_position:
+      - - 0.08251942694187164
+        - 0.8510384559631348
+        - 0.6554000377655029
+    target_direction:
+      - - 0.031289972364902496
+        - -0.9994879961013794
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/table019_stageII.pkl
+    start_frame: 768
+    end_frame: 1318
+    match_start_frame: 768
+    match_end_frame: 1318
+    target_root_position:
+      - - 0.1447361558675766
+        - 0.8841104507446289
+        - 0.6519028544425964
+    target_direction:
+      - - 0.010781810618937016
+        - -0.9999170303344727
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/table_stageII.pkl
+    start_frame: 672
+    end_frame: 1277
+    match_start_frame: 672
+    match_end_frame: 1277
+    target_root_position:
+      - - 0.10450322180986404
+        - 0.8809517025947571
+        - 0.6537014245986938
+    target_direction:
+      - - 0.1036597415804863
+        - -0.9944079518318176
+        - 0.0

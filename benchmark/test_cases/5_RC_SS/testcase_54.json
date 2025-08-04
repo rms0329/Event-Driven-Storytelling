@@ -1,0 +1,198 @@
+{
+  "id": 54,
+  "tags": ["RC", "SS"],
+  "scene_name": "Restaurant",
+  "action_labels": [
+    "idle",
+    "drink",
+    "eat",
+    "chat",
+    "handshake",
+    "use_smartphone",
+    "deliver_menu",
+    "take_order",
+    "serve_food",
+    "serve_drink",
+    "order_food",
+    "order_drink",
+    "pay_bill",
+    "clean_table",
+    "listen_to_music"
+  ],
+  "user_instruction": "Thomas and Brenda enjoys their drinks, sitting together in the empty chairs in the bar area.",
+  "planning_history": [
+    {
+      "idx": 0,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "completed",
+      "characters": ["Jeremy"],
+      "activity": "order drinks from the bar",
+      "details": [
+        {
+          "character": "Jeremy",
+          "target_action": "order_drink",
+          "position": ["close to bar_counter_1"],
+          "orientation": []
+        }
+      ]
+    },
+    {
+      "idx": 1,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "ongoing",
+      "characters": ["Jeremy"],
+      "activity": "enjoy a drink in a bar table",
+      "details": [
+        {
+          "character": "Jeremy",
+          "target_action": "drink",
+          "position": ["adjacent to table_5"],
+          "orientation": []
+        }
+      ]
+    },
+    {
+      "idx": 2,
+      "type": "essential",
+      "distraction_level": 0,
+      "state": "ongoing",
+      "characters": ["Justin"],
+      "activity": "sit and enjoy a drink in the bar area",
+      "details": [
+        {
+          "character": "Justin",
+          "target_action": "drink",
+          "position": ["sit on chair_1"],
+          "orientation": []
+        }
+      ]
+    },
+    {
+      "idx": 3,
+      "type": "essential",
+      "distraction_level": 0,
+      "state": "ongoing",
+      "characters": ["Karen"],
+      "activity": "sit and enjoy a drink in the bar area",
+      "details": [
+        {
+          "character": "Karen",
+          "target_action": "drink",
+          "position": ["sit on chair_2"],
+          "orientation": []
+        }
+      ]
+    },
+    {
+      "idx": 4,
+      "type": "distractor",
+      "distraction_level": 1,
+      "state": "ongoing",
+      "characters": ["Tyler", "Jamie"],
+      "activity": "have a meal together, sitting in the same table in the dining area",
+      "details": [
+        {
+          "character": "Tyler",
+          "target_action": "eat",
+          "position": ["sit on chair_10"],
+          "orientation": []
+        },
+        {
+          "character": "Jamie",
+          "target_action": "eat",
+          "position": ["sit on chair_5"],
+          "orientation": []
+        }
+      ]
+    }
+  ],
+  "current_states": [
+    {
+      "idx": 0,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Thomas",
+      "state": "idle",
+      "current_action": "idle",
+      "position": [],
+      "orientation": []
+    },
+    {
+      "idx": 1,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Brenda",
+      "state": "idle",
+      "current_action": "idle",
+      "position": [],
+      "orientation": []
+    },
+    {
+      "idx": 2,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Justin",
+      "state": "interacting",
+      "current_action": "drink",
+      "position": ["sit on chair_1"],
+      "orientation": []
+    },
+    {
+      "idx": 3,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Karen",
+      "state": "interacting",
+      "current_action": "drink",
+      "position": ["sit on chair_2"],
+      "orientation": []
+    },
+    {
+      "idx": 4,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "Tyler",
+      "state": "interacting",
+      "current_action": "eat",
+      "position": ["sit on chair_10"],
+      "orientation": []
+    },
+    {
+      "idx": 5,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "Jamie",
+      "state": "interacting",
+      "current_action": "eat",
+      "position": ["sit on chair_5"],
+      "orientation": []
+    },
+    {
+      "idx": 6,
+      "type": "distractor",
+      "distraction_level": 2,
+      "name": "Jeremy",
+      "state": "interacting",
+      "current_action": "drink",
+      "position": ["adjacent to table_5"],
+      "orientation": []
+    }
+  ],
+  "expected_plans": [
+    {
+      "character": "Thomas",
+      "target_action": "drink",
+      "relationships": "sit on chair_7 || sit on chair_8",
+      "sampled_position": null
+    },
+    {
+      "character": "Brenda",
+      "target_action": "drink",
+      "relationships": "sit on chair_7 || sit on chair_8",
+      "sampled_position": null
+    }
+  ],
+  "allow_null_plan": false
+}

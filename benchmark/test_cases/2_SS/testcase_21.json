@@ -1,0 +1,163 @@
+{
+  "id": 21,
+  "tags": ["SS"],
+  "scene_name": "House",
+  "action_labels": [
+    "idle",
+    "drink",
+    "eat",
+    "watch_tv",
+    "dance",
+    "chat",
+    "handshake",
+    "turn_on_record_player",
+    "turn_off_record_player",
+    "turn_on_tv",
+    "turn_off_tv",
+    "open_fridge",
+    "close_fridge",
+    "open_cabinet",
+    "close_cabinet",
+    "use_coffee_maker",
+    "use_toaster",
+    "use_microwave",
+    "use_dishwasher",
+    "use_smartphone",
+    "use_laptop",
+    "read_book"
+  ],
+  "user_instruction": "Christopher makes a coffee first and then enjoys it while sitting on the sofa.",
+  "planning_history": [
+    {
+      "idx": 0,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "completed",
+      "characters": ["Daniel"],
+      "activity": "makes a coffee using the coffee maker",
+      "details": [
+        {
+          "character": "Daniel",
+          "target_action": "use_coffee_maker",
+          "position": ["adjacent to coffee_maker_1"],
+          "orientation": ["look at coffee_maker_1"]
+        }
+      ]
+    },
+    {
+      "idx": 1,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "ongoing",
+      "characters": ["Daniel"],
+      "activity": "drink coffee sitting at the table in the kitchen",
+      "details": [
+        {
+          "character": "Daniel",
+          "target_action": "drink",
+          "position": ["sit on chair_2"],
+          "orientation": []
+        }
+      ]
+    },
+    {
+      "idx": 2,
+      "type": "essential",
+      "distraction_level": 0,
+      "state": "ongoing",
+      "characters": ["Melissa"],
+      "activity": "makes a coffee using the coffee maker",
+      "details": [
+        {
+          "character": "Melissa",
+          "target_action": "use_coffee_maker",
+          "position": ["adjacent to coffee_maker_1"],
+          "orientation": ["look at coffee_maker_1"]
+        }
+      ]
+    },
+    {
+      "idx": 3,
+      "type": "distractor",
+      "distraction_level": 1,
+      "state": "ongoing",
+      "characters": ["Mark", "Karen"],
+      "activity": "chat with each other, sitting on the living room",
+      "details": [
+        {
+          "character": "Mark",
+          "target_action": "chat",
+          "position": ["sit on chair_1"],
+          "orientation": ["look at Karen"]
+        },
+        {
+          "character": "Karen",
+          "target_action": "chat",
+          "position": ["sit on couch_1"],
+          "orientation": ["look at Mark"]
+        }
+      ]
+    }
+  ],
+  "current_states": [
+    {
+      "idx": 0,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Christopher",
+      "state": "idle",
+      "current_action": "idle",
+      "position": [],
+      "orientation": []
+    },
+    {
+      "idx": 1,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Melissa",
+      "state": "interacting",
+      "current_action": "use_coffee_maker",
+      "position": ["adjacent to coffee_maker_1"],
+      "orientation": ["look at coffee_maker_1"]
+    },
+    {
+      "idx": 2,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "Mark",
+      "state": "interacting",
+      "current_action": "chat",
+      "position": ["sit on chair_1"],
+      "orientation": ["look at Karen"]
+    },
+    {
+      "idx": 3,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "Karen",
+      "state": "interacting",
+      "current_action": "chat",
+      "position": ["sit on couch_1"],
+      "orientation": ["look at Mark"]
+    },
+    {
+      "idx": 4,
+      "type": "distractor",
+      "distraction_level": 2,
+      "name": "Daniel",
+      "state": "interacting",
+      "current_action": "drink",
+      "position": ["sit on chair_2"],
+      "orientation": []
+    }
+  ],
+  "expected_plans": [
+    {
+      "character": "Christopher",
+      "target_action": "idle",
+      "relationships": null,
+      "sampled_position": null
+    }
+  ],
+  "allow_null_plan": true
+}

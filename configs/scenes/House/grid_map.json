@@ -1,0 +1,12 @@
+{
+  "grid_step": 0.3,
+  "x_margin": -0.198,
+  "y_margin": 0.1,
+  "z_margin": 0.1,
+  "cylinder_radius": 0.302,
+  "cylinder_height": 0.652,
+  "user_modifications": {
+    "occupied": [],
+    "unoccupied": [[5, 28]]
+  }
+}

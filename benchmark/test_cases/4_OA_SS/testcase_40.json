@@ -1,0 +1,205 @@
+{
+  "id": 40,
+  "tags": ["OA", "SS"],
+  "scene_name": "House",
+  "action_labels": [
+    "idle",
+    "drink",
+    "eat",
+    "watch_tv",
+    "dance",
+    "chat",
+    "handshake",
+    "turn_on_record_player",
+    "turn_off_record_player",
+    "turn_on_tv",
+    "turn_off_tv",
+    "open_fridge",
+    "close_fridge",
+    "open_cabinet",
+    "close_cabinet",
+    "use_coffee_maker",
+    "use_toaster",
+    "use_microwave",
+    "use_dishwasher",
+    "use_smartphone",
+    "use_laptop",
+    "read_book"
+  ],
+  "user_instruction": "Sherry makes a coffee using the coffee maker and eats a sandwich sitting in the kitchen.\nJimmy eats a sandwich while sitting in one of the seats to the right of Sherry.",
+  "planning_history": [
+    {
+      "idx": 0,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "completed",
+      "characters": ["Mary"],
+      "activity": "answer a phone call in the kitchen",
+      "details": [
+        {
+          "character": "Mary",
+          "target_action": "use_smartphone",
+          "position": ["in front of fridge_1"],
+          "orientation": []
+        }
+      ]
+    },
+    {
+      "idx": 1,
+      "type": "essential",
+      "distraction_level": 0,
+      "state": "completed",
+      "characters": ["Sherry"],
+      "activity": "make coffee using the coffee maker",
+      "details": [
+        {
+          "character": "Sherry",
+          "target_action": "use_coffee_maker",
+          "position": ["adjacent to coffee_maker_1"],
+          "orientation": ["look at coffee_maker_1"]
+        }
+      ]
+    },
+    {
+      "idx": 2,
+      "type": "essential",
+      "distraction_level": 0,
+      "state": "ongoing",
+      "characters": ["Sherry"],
+      "activity": "eat a sandwich sitting on chair_6",
+      "details": [
+        {
+          "character": "Sherry",
+          "target_action": "eat",
+          "position": ["sit on chair_6"],
+          "orientation": []
+        }
+      ]
+    },
+    {
+      "idx": 3,
+      "type": "distractor",
+      "distraction_level": 1,
+      "state": "ongoing",
+      "characters": ["Andres", "Diane"],
+      "activity": "chat with each other in the living room",
+      "details": [
+        {
+          "character": "Andres",
+          "target_action": "chat",
+          "position": ["sit on chair_1"],
+          "orientation": ["look at Diane"]
+        },
+        {
+          "character": "Diane",
+          "target_action": "chat",
+          "position": ["sit on couch_1"],
+          "orientation": ["look at Andres"]
+        }
+      ]
+    },
+    {
+      "idx": 4,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "completed",
+      "characters": ["Vernon"],
+      "activity": "make toast using the toaster",
+      "details": [
+        {
+          "character": "Vernon",
+          "target_action": "use_toaster",
+          "position": ["adjacent to toaster_1"],
+          "orientation": ["look at toaster_1"]
+        }
+      ]
+    },
+    {
+      "idx": 5,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "ongoing",
+      "characters": ["Vernon"],
+      "activity": "make coffee using the coffee maker",
+      "details": [
+        {
+          "character": "Vernon",
+          "target_action": "use_coffee_maker",
+          "position": ["adjacent to coffee_maker_1"],
+          "orientation": ["look at coffee_maker_1"]
+        }
+      ]
+    }
+  ],
+  "current_states": [
+    {
+      "idx": 0,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Jimmy",
+      "state": "idle",
+      "current_action": "idle",
+      "position": [],
+      "orientation": []
+    },
+    {
+      "idx": 1,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Sherry",
+      "state": "interacting",
+      "current_action": "eat",
+      "position": ["sit on chair_6"],
+      "orientation": []
+    },
+    {
+      "idx": 2,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "Andres",
+      "state": "interacting",
+      "current_action": "chat",
+      "position": ["sit on chair_1"],
+      "orientation": ["look at Diane"]
+    },
+    {
+      "idx": 3,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "Diane",
+      "state": "interacting",
+      "current_action": "chat",
+      "position": ["sit on couch_1"],
+      "orientation": ["look at Andres"]
+    },
+    {
+      "idx": 4,
+      "type": "distractor",
+      "distraction_level": 2,
+      "name": "Vernon",
+      "state": "interacting",
+      "current_action": "use_coffee_maker",
+      "position": ["adjacent to coffee_maker_1"],
+      "orientation": ["look at coffee_maker_1"]
+    },
+    {
+      "idx": 5,
+      "type": "distractor",
+      "distraction_level": 2,
+      "name": "Mary",
+      "state": "idle",
+      "current_action": "idle",
+      "position": ["in front of fridge_1"],
+      "orientation": []
+    }
+  ],
+  "expected_plans": [
+    {
+      "character": "Jimmy",
+      "target_action": "eat",
+      "relationships": "sit on chair_4 || sit on chair_5",
+      "sampled_position": null
+    }
+  ],
+  "allow_null_plan": false
+}

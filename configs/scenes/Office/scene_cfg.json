@@ -1,0 +1,359 @@
+{
+  "0b2e5dda4ef3386ec6b001496b952db45e614c0d2": {
+    "id": 0,
+    "model_id": "0b2e5dda4ef3386ec6b001496b952db45e614c0d",
+    "location": [3.8000000000000003, 0.2, 0.0],
+    "rotation": [0.0, -0.0, -0.0],
+    "scale": [1.0, 1.0, 1.0]
+  },
+  "0b2e5dda4ef3386ec6b001496b952db45e614c0d": {
+    "id": 1,
+    "model_id": "0b2e5dda4ef3386ec6b001496b952db45e614c0d",
+    "location": [2.3000000000000003, 0.2, 0.0],
+    "rotation": [0.0, -0.0, -0.0],
+    "scale": [1.0, 1.0, 1.0]
+  },
+  "0b2e5dda4ef3386ec6b001496b952db45e614c0d3": {
+    "id": 2,
+    "model_id": "0b2e5dda4ef3386ec6b001496b952db45e614c0d",
+    "location": [2.4, -5.5, 0.0],
+    "rotation": [0.0, -0.0, -0.0],
+    "scale": [1.0, 1.0, 1.0]
+  },
+  "0b2e5dda4ef3386ec6b001496b952db45e614c0d13": {
+    "id": 3,
+    "model_id": "0b2e5dda4ef3386ec6b001496b952db45e614c0d",
+    "location": [10.700000000000001, -5.4, 0.0],
+    "rotation": [-0.0, -0.0, -1.5707963267948963],
+    "scale": [1.0, 1.0, 1.0]
+  },
+  "0b2e5dda4ef3386ec6b001496b952db45e614c0d14": {
+    "id": 4,
+    "model_id": "0b2e5dda4ef3386ec6b001496b952db45e614c0d",
+    "location": [10.700000000000001, -4.5, 0.0],
+    "rotation": [-0.0, -0.0, -1.5707963267948963],
+    "scale": [1.0, 1.0, 1.0]
+  },
+  "d66931edfe3f772e6b972febc8c63095444108a6": {
+    "id": 5,
+    "model_id": "d66931edfe3f772e6b972febc8c63095444108a6",
+    "location": [1.8, -15.4, 0.0],
+    "rotation": [0.0, -0.0, 1.5707963267948963],
+    "scale": [1.0, 1.0, 1.0]
+  },
+  "0b2e5dda4ef3386ec6b001496b952db45e614c0d7": {
+    "id": 6,
+    "model_id": "0b2e5dda4ef3386ec6b001496b952db45e614c0d",
+    "location": [2.4, -8.3, 0.0],
+    "rotation": [-0.0, -0.0, -3.12413936106985],
+    "scale": [1.0, 1.0, 1.0]
+  },
+  "0b2e5dda4ef3386ec6b001496b952db45e614c0d15": {
+    "id": 7,
+    "model_id": "0b2e5dda4ef3386ec6b001496b952db45e614c0d",
+    "location": [10.700000000000001, -3.3000000000000003, 0.0],
+    "rotation": [-0.0, -0.0, -1.5707963267948963],
+    "scale": [1.0, 1.0, 1.0]
+  },
+  "0b2e5dda4ef3386ec6b001496b952db45e614c0d6": {
+    "id": 8,
+    "model_id": "0b2e5dda4ef3386ec6b001496b952db45e614c0d",
+    "location": [3.8000000000000003, -5.5, 0.0],
+    "rotation": [0.0, -0.0, -0.0],
+    "scale": [1.0, 1.0, 1.0]
+  },
+  "0b2e5dda4ef3386ec6b001496b952db45e614c0d4": {
+    "id": 9,
+    "model_id": "0b2e5dda4ef3386ec6b001496b952db45e614c0d",
+    "location": [2.3000000000000003, -2.6, 0.0],
+    "rotation": [-0.0, -0.0, -3.12413936106985],
+    "scale": [1.0, 1.0, 1.0]
+  },
+  "0b2e5dda4ef3386ec6b001496b952db45e614c0d10": {
+    "id": 10,
+    "model_id": "0b2e5dda4ef3386ec6b001496b952db45e614c0d",
+    "location": [7.4, -4.5, 0.0],
+    "rotation": [0.0, -0.0, 1.5707963267948963],
+    "scale": [1.0, 1.0, 1.0]
+  },
+  "0b2e5dda4ef3386ec6b001496b952db45e614c0d8": {
+    "id": 11,
+    "model_id": "0b2e5dda4ef3386ec6b001496b952db45e614c0d",
+    "location": [3.9, -8.3, 0.0],
+    "rotation": [-0.0, -0.0, -3.106686068549907],
+    "scale": [1.0, 1.0, 1.0]
+  },
+  "4d13ab43898ce0d21a716edcef91fec02ff8cb2d": {
+    "id": 12,
+    "model_id": "4d13ab43898ce0d21a716edcef91fec02ff8cb2d",
+    "location": [3.0, -4.4, 0.0],
+    "rotation": [0.0, -0.0, -0.0],
+    "scale": [1.0, 1.0, 1.0]
+  },
+  "4d13ab43898ce0d21a716edcef91fec02ff8cb2d2": {
+    "id": 13,
+    "model_id": "4d13ab43898ce0d21a716edcef91fec02ff8cb2d",
+    "location": [3.0, -4.0, 0.0],
+    "rotation": [-0.0, -0.0, -3.141592653589793],
+    "scale": [1.0, 1.0, 1.0]
+  },
+  "0b2e5dda4ef3386ec6b001496b952db45e614c0d9": {
+    "id": 14,
+    "model_id": "0b2e5dda4ef3386ec6b001496b952db45e614c0d",
+    "location": [7.4, -5.5, 0.0],
+    "rotation": [0.0, -0.0, 1.5707963267948963],
+    "scale": [1.0, 1.0, 1.0]
+  },
+  "0b2e5dda4ef3386ec6b001496b952db45e614c0d5": {
+    "id": 15,
+    "model_id": "0b2e5dda4ef3386ec6b001496b952db45e614c0d",
+    "location": [3.9, -2.6, 0.0],
+    "rotation": [-0.0, -0.0, -3.106686068549907],
+    "scale": [1.0, 1.0, 1.0]
+  },
+  "977bf1533db4af5a5a9e2e203d76661ba33f221f": {
+    "id": 16,
+    "model_id": "977bf1533db4af5a5a9e2e203d76661ba33f221f",
+    "location": [10.0, -7.3, 0.0],
+    "rotation": [-0.0, -0.0, -2.199114857512855],
+    "scale": [1.0, 1.0, 1.0]
+  },
+  "0b2e5dda4ef3386ec6b001496b952db45e614c0d12": {
+    "id": 17,
+    "model_id": "0b2e5dda4ef3386ec6b001496b952db45e614c0d",
+    "location": [7.4, -2.4, 0.0],
+    "rotation": [0.0, -0.0, 1.5707963267948963],
+    "scale": [1.0, 1.0, 1.0]
+  },
+  "ec68e388f774cdbc495fbafcda7c1b367d79f9a9": {
+    "id": 18,
+    "model_id": "ec68e388f774cdbc495fbafcda7c1b367d79f9a9",
+    "location": [3.6, -11.700000000000001, 0.0],
+    "rotation": [0.0, -0.0, -0.0],
+    "scale": [1.0, 1.0, 1.0]
+  },
+  "0b2e5dda4ef3386ec6b001496b952db45e614c0d16": {
+    "id": 19,
+    "model_id": "0b2e5dda4ef3386ec6b001496b952db45e614c0d",
+    "location": [10.700000000000001, -2.4, 0.0],
+    "rotation": [-0.0, -0.0, -1.5707963267948963],
+    "scale": [1.0, 1.0, 1.0]
+  },
+  "2efebdcc1ba9514b0deb0dfb05951341432bd26a6": {
+    "id": 20,
+    "model_id": "2efebdcc1ba9514b0deb0dfb05951341432bd26a",
+    "location": [2.4, -6.5, 0.75],
+    "rotation": [-0.0, -0.0, -3.141592653589793],
+    "scale": [1.0, 1.0, 1.0]
+  },
+  "1fda4d05f021228c2de75c39bd80ac2531021fc5": {
+    "id": 21,
+    "model_id": "1fda4d05f021228c2de75c39bd80ac2531021fc5",
+    "location": [6.3, -12.5, 0.0],
+    "rotation": [0.0, -0.0, -0.0],
+    "scale": [1.0, 1.0, 1.0]
+  },
+  "2a1b54fedd2a492220ebf3e97243dec9f9cc8d87": {
+    "id": 22,
+    "model_id": "2a1b54fedd2a492220ebf3e97243dec9f9cc8d85",
+    "location": [3.8000000000000003, -0.8, 0.0],
+    "rotation": [0.0, -0.0, -0.0],
+    "scale": [1.0, 1.0, 1.0]
+  },
+  "2efebdcc1ba9514b0deb0dfb05951341432bd26a5": {
+    "id": 23,
+    "model_id": "2efebdcc1ba9514b0deb0dfb05951341432bd26a",
+    "location": [3.8000000000000003, -6.5, 0.75],
+    "rotation": [-0.0, -0.0, -3.141592653589793],
+    "scale": [1.0, 1.0, 1.0]
+  },
+  "2efebdcc1ba9514b0deb0dfb05951341432bd26a2": {
+    "id": 24,
+    "model_id": "2efebdcc1ba9514b0deb0dfb05951341432bd26a",
+    "location": [3.8000000000000003, -7.3, 0.75],
+    "rotation": [0.0, -0.0, -0.0],
+    "scale": [1.0, 1.0, 1.0]
+  },
+  "2efebdcc1ba9514b0deb0dfb05951341432bd26a8": {
+    "id": 25,
+    "model_id": "2efebdcc1ba9514b0deb0dfb05951341432bd26a",
+    "location": [3.8000000000000003, -0.7000000000000001, 0.75],
+    "rotation": [-0.0, -0.0, -3.141592653589793],
+    "scale": [1.0, 1.0, 1.0]
+  },
+  "2a1b54fedd2a492220ebf3e97243dec9f9cc8d86": {
+    "id": 26,
+    "model_id": "2a1b54fedd2a492220ebf3e97243dec9f9cc8d85",
+    "location": [2.4, -1.6, -6.376014984610379e-5],
+    "rotation": [0.0, -0.0, -0.0],
+    "scale": [1.0, 1.0, 1.0]
+  },
+  "2efebdcc1ba9514b0deb0dfb05951341432bd26a": {
+    "id": 27,
+    "model_id": "2efebdcc1ba9514b0deb0dfb05951341432bd26a",
+    "location": [2.4, -7.3, 0.75],
+    "rotation": [0.0, -0.0, -0.0],
+    "scale": [1.0, 1.0, 1.0]
+  },
+  "0b2e5dda4ef3386ec6b001496b952db45e614c0d11": {
+    "id": 28,
+    "model_id": "0b2e5dda4ef3386ec6b001496b952db45e614c0d",
+    "location": [7.4, -3.4, 9.999999747378752e-7],
+    "rotation": [0.0, -0.0, 1.5707963267948963],
+    "scale": [1.0, 1.0, 1.0]
+  },
+  "2a1b54fedd2a492220ebf3e97243dec9f9cc8d85": {
+    "id": 29,
+    "model_id": "2a1b54fedd2a492220ebf3e97243dec9f9cc8d85",
+    "location": [2.4, -0.8, 0.0],
+    "rotation": [0.0, -0.0, -0.0],
+    "scale": [1.0, 1.0, 1.0]
+  },
+  "fcc046afe57d8d3616e206364b7b7f20d04d9fdb": {
+    "id": 30,
+    "model_id": "fcc046afe57d8d3616e206364b7b7f20d04d9fdb",
+    "location": [9.499999973230477, -5.100000012167964, 0.0],
+    "rotation": [0.0, -0.0, 1.5707963146269344],
+    "scale": [1.0, 1.0, 1.0]
+  },
+  "1fda4d05f021228c2de75c39bd80ac2531021fc7": {
+    "id": 31,
+    "model_id": "1fda4d05f021228c2de75c39bd80ac2531021fc5",
+    "location": [7.1000000000000005, -14.6, 0.0],
+    "rotation": [0.0, -0.0, -0.0],
+    "scale": [1.0, 1.0, 1.0]
+  },
+  "2a1b54fedd2a492220ebf3e97243dec9f9cc8d90": {
+    "id": 32,
+    "model_id": "2a1b54fedd2a492220ebf3e97243dec9f9cc8d85",
+    "location": [2.4, -7.3, -6.376e-5],
+    "rotation": [0.0, -0.0, -0.0],
+    "scale": [1.0, 1.0, 1.0]
+  },
+  "2efebdcc1ba9514b0deb0dfb05951341432bd26a3": {
+    "id": 33,
+    "model_id": "2efebdcc1ba9514b0deb0dfb05951341432bd26a",
+    "location": [2.4, -1.6, 0.75],
+    "rotation": [0.0, -0.0, -0.0],
+    "scale": [1.0, 1.0, 1.0]
+  },
+  "2efebdcc1ba9514b0deb0dfb05951341432bd26a4": {
+    "id": 34,
+    "model_id": "2efebdcc1ba9514b0deb0dfb05951341432bd26a",
+    "location": [3.8000000000000003, -1.6, 0.75],
+    "rotation": [0.0, -0.0, -0.0],
+    "scale": [1.0, 1.0, 1.0]
+  },
+  "0ba1428b4cf741f1ce877519074ac563580a18e2": {
+    "id": 35,
+    "model_id": "0ba1428b4cf741f1ce877519074ac563580a18e2",
+    "location": [7.308404347807022, -15.516704574994051, 3.2499334452040784e-7],
+    "rotation": [0.0, -0.0, -0.0],
+    "scale": [1.0, 1.0, 1.0]
+  },
+  "0d6acbc9f35c8834a605e284167f44c84582a975": {
+    "id": 36,
+    "model_id": "0d6acbc9f35c8834a605e284167f44c84582a975",
+    "location": [9.0, -1.4000000000000001, 1.3],
+    "rotation": [1.5707963267948963, -0.0, -0.0],
+    "scale": [1.0, 1.0, 1.0]
+  },
+  "2a1b54fedd2a492220ebf3e97243dec9f9cc8d88": {
+    "id": 37,
+    "model_id": "2a1b54fedd2a492220ebf3e97243dec9f9cc8d85",
+    "location": [3.8000000000000003, -1.6, 0.0],
+    "rotation": [0.0, -0.0, -0.0],
+    "scale": [1.0, 1.0, 1.0]
+  },
+  "2a1b54fedd2a492220ebf3e97243dec9f9cc8d89": {
+    "id": 38,
+    "model_id": "2a1b54fedd2a492220ebf3e97243dec9f9cc8d85",
+    "location": [2.4, -6.5, 0.0],
+    "rotation": [0.0, -0.0, -0.0],
+    "scale": [1.0, 1.0, 1.0]
+  },
+  "2efebdcc1ba9514b0deb0dfb05951341432bd26a7": {
+    "id": 39,
+    "model_id": "2efebdcc1ba9514b0deb0dfb05951341432bd26a",
+    "location": [2.4, -0.8, 0.75],
+    "rotation": [-0.0, -0.0, -3.141592653589793],
+    "scale": [1.0, 1.0, 1.0]
+  },
+  "215ea2da23bd8e42afe05183e5e48a5984613be5": {
+    "id": 40,
+    "model_id": "215ea2da23bd8e42afe05183e5e48a5984613be5",
+    "location": [5.25, -11.35, 0.0],
+    "rotation": [0.0, -0.0, -0.0],
+    "scale": [1.0, 1.0, 1.0]
+  },
+  "b77968f3bfaa85fec68e60f7d559967e7e2b9b23": {
+    "id": 41,
+    "model_id": "b77968f3bfaa85fec68e60f7d559967e7e2b9b23",
+    "location": [1.7, -12.0, 0.0],
+    "rotation": [0.0, -0.0, 1.5707963267948963],
+    "scale": [1.0, 1.0, 1.0]
+  },
+  "2a1b54fedd2a492220ebf3e97243dec9f9cc8d92": {
+    "id": 42,
+    "model_id": "2a1b54fedd2a492220ebf3e97243dec9f9cc8d85",
+    "location": [3.8000000000000003, -7.3, 0.0],
+    "rotation": [0.0, -0.0, -0.0],
+    "scale": [1.0, 1.0, 1.0]
+  },
+  "fcc046afe57d8d3616e206364b7b7f20d04d9fdb2": {
+    "id": 43,
+    "model_id": "fcc046afe57d8d3616e206364b7b7f20d04d9fdb",
+    "location": [9.500000026769522, -2.9000000121679648, 0.0],
+    "rotation": [0.0, -0.0, 1.5707963146269344],
+    "scale": [1.0, 1.0, 1.0]
+  },
+  "b02c891d8e86bc914852753f1ce1c318b2499f42": {
+    "id": 44,
+    "model_id": "b02c891d8e86bc914852753f1ce1c318b2499f42",
+    "location": [1.7, -13.700000000000001, 0.0],
+    "rotation": [0.0, -0.0, 1.5707963267948963],
+    "scale": [1.0, 1.0, 1.0]
+  },
+  "fcc046afe57d8d3616e206364b7b7f20d04d9fdb4": {
+    "id": 45,
+    "model_id": "fcc046afe57d8d3616e206364b7b7f20d04d9fdb",
+    "location": [8.500000026769523, -2.8999999878320364, 0.0],
+    "rotation": [0.0, -0.0, 1.5707963146269344],
+    "scale": [1.0, 1.0, 1.0]
+  },
+  "2a1b54fedd2a492220ebf3e97243dec9f9cc8d91": {
+    "id": 46,
+    "model_id": "2a1b54fedd2a492220ebf3e97243dec9f9cc8d85",
+    "location": [3.8000000000000003, -6.5, 0.0],
+    "rotation": [0.0, -0.0, -0.0],
+    "scale": [1.0, 1.0, 1.0]
+  },
+  "fcc046afe57d8d3616e206364b7b7f20d04d9fdb3": {
+    "id": 47,
+    "model_id": "fcc046afe57d8d3616e206364b7b7f20d04d9fdb",
+    "location": [8.499999973230478, -5.099999987832035, 0.0],
+    "rotation": [0.0, -0.0, 1.5707963146269344],
+    "scale": [1.0, 1.0, 1.0]
+  },
+  "8d4442ba5d31ebcbd6e33efad5c3531b6583ef32": {
+    "id": 48,
+    "model_id": "8d4442ba5d31ebcbd6e33efad5c3531b6583ef32",
+    "location": [4.81632143146826, -15.497442656466356, 0.00010371553992428062],
+    "rotation": [-0.0, -0.0, -3.141592653589793],
+    "scale": [1.5, 1.0, 1.0]
+  },
+  "8f79b25bf93105c849e172333193374d16441ad0": {
+    "id": 49,
+    "model_id": "8f79b25bf93105c849e172333193374d16441ad0",
+    "location": [1.8, -14.3, 0.9],
+    "rotation": [0.0, -0.0, 1.5707963267948963],
+    "scale": [1.0, 1.0, 1.0]
+  },
+  "1fda4d05f021228c2de75c39bd80ac2531021fc6": {
+    "id": 50,
+    "model_id": "1fda4d05f021228c2de75c39bd80ac2531021fc5",
+    "location": [3.3, -14.1, 0.0],
+    "rotation": [0.0, -0.0, -0.0],
+    "scale": [1.0, 1.0, 1.0]
+  }
+}

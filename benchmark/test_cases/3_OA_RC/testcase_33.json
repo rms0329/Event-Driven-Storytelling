@@ -1,0 +1,157 @@
+{
+  "id": 33,
+  "tags": ["OA", "RC"],
+  "scene_name": "Office",
+  "action_labels": [
+    "idle",
+    "drink",
+    "chat",
+    "discuss",
+    "handshake",
+    "open_cabinet",
+    "close_cabinet",
+    "use_smartphone",
+    "use_water_dispenser",
+    "work_on_computer",
+    "attend_meeting",
+    "take_out_drink",
+    "take_out_document",
+    "take_out_book",
+    "clean_white_board",
+    "read_book"
+  ],
+  "user_instruction": "Kelly attends a meeting, sitting in a conference room chair in the row farther from the whiteboard.",
+  "planning_history": [
+    {
+      "idx": 0,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "completed",
+      "characters": ["Kelly"],
+      "activity": "use smart phone right next to the chair_1",
+      "details": [
+        {
+          "character": "Kelly",
+          "target_action": "use_smartphone",
+          "position": ["adjacent to chair_1"],
+          "orientation": []
+        }
+      ]
+    },
+    {
+      "idx": 1,
+      "type": "distractor",
+      "distraction_level": 1,
+      "state": "ongoing",
+      "characters": ["Lynn", "Robert"],
+      "activity": "chat with each other, sitting on couch_2 and stool_1 respectively",
+      "details": [
+        {
+          "character": "Lynn",
+          "target_action": "chat",
+          "position": ["sit on couch_2"],
+          "orientation": ["look at Robert"]
+        },
+        {
+          "character": "Robert",
+          "target_action": "chat",
+          "position": ["sit on stool_1"],
+          "orientation": ["look at Lynn"]
+        }
+      ]
+    },
+    {
+      "idx": 2,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "ongoing",
+      "characters": ["Destiny"],
+      "activity": "work on computer sitting on chair_6",
+      "details": [
+        {
+          "character": "Destiny",
+          "target_action": "work_on_computer",
+          "position": ["sit on chair_6"],
+          "orientation": []
+        }
+      ]
+    },
+    {
+      "idx": 3,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "ongoing",
+      "characters": ["Matthew"],
+      "activity": "work on computer sitting on chair_11",
+      "details": [
+        {
+          "character": "Matthew",
+          "target_action": "work_on_computer",
+          "position": ["sit on chair_11"],
+          "orientation": []
+        }
+      ]
+    }
+  ],
+  "current_states": [
+    {
+      "idx": 0,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Kelly",
+      "state": "idle",
+      "current_action": "idle",
+      "position": ["adjacent to chair_1"],
+      "orientation": []
+    },
+    {
+      "idx": 1,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "Lynn",
+      "state": "interacting",
+      "current_action": "chat",
+      "position": ["sit on couch_2"],
+      "orientation": ["look at Robert"]
+    },
+    {
+      "idx": 2,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "Robert",
+      "state": "interacting",
+      "current_action": "chat",
+      "position": ["sit on stool_1"],
+      "orientation": ["look at Lynn"]
+    },
+    {
+      "idx": 3,
+      "type": "distractor",
+      "distraction_level": 2,
+      "name": "Destiny",
+      "state": "interacting",
+      "current_action": "work_on_computer",
+      "position": ["sit on chair_6"],
+      "orientation": []
+    },
+    {
+      "idx": 4,
+      "type": "distractor",
+      "distraction_level": 2,
+      "name": "Matthew",
+      "state": "interacting",
+      "current_action": "work_on_computer",
+      "position": ["sit on chair_11"],
+      "orientation": []
+    }
+  ],
+  "expected_plans": [
+    {
+      "character": "Kelly",
+      "target_action": "attend_meeting",
+      "relationships": "sit on chair_14 || sit on chair_16 || sit on chair_10 || sit on chair_12",
+      "sampled_position": null
+    }
+  ],
+  "allow_null_plan": false
+}

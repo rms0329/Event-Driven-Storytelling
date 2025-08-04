@@ -1,0 +1,230 @@
+human_scene_interaction: false
+human_human_interaction: true
+looping: false
+keyjoints:
+  - pelvis
+  - right_knee
+  - right_foot
+  - left_knee
+  - left_foot
+matching_features:
+  - relative_position
+  - relative_direction
+  - relative_velocity
+motions:
+  - dataset: inter_x
+    motion_file: G012T000A001R007
+    start_frame: 0
+    end_frame: 559
+    match_start_frame: 0
+    match_end_frame: 73
+  - dataset: inter_x
+    motion_file: G012T000A001R006
+    start_frame: 0
+    end_frame: 455
+    match_start_frame: 0
+    match_end_frame: 100
+  - dataset: inter_x
+    motion_file: G011T000A001R005
+    start_frame: 0
+    end_frame: 471
+    match_start_frame: 0
+    match_end_frame: 87
+  - dataset: inter_x
+    motion_file: G011T000A001R004
+    start_frame: 0
+    end_frame: 427
+    match_start_frame: 0
+    match_end_frame: 49
+  - dataset: inter_x
+    motion_file: G011T000A001R003
+    start_frame: 0
+    end_frame: 447
+    match_start_frame: 0
+    match_end_frame: 75
+  - dataset: inter_x
+    motion_file: G010T000A001R002
+    start_frame: 0
+    end_frame: 655
+    match_start_frame: 0
+    match_end_frame: 127
+  - dataset: inter_x
+    motion_file: G010T000A001R000
+    start_frame: 0
+    end_frame: 559
+    match_start_frame: 0
+    match_end_frame: 75
+  - dataset: inter_x
+    motion_file: G007T000A001R007
+    start_frame: 0
+    end_frame: 431
+    match_start_frame: 0
+    match_end_frame: 62
+  - dataset: inter_x
+    motion_file: G007T000A001R006
+    start_frame: 0
+    end_frame: 359
+    match_start_frame: 0
+    match_end_frame: 112
+  - dataset: inter_x
+    motion_file: G007T000A001R005
+    start_frame: 0
+    end_frame: 395
+    match_start_frame: 0
+    match_end_frame: 112
+  - dataset: inter_x
+    motion_file: G006T000A001R009
+    start_frame: 0
+    end_frame: 391
+    match_start_frame: 0
+    match_end_frame: 100
+  - dataset: inter_x
+    motion_file: G006T000A001R008
+    start_frame: 0
+    end_frame: 555
+    match_start_frame: 0
+    match_end_frame: 117
+  - dataset: inter_x
+    motion_file: G006T000A001R007
+    start_frame: 0
+    end_frame: 571
+    match_start_frame: 0
+    match_end_frame: 58
+  - dataset: inter_x
+    motion_file: G006T000A001R006
+    start_frame: 0
+    end_frame: 535
+    match_start_frame: 0
+    match_end_frame: 94
+  - dataset: inter_x
+    motion_file: G006T000A001R005
+    start_frame: 0
+    end_frame: 447
+    match_start_frame: 0
+    match_end_frame: 100
+  - dataset: inter_x
+    motion_file: G005T000A001R005
+    start_frame: 0
+    end_frame: 1283
+    match_start_frame: 0
+    match_end_frame: 405
+  - dataset: inter_x
+    motion_file: G005T000A001R003
+    start_frame: 0
+    end_frame: 887
+    match_start_frame: 0
+    match_end_frame: 31
+  - dataset: inter_x
+    motion_file: G004T003A001R013
+    start_frame: 0
+    end_frame: 743
+    match_start_frame: 0
+    match_end_frame: 170
+  - dataset: inter_x
+    motion_file: G004T003A001R012
+    start_frame: 0
+    end_frame: 567
+    match_start_frame: 0
+    match_end_frame: 197
+  - dataset: inter_x
+    motion_file: G004T003A001R011
+    start_frame: 0
+    end_frame: 491
+    match_start_frame: 0
+    match_end_frame: 169
+  - dataset: inter_x
+    motion_file: G004T003A001R010
+    start_frame: 0
+    end_frame: 647
+    match_start_frame: 0
+    match_end_frame: 109
+  - dataset: inter_x
+    motion_file: G004T003A001R009
+    start_frame: 0
+    end_frame: 539
+    match_start_frame: 0
+    match_end_frame: 120
+  - dataset: inter_x
+    motion_file: G004T003A001R008
+    start_frame: 0
+    end_frame: 455
+    match_start_frame: 0
+    match_end_frame: 112
+  - dataset: inter_x
+    motion_file: G003T000A001R008
+    start_frame: 0
+    end_frame: 971
+    match_start_frame: 0
+    match_end_frame: 306
+  - dataset: inter_x
+    motion_file: G003T000A001R007
+    start_frame: 0
+    end_frame: 867
+    match_start_frame: 0
+    match_end_frame: 116
+  - dataset: inter_x
+    motion_file: G003T000A001R006
+    start_frame: 0
+    end_frame: 819
+    match_start_frame: 0
+    match_end_frame: 193
+  - dataset: inter_x
+    motion_file: G002T000A001R009
+    start_frame: 0
+    end_frame: 511
+    match_start_frame: 0
+    match_end_frame: 104
+  - dataset: inter_x
+    motion_file: G002T000A001R008
+    start_frame: 0
+    end_frame: 531
+    match_start_frame: 0
+    match_end_frame: 74
+  - dataset: inter_x
+    motion_file: G002T000A001R007
+    start_frame: 0
+    end_frame: 387
+    match_start_frame: 0
+    match_end_frame: 31
+  - dataset: inter_x
+    motion_file: G002T000A001R006
+    start_frame: 0
+    end_frame: 503
+    match_start_frame: 0
+    match_end_frame: 24
+  - dataset: inter_x
+    motion_file: G002T000A001R005
+    start_frame: 0
+    end_frame: 603
+    match_start_frame: 0
+    match_end_frame: 219
+  - dataset: inter_x
+    motion_file: G001T000A001R009
+    start_frame: 0
+    end_frame: 631
+    match_start_frame: 0
+    match_end_frame: 155
+  - dataset: inter_x
+    motion_file: G001T000A001R008
+    start_frame: 0
+    end_frame: 651
+    match_start_frame: 0
+    match_end_frame: 203
+  - dataset: inter_x
+    motion_file: G001T000A001R007
+    start_frame: 0
+    end_frame: 687
+    match_start_frame: 0
+    match_end_frame: 265
+  - dataset: inter_x
+    motion_file: G001T000A001R006
+    start_frame: 0
+    end_frame: 623
+    match_start_frame: 0
+    match_end_frame: 73
+  - dataset: inter_x
+    motion_file: G001T000A001R005
+    start_frame: 0
+    end_frame: 539
+    match_start_frame: 0
+    match_end_frame: 125

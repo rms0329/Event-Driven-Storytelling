@@ -1,0 +1,157 @@
+{
+  "id": 11,
+  "tags": ["RC"],
+  "scene_name": "Office",
+  "action_labels": [
+    "idle",
+    "drink",
+    "chat",
+    "discuss",
+    "handshake",
+    "open_cabinet",
+    "close_cabinet",
+    "use_smartphone",
+    "use_water_dispenser",
+    "work_on_computer",
+    "attend_meeting",
+    "take_out_drink",
+    "take_out_document",
+    "take_out_book",
+    "clean_white_board",
+    "read_book"
+  ],
+  "user_instruction": "Jesse opens the cabinet, which is in the resting area.",
+  "planning_history": [
+    {
+      "idx": 0,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "completed",
+      "characters": ["Jesse"],
+      "activity": "use smart phone right next to the chair_1",
+      "details": [
+        {
+          "character": "Jesse",
+          "target_action": "use_smartphone",
+          "position": ["adjacent to chair_1"],
+          "orientation": []
+        }
+      ]
+    },
+    {
+      "idx": 1,
+      "type": "distractor",
+      "distraction_level": 1,
+      "state": "ongoing",
+      "characters": ["Kristin", "Thomas"],
+      "activity": "chat with each other, sitting on couch_2 and stool_1 respectively",
+      "details": [
+        {
+          "character": "Kristin",
+          "target_action": "chat",
+          "position": ["sit on couch_2"],
+          "orientation": ["look at Thomas"]
+        },
+        {
+          "character": "Thomas",
+          "target_action": "chat",
+          "position": ["sit on stool_1"],
+          "orientation": ["look at Kristin"]
+        }
+      ]
+    },
+    {
+      "idx": 2,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "ongoing",
+      "characters": ["Julie"],
+      "activity": "work on computer sitting on chair_6",
+      "details": [
+        {
+          "character": "Julie",
+          "target_action": "work_on_computer",
+          "position": ["sit on chair_6"],
+          "orientation": []
+        }
+      ]
+    },
+    {
+      "idx": 3,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "ongoing",
+      "characters": ["Jordan"],
+      "activity": "work on computer sitting on chair_11",
+      "details": [
+        {
+          "character": "Jordan",
+          "target_action": "work_on_computer",
+          "position": ["sit on chair_11"],
+          "orientation": []
+        }
+      ]
+    }
+  ],
+  "current_states": [
+    {
+      "idx": 0,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Jesse",
+      "state": "idle",
+      "current_action": "idle",
+      "position": ["adjacent to chair_1"],
+      "orientation": []
+    },
+    {
+      "idx": 1,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "Kristin",
+      "state": "interacting",
+      "current_action": "chat",
+      "position": ["sit on couch_2"],
+      "orientation": ["look at Thomas"]
+    },
+    {
+      "idx": 2,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "Thomas",
+      "state": "interacting",
+      "current_action": "chat",
+      "position": ["sit on stool_1"],
+      "orientation": ["look at Kristin"]
+    },
+    {
+      "idx": 3,
+      "type": "distractor",
+      "distraction_level": 2,
+      "name": "Julie",
+      "state": "interacting",
+      "current_action": "work_on_computer",
+      "position": ["sit on chair_6"],
+      "orientation": []
+    },
+    {
+      "idx": 4,
+      "type": "distractor",
+      "distraction_level": 2,
+      "name": "Jordan",
+      "state": "interacting",
+      "current_action": "work_on_computer",
+      "position": ["sit on chair_11"],
+      "orientation": []
+    }
+  ],
+  "expected_plans": [
+    {
+      "character": "Jesse",
+      "target_action": "open_cabinet",
+      "relationships": "adjacent to cabinet_3 || in front of cabinet_3",
+      "sampled_position": null
+    }
+  ],
+  "allow_null_plan": false
+}

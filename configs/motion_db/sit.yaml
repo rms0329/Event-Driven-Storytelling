@@ -1,0 +1,153 @@
+human_scene_interaction: true
+human_human_interaction: false
+looping: false
+keyjoints:
+  - pelvis
+  - spine3
+  - right_knee
+  - right_foot
+  - left_knee
+  - left_foot
+matching_features:
+  - keyjoints
+motions:
+  - dataset: samp
+    motion_file: data/SAMP/pkl/armchair007_stageII.pkl
+    start_frame: 1312
+    end_frame: 2160
+    match_start_frame: 1312
+    match_end_frame: 2160
+    target_root_position:
+      - - 0.001009957049973309
+        - 0.527252197265625
+        - 0.6114825010299683
+    target_direction:
+      - - 0.16363973915576935
+        - -0.9841141104698181
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/armchair014_stageII.pkl
+    start_frame: 1577
+    end_frame: 2661
+    match_start_frame: 1577
+    match_end_frame: 2661
+    target_root_position:
+      - - -0.010017004795372486
+        - 0.5320464372634888
+        - 0.6131719350814819
+    target_direction:
+      - - 0.041678477078676224
+        - -0.9989903569221497
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/armchair018_stageII.pkl
+    start_frame: 1238
+    end_frame: 1957
+    match_start_frame: 1238
+    match_end_frame: 1957
+    target_root_position:
+      - - -0.0028732765931636095
+        - 0.5422231554985046
+        - 0.6094275712966919
+    target_direction:
+      - - 0.016115447506308556
+        - -0.9998301863670349
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/highstool006_stageII.pkl
+    start_frame: 1287
+    end_frame: 2171
+    match_start_frame: 1287
+    match_end_frame: 2171
+    target_root_position:
+      - - -0.03488478809595108
+        - 0.6095776557922363
+        - 0.7797744870185852
+    target_direction:
+      - - 0.41787004470825195
+        - -0.9081419706344604
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/highstool018_stageII.pkl
+    start_frame: 1288
+    end_frame: 2745
+    match_start_frame: 1288
+    match_end_frame: 2745
+    target_root_position:
+      - - 0.009023892693221569
+        - 0.6043601632118225
+        - 0.7793041467666626
+    target_direction:
+      - - 0.03414130583405495
+        - -0.9990334510803223
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/highstool019_stageII.pkl
+    start_frame: 1124
+    end_frame: 2089
+    match_start_frame: 1124
+    match_end_frame: 2089
+    target_root_position:
+      - - 0.018800297752022743
+        - 0.5921421647071838
+        - 0.7829354405403137
+    target_direction:
+      - - -0.019350063055753708
+        - -0.9995856285095215
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/table005_stageII.pkl
+    start_frame: 977
+    end_frame: 1953
+    match_start_frame: 977
+    match_end_frame: 1953
+    target_root_position:
+      - - 0.2312028706073761
+        - 0.9217641353607178
+        - 0.6567186713218689
+    target_direction:
+      - - 0.999986469745636
+        - 0.002808373188599944
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/table017_stageII.pkl
+    start_frame: 569
+    end_frame: 1512
+    match_start_frame: 569
+    match_end_frame: 1512
+    target_root_position:
+      - - 0.10933995991945267
+        - 0.8985521793365479
+        - 0.6593725681304932
+    target_direction:
+      - - -0.04495349898934364
+        - -0.9989613890647888
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/table018_stageII.pkl
+    start_frame: 1052
+    end_frame: 1844
+    match_start_frame: 1052
+    match_end_frame: 1844
+    target_root_position:
+      - - 0.08251942694187164
+        - 0.8510384559631348
+        - 0.6554000377655029
+    target_direction:
+      - - 0.031289972364902496
+        - -0.9994879961013794
+        - 0.0
+  - dataset: samp
+    motion_file: data/SAMP/pkl/table019_stageII.pkl
+    start_frame: 918
+    end_frame: 2214
+    match_start_frame: 918
+    match_end_frame: 2214
+    target_root_position:
+      - - 0.1447361558675766
+        - 0.8841104507446289
+        - 0.6519028544425964
+    target_direction:
+      - - 0.010781810618937016
+        - -0.9999170303344727
+        - 0.0

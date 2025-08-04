@@ -1,0 +1,261 @@
+{
+    "backpack_1": {
+        "position": [5.61, 1.76, 0.15],
+        "size": [0.38, 0.26, 0.37],
+        "volume": 0.03,
+        "relationships": [
+            "adjacent to bed_2",
+            "close to partition_1",
+            "close to luggage_1"
+        ]
+    },
+    "bag_1": {
+        "position": [3.7, 0.53, 0.61],
+        "size": [0.72, 0.51, 0.28],
+        "volume": 0.09,
+        "relationships": [
+            "on bench_1"
+        ]
+    },
+    "bed_1": {
+        "position": [3.84, 2.83, 0.22],
+        "size": [1.06, 2.0, 0.54],
+        "volume": 1.09,
+        "relationships": [
+            "close to wardrobe_1",
+            "close to bed_2",
+            "close to nightstand_1",
+            "adjacent to nightstand_2",
+            "close to luggage_1"
+        ]
+    },
+    "bed_2": {
+        "position": [5.83, 2.88, 0.23],
+        "size": [1.02, 2.07, 0.53],
+        "volume": 1.07,
+        "relationships": [
+            "adjacent to backpack_1",
+            "close to bed_1",
+            "adjacent to nightstand_1",
+            "close to nightstand_2",
+            "close to coffee_table_1",
+            "in front of chair_2",
+            "behind chair_3",
+            "adjacent to chair_3",
+            "adjacent to partition_1",
+            "close to luggage_1"
+        ]
+    },
+    "bench_1": {
+        "position": [3.95, 0.55, 0.27],
+        "size": [1.28, 0.59, 0.64],
+        "volume": 0.41,
+        "relationships": [
+            "adjacent to wardrobe_1",
+            "adjacent to luggage_1"
+        ]
+    },
+    "blanket_1": {
+        "position": [3.79, 2.56, 0.45],
+        "size": [0.83, 1.39, 0.1],
+        "volume": 0.11,
+        "relationships": [
+            "on bed_1"
+        ]
+    },
+    "blanket_2": {
+        "position": [5.86, 2.56, 0.44],
+        "size": [0.88, 1.43, 0.11],
+        "volume": 0.13,
+        "relationships": [
+            "on bed_2"
+        ]
+    },
+    "chair_1": {
+        "position": [8.23, 1.02, 0.41],
+        "size": [0.81, 0.68, 0.89],
+        "volume": 0.35,
+        "orientation": [-0.97, -0.19, 0.0],
+        "relationships": [
+            "adjacent to desk_1",
+            "close to radiator_1",
+            "to the left of chair_2"
+        ]
+    },
+    "chair_2": {
+        "position": [8.27, 3.35, 0.37],
+        "size": [0.76, 0.72, 0.85],
+        "volume": 0.45,
+        "orientation": [-0.99, 0.01, 0.0],
+        "relationships": [
+            "to the right of chair_1",
+            "adjacent to coffee_table_1",
+            "in front of chair_3",
+            "close to chair_3"
+        ]
+    },
+    "chair_3": {
+        "position": [6.64, 3.61, 0.36],
+        "size": [0.84, 0.79, 0.81],
+        "volume": 0.42,
+        "orientation": [0.98, -0.15, 0.0],
+        "relationships": [
+            "adjacent to bed_2",
+            "close to nightstand_1",
+            "adjacent to coffee_table_1",
+            "in front of chair_2",
+            "close to chair_2",
+            "adjacent to partition_1"
+        ]
+    },
+    "closet_1": {
+        "position": [0.76, 0.66, 1.14],
+        "size": [0.86, 0.54, 2.38],
+        "volume": 1.1,
+        "relationships": [
+            "adjacent to wardrobe_1",
+            "adjacent to door_1",
+            "adjacent to trash_can_1"
+        ]
+    },
+    "coffee_table_1": {
+        "position": [7.38, 3.47, 0.21],
+        "size": [0.75, 0.87, 0.52],
+        "volume": 0.33,
+        "relationships": [
+            "to the right of chair_1",
+            "close to bed_2",
+            "in front of chair_2",
+            "adjacent to chair_2",
+            "in front of chair_3",
+            "adjacent to chair_3",
+            "close to partition_1"
+        ]
+    },
+    "desk_1": {
+        "position": [7.48, 0.43, 0.74],
+        "size": [2.3, 0.75, 0.54],
+        "volume": 0.81,
+        "relationships": [
+            "in front of chair_1",
+            "adjacent to chair_1",
+            "adjacent to radiator_1",
+            "close to partition_1"
+        ]
+    },
+    "door_1": {
+        "position": [0.44, 1.45, 1.13],
+        "size": [0.23, 1.57, 2.36],
+        "volume": 0.57,
+        "relationships": [
+            "close to wardrobe_1",
+            "adjacent to closet_1",
+            "adjacent to trash_can_1"
+        ]
+    },
+    "luggage_1": {
+        "position": [4.98, 0.73, 0.08],
+        "size": [0.68, 1.04, 0.27],
+        "volume": 0.19,
+        "relationships": [
+            "close to backpack_1",
+            "close to bed_2",
+            "close to bed_1",
+            "close to partition_1",
+            "adjacent to bench_1"
+        ]
+    },
+    "monitor_1": {
+        "position": [6.71, 0.34, 0.88],
+        "size": [0.6, 0.43, 0.39],
+        "volume": 0.06,
+        "orientation": [0.25, 0.96, 0.0],
+        "relationships": [
+            "on desk_1"
+        ]
+    },
+    "nightstand_1": {
+        "position": [5.14, 3.72, 0.23],
+        "size": [0.54, 0.5, 0.56],
+        "volume": 0.11,
+        "relationships": [
+            "adjacent to bed_2",
+            "close to bed_1",
+            "adjacent to nightstand_2",
+            "behind chair_3",
+            "close to chair_3",
+            "close to partition_1"
+        ]
+    },
+    "nightstand_2": {
+        "position": [4.53, 3.7, 0.24],
+        "size": [0.5, 0.41, 0.59],
+        "volume": 0.12,
+        "relationships": [
+            "close to bed_2",
+            "adjacent to bed_1",
+            "adjacent to nightstand_1",
+            "behind chair_3"
+        ]
+    },
+    "partition_1": {
+        "position": [6.3, 2.84, 0.77],
+        "size": [0.36, 2.27, 1.64],
+        "volume": 1.02,
+        "relationships": [
+            "close to backpack_1",
+            "adjacent to bed_2",
+            "close to nightstand_1",
+            "close to desk_1",
+            "close to coffee_table_1",
+            "in front of chair_2",
+            "to the right of chair_3",
+            "adjacent to chair_3",
+            "close to luggage_1"
+        ]
+    },
+    "picture_1": {
+        "position": [3.31, 3.04, 1.66],
+        "size": [0.22, 1.12, 0.66],
+        "volume": 0.07,
+        "relationships": [
+            "above bed_1"
+        ]
+    },
+    "radiator_1": {
+        "position": [7.52, 0.2, 0.28],
+        "size": [1.92, 0.5, 0.63],
+        "volume": 0.43,
+        "relationships": [
+            "close to chair_1",
+            "adjacent to desk_1"
+        ]
+    },
+    "trash_can_1": {
+        "position": [0.66, 0.69, 0.18],
+        "size": [0.39, 0.43, 0.44],
+        "volume": 0.04,
+        "relationships": [
+            "adjacent to wardrobe_1",
+            "adjacent to door_1",
+            "adjacent to closet_1"
+        ]
+    },
+    "wardrobe_1": {
+        "position": [2.21, 0.79, 1.07],
+        "size": [2.44, 0.59, 2.46],
+        "volume": 2.69,
+        "relationships": [
+            "close to bed_1",
+            "close to door_1",
+            "adjacent to closet_1",
+            "adjacent to bench_1",
+            "adjacent to trash_can_1"
+        ]
+    },
+    "window_1": {
+        "position": [8.59, 2.22, 1.67],
+        "size": [0.16, 2.05, 1.77],
+        "volume": 0.31
+    }
+}

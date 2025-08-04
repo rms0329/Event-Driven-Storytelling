@@ -1,0 +1,179 @@
+{
+  "id": 50,
+  "tags": ["RC", "SS"],
+  "scene_name": "House",
+  "action_labels": [
+    "idle",
+    "drink",
+    "eat",
+    "watch_tv",
+    "dance",
+    "chat",
+    "handshake",
+    "turn_on_record_player",
+    "turn_off_record_player",
+    "turn_on_tv",
+    "turn_off_tv",
+    "open_fridge",
+    "close_fridge",
+    "open_cabinet",
+    "close_cabinet",
+    "use_coffee_maker",
+    "use_toaster",
+    "use_microwave",
+    "use_dishwasher",
+    "use_smartphone",
+    "use_laptop",
+    "read_book"
+  ],
+  "user_instruction": "Jonathan works with his laptop, sitting on an empty chair in the kitchen.",
+  "planning_history": [
+    {
+      "idx": 0,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "completed",
+      "characters": ["Tracy"],
+      "activity": "make toast using the toaster",
+      "details": [
+        {
+          "character": "Tracy",
+          "target_action": "use_toaster",
+          "position": ["adjacent to toaster_1"],
+          "orientation": ["look at toaster_1"]
+        }
+      ]
+    },
+    {
+      "idx": 1,
+      "type": "essential",
+      "distraction_level": 0,
+      "state": "ongoing",
+      "characters": ["Deborah", "Mark"],
+      "activity": "chat with each other, sitting at the table_4 in the kitchen",
+      "details": [
+        {
+          "character": "Deborah",
+          "target_action": "chat",
+          "position": ["sit on chair_2"],
+          "orientation": ["look at Mark"]
+        },
+        {
+          "character": "Mark",
+          "target_action": "chat",
+          "position": ["sit on chair_6"],
+          "orientation": ["look at Deborah"]
+        }
+      ]
+    },
+    {
+      "idx": 2,
+      "type": "distractor",
+      "distraction_level": 1,
+      "state": "ongoing",
+      "characters": ["Dana", "John"],
+      "activity": "chat with each other in the living room",
+      "details": [
+        {
+          "character": "Dana",
+          "target_action": "chat",
+          "position": ["sit on couch_1"],
+          "orientation": ["look at John"]
+        },
+        {
+          "character": "John",
+          "target_action": "chat",
+          "position": ["sit on couch_1"],
+          "orientation": ["look at Dana"]
+        }
+      ]
+    },
+    {
+      "idx": 3,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "completed",
+      "characters": ["Tracy"],
+      "activity": "make coffee using the coffee maker",
+      "details": [
+        {
+          "character": "Tracy",
+          "target_action": "use_coffee_maker",
+          "position": ["adjacent to coffee_maker_1"],
+          "orientation": ["look at coffee_maker_1"]
+        }
+      ]
+    }
+  ],
+  "current_states": [
+    {
+      "idx": 0,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Jonathan",
+      "state": "idle",
+      "current_action": "idle",
+      "position": [],
+      "orientation": []
+    },
+    {
+      "idx": 1,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Deborah",
+      "state": "interacting",
+      "current_action": "chat",
+      "position": ["sit on chair_2"],
+      "orientation": ["look at Mark"]
+    },
+    {
+      "idx": 2,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Mark",
+      "state": "interacting",
+      "current_action": "chat",
+      "position": ["sit on chair_6"],
+      "orientation": ["look at Deborah"]
+    },
+    {
+      "idx": 3,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "Dana",
+      "state": "interacting",
+      "current_action": "chat",
+      "position": ["sit on couch_1"],
+      "orientation": ["look at John"]
+    },
+    {
+      "idx": 4,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "John",
+      "state": "interacting",
+      "current_action": "chat",
+      "position": ["sit on couch_1"],
+      "orientation": ["look at Dana"]
+    },
+    {
+      "idx": 5,
+      "type": "distractor",
+      "distraction_level": 2,
+      "name": "Tracy",
+      "state": "idle",
+      "current_action": "idle",
+      "position": ["adjacent to coffee_maker_1"],
+      "orientation": []
+    }
+  ],
+  "expected_plans": [
+    {
+      "character": "Jonathan",
+      "target_action": "use_laptop",
+      "relationships": "sit on chair_4 || sit on chair_5",
+      "sampled_position": null
+    }
+  ],
+  "allow_null_plan": false
+}

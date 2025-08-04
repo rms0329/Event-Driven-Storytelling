@@ -1,0 +1,189 @@
+{
+  "id": 41,
+  "tags": ["OA", "SS"],
+  "scene_name": "Office",
+  "action_labels": [
+    "idle",
+    "drink",
+    "chat",
+    "discuss",
+    "handshake",
+    "open_cabinet",
+    "close_cabinet",
+    "use_smartphone",
+    "use_water_dispenser",
+    "work_on_computer",
+    "attend_meeting",
+    "take_out_drink",
+    "take_out_document",
+    "take_out_book",
+    "clean_white_board",
+    "read_book"
+  ],
+  "user_instruction": "Crystal answers a phone call in the rest area.\nAfter the phone call, Crystal goes back to work on the computer in the workspace.\nJames works in the seat right next to Crystal.",
+  "planning_history": [
+    {
+      "idx": 0,
+      "type": "essential",
+      "distraction_level": 0,
+      "state": "completed",
+      "characters": ["Crystal"],
+      "activity": "answer a phone call in the rest area",
+      "details": [
+        {
+          "character": "Crystal",
+          "target_action": "use_smartphone",
+          "position": ["sit on couch_1"],
+          "orientation": []
+        }
+      ]
+    },
+    {
+      "idx": 1,
+      "type": "essential",
+      "distraction_level": 0,
+      "state": "ongoing",
+      "characters": ["Crystal"],
+      "activity": "goes back to work on the computer in the workspace",
+      "details": [
+        {
+          "character": "Crystal",
+          "target_action": "work_on_computer",
+          "position": ["sit on chair_6"],
+          "orientation": []
+        }
+      ]
+    },
+    {
+      "idx": 2,
+      "type": "distractor",
+      "distraction_level": 1,
+      "state": "completed",
+      "characters": ["Christopher"],
+      "activity": "drink water from the dispenser",
+      "details": [
+        {
+          "character": "Christopher",
+          "target_action": "use_water_dispenser",
+          "position": ["adjacent to water_dispenser_1"],
+          "orientation": ["look at water_dispenser_1"]
+        }
+      ]
+    },
+    {
+      "idx": 3,
+      "type": "distractor",
+      "distraction_level": 1,
+      "state": "ongoing",
+      "characters": ["Christopher", "Suzanne"],
+      "activity": "chat with each other, sitting in the rest area",
+      "details": [
+        {
+          "character": "Christopher",
+          "target_action": "chat",
+          "position": ["sit on stool_1"],
+          "orientation": ["look at Suzanne"]
+        },
+        {
+          "character": "Suzanne",
+          "target_action": "chat",
+          "position": ["sit on couch_2"],
+          "orientation": ["look at Christopher"]
+        }
+      ]
+    },
+    {
+      "idx": 4,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "ongoing",
+      "characters": ["Kenneth", "Melissa"],
+      "activity": "work together on a project in the workspace",
+      "details": [
+        {
+          "character": "Kenneth",
+          "target_action": "work_on_computer",
+          "position": ["sit on chair_9"],
+          "orientation": []
+        },
+        {
+          "character": "Melissa",
+          "target_action": "work_on_computer",
+          "position": ["sit on chair_13"],
+          "orientation": []
+        }
+      ]
+    }
+  ],
+  "current_states": [
+    {
+      "idx": 0,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "James",
+      "state": "idle",
+      "current_action": "idle",
+      "position": [],
+      "orientation": []
+    },
+    {
+      "idx": 1,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Crystal",
+      "state": "interacting",
+      "current_action": "work_on_computer",
+      "position": ["sit on chair_6"],
+      "orientation": []
+    },
+    {
+      "idx": 2,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "Christopher",
+      "state": "interacting",
+      "current_action": "chat",
+      "position": ["sit on stool_1"],
+      "orientation": ["look at Suzanne"]
+    },
+    {
+      "idx": 3,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "Suzanne",
+      "state": "interacting",
+      "current_action": "chat",
+      "position": ["sit on couch_2"],
+      "orientation": ["look at Christopher"]
+    },
+    {
+      "idx": 4,
+      "type": "distractor",
+      "distraction_level": 2,
+      "name": "Kenneth",
+      "state": "interacting",
+      "current_action": "work_on_computer",
+      "position": ["sit on chair_9"],
+      "orientation": []
+    },
+    {
+      "idx": 5,
+      "type": "distractor",
+      "distraction_level": 2,
+      "name": "Melissa",
+      "state": "interacting",
+      "current_action": "work_on_computer",
+      "position": ["sit on chair_13"],
+      "orientation": []
+    }
+  ],
+  "expected_plans": [
+    {
+      "character": "James",
+      "target_action": "work_on_computer",
+      "relationships": "sit on chair_11",
+      "sampled_position": null
+    }
+  ],
+  "allow_null_plan": false
+}

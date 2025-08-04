@@ -1,0 +1,166 @@
+{
+    "cabinet_1": {
+        "position": [1.09, 2.31, 1.26],
+        "size": [0.78, 4.04, 2.62],
+        "volume": 7.67,
+        "orientation": [0.99, 0.01, 0.0],
+        "relationships": [
+            "to the right of cabinet_2",
+            "adjacent to cabinet_2",
+            "to the left of chair_1",
+            "to the left of chair_2"
+        ]
+    },
+    "cabinet_2": {
+        "position": [2.69, 3.99, 0.45],
+        "size": [2.73, 0.66, 0.9],
+        "volume": 1.49,
+        "orientation": [0.01, -0.99, 0.0],
+        "relationships": [
+            "below kitchen_hood_1",
+            "close to table_1",
+            "in front of cabinet_1",
+            "adjacent to cabinet_1",
+            "in front of chair_1",
+            "in front of chair_2"
+        ]
+    },
+    "chair_1": {
+        "position": [2.91, 1.94, 0.42],
+        "size": [0.48, 0.5, 0.79],
+        "volume": 0.18,
+        "orientation": [0.03, 0.99, 0.0],
+        "relationships": [
+            "adjacent to table_1",
+            "in front of cabinet_1",
+            "in front of cabinet_2",
+            "to the left of chair_2",
+            "adjacent to chair_2",
+            "close to shelf_2"
+        ]
+    },
+    "chair_2": {
+        "position": [3.47, 1.91, 0.43],
+        "size": [0.48, 0.61, 0.91],
+        "volume": 0.24,
+        "orientation": [0.04, 0.99, 0.0],
+        "relationships": [
+            "adjacent to table_1",
+            "in front of cabinet_1",
+            "in front of cabinet_2",
+            "to the right of chair_1",
+            "adjacent to chair_1",
+            "close to shelf_2"
+        ]
+    },
+    "clock_1": {
+        "position": [4.08, 3.63, 1.98],
+        "size": [0.07, 0.39, 0.4],
+        "volume": 0.01,
+        "relationships": [
+            "above cabinet_2"
+        ]
+    },
+    "cooking_pot_1": {
+        "position": [3.48, 4.14, 0.95],
+        "size": [0.31, 0.38, 0.16],
+        "volume": 0.02,
+        "relationships": [
+            "on cabinet_2"
+        ]
+    },
+    "flowers_1": {
+        "position": [3.69, 2.49, 1.04],
+        "size": [0.42, 0.41, 0.38],
+        "volume": 0.03,
+        "relationships": [
+            "on table_1"
+        ]
+    },
+    "kitchen_hood_1": {
+        "position": [2.72, 3.99, 1.95],
+        "size": [0.57, 0.38, 0.89],
+        "volume": 0.14,
+        "relationships": [
+            "above cabinet_2"
+        ]
+    },
+    "lamp_1": {
+        "position": [3.28, 2.32, 1.82],
+        "size": [0.23, 0.2, 0.26],
+        "volume": 0.01,
+        "relationships": [
+            "above table_1",
+            "above chair_1",
+            "above chair_2"
+        ]
+    },
+    "oven_1": {
+        "position": [2.7, 3.98, 0.64],
+        "size": [0.97, 0.62, 0.68],
+        "volume": 0.4,
+        "orientation": [0.0, -0.99, 0.0],
+        "relationships": [
+            "embedded in cabinet_2"
+        ]
+    },
+    "plant_1": {
+        "position": [1.89, 4.1, 0.99],
+        "size": [0.37, 0.39, 0.17],
+        "volume": 0.02,
+        "relationships": [
+            "on cabinet_2"
+        ]
+    },
+    "shelf_1": {
+        "position": [0.96, 1.95, 1.73],
+        "size": [0.51, 1.33, 0.71],
+        "volume": 0.43,
+        "relationships": [
+            "embedded in cabinet_1"
+        ]
+    },
+    "shelf_2": {
+        "position": [4.03, 0.74, 1.04],
+        "size": [0.5, 0.88, 2.2],
+        "volume": 0.84,
+        "relationships": [
+            "close to table_1",
+            "close to chair_1",
+            "close to chair_2"
+        ]
+    },
+    "sink_1": {
+        "position": [1.15, 1.99, 0.63],
+        "size": [0.58, 0.89, 0.62],
+        "volume": 0.31,
+        "orientation": [0.99, 0.01, 0.0],
+        "relationships": [
+            "embedded in cabinet_1"
+        ]
+    },
+    "table_1": {
+        "position": [3.27, 2.33, 0.39],
+        "size": [1.41, 0.8, 1.13],
+        "volume": 1.26,
+        "relationships": [
+            "below lamp_1",
+            "in front of cabinet_1",
+            "in front of cabinet_2",
+            "close to cabinet_2",
+            "to the right of chair_1",
+            "adjacent to chair_1",
+            "in front of chair_2",
+            "adjacent to chair_2",
+            "close to shelf_2"
+        ]
+    },
+    "window_1": {
+        "position": [4.09, 2.36, 1.7],
+        "size": [0.08, 0.71, 1.25],
+        "volume": 0.06,
+        "relationships": [
+            "above table_1"
+        ]
+    }
+}

@@ -1,0 +1,195 @@
+{
+  "id": 42,
+  "tags": ["OA", "SS"],
+  "scene_name": "Office",
+  "action_labels": [
+    "idle",
+    "drink",
+    "chat",
+    "discuss",
+    "handshake",
+    "open_cabinet",
+    "close_cabinet",
+    "use_smartphone",
+    "use_water_dispenser",
+    "work_on_computer",
+    "attend_meeting",
+    "take_out_drink",
+    "take_out_document",
+    "take_out_book",
+    "clean_white_board",
+    "read_book"
+  ],
+  "user_instruction": "Mark and Allison greet each other with a handshake in the left side of the chair_8.\nAllison then takes a seat in the conference room and attends a meeting first.\nAfter a while, Mark joins the meeting, sitting in one of the chairs to the right side of Allison.",
+  "planning_history": [
+    {
+      "idx": 0,
+      "type": "essential",
+      "distraction_level": 0,
+      "state": "completed",
+      "characters": ["Mark", "Allison"],
+      "activity": "greet each other with a handshake",
+      "details": [
+        {
+          "character": "Mark",
+          "target_action": "handshake",
+          "position": ["to the left of chair_8"],
+          "orientation": ["look at Allison"]
+        },
+        {
+          "character": "Allison",
+          "target_action": "handshake",
+          "position": ["to the left of chair_8"],
+          "orientation": ["look at Mark"]
+        }
+      ]
+    },
+    {
+      "idx": 1,
+      "type": "essential",
+      "distraction_level": 0,
+      "state": "ongoing",
+      "characters": ["Allison"],
+      "activity": "attend a meeting in the conference room",
+      "details": [
+        {
+          "character": "Allison",
+          "target_action": "attend_meeting",
+          "position": ["sit on chair_16"],
+          "orientation": []
+        }
+      ]
+    },
+    {
+      "idx": 2,
+      "type": "distractor",
+      "distraction_level": 1,
+      "state": "completed",
+      "characters": ["Donald"],
+      "activity": "drink water from the dispenser",
+      "details": [
+        {
+          "character": "Donald",
+          "target_action": "use_water_dispenser",
+          "position": ["adjacent to water_dispenser_1"],
+          "orientation": ["look at water_dispenser_1"]
+        }
+      ]
+    },
+    {
+      "idx": 3,
+      "type": "distractor",
+      "distraction_level": 1,
+      "state": "ongoing",
+      "characters": ["Donald", "Courtney"],
+      "activity": "chat with each other, sitting in the rest area",
+      "details": [
+        {
+          "character": "Donald",
+          "target_action": "chat",
+          "position": ["sit on stool_1"],
+          "orientation": ["look at Courtney"]
+        },
+        {
+          "character": "Courtney",
+          "target_action": "chat",
+          "position": ["sit on couch_2"],
+          "orientation": ["look at Donald"]
+        }
+      ]
+    },
+    {
+      "idx": 4,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "ongoing",
+      "characters": ["Noah", "Megan"],
+      "activity": "work together on a project in the workspace",
+      "details": [
+        {
+          "character": "Noah",
+          "target_action": "work_on_computer",
+          "position": ["sit on chair_2"],
+          "orientation": []
+        },
+        {
+          "character": "Megan",
+          "target_action": "work_on_computer",
+          "position": ["sit on chair_1"],
+          "orientation": []
+        }
+      ]
+    }
+  ],
+  "current_states": [
+    {
+      "idx": 0,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Mark",
+      "state": "idle",
+      "current_action": "idle",
+      "position": ["to the left of chair_8"],
+      "orientation": []
+    },
+    {
+      "idx": 1,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Allison",
+      "state": "interacting",
+      "current_action": "attend_meeting",
+      "position": ["sit on chair_16"],
+      "orientation": []
+    },
+    {
+      "idx": 2,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "Donald",
+      "state": "interacting",
+      "current_action": "chat",
+      "position": ["sit on stool_1"],
+      "orientation": ["look at Courtney"]
+    },
+    {
+      "idx": 3,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "Courtney",
+      "state": "interacting",
+      "current_action": "chat",
+      "position": ["sit on couch_2"],
+      "orientation": ["look at Donald"]
+    },
+    {
+      "idx": 4,
+      "type": "distractor",
+      "distraction_level": 2,
+      "name": "Noah",
+      "state": "interacting",
+      "current_action": "work_on_computer",
+      "position": ["sit on chair_2"],
+      "orientation": []
+    },
+    {
+      "idx": 5,
+      "type": "distractor",
+      "distraction_level": 2,
+      "name": "Megan",
+      "state": "interacting",
+      "current_action": "work_on_computer",
+      "position": ["sit on chair_1"],
+      "orientation": []
+    }
+  ],
+  "expected_plans": [
+    {
+      "character": "Mark",
+      "target_action": "attend_meeting",
+      "relationships": "sit on chair_10 || sit on chair_12",
+      "sampled_position": null
+    }
+  ],
+  "allow_null_plan": false
+}

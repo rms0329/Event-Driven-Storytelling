@@ -1,0 +1,163 @@
+{
+  "id": 4,
+  "tags": ["OA"],
+  "scene_name": "House",
+  "action_labels": [
+    "idle",
+    "drink",
+    "eat",
+    "watch_tv",
+    "dance",
+    "chat",
+    "handshake",
+    "turn_on_record_player",
+    "turn_off_record_player",
+    "turn_on_tv",
+    "turn_off_tv",
+    "open_fridge",
+    "close_fridge",
+    "open_cabinet",
+    "close_cabinet",
+    "use_coffee_maker",
+    "use_toaster",
+    "use_microwave",
+    "use_dishwasher",
+    "use_smartphone",
+    "use_laptop",
+    "read_book"
+  ],
+  "user_instruction": "David stands near the table, which supports the record player.",
+  "planning_history": [
+    {
+      "idx": 0,
+      "type": "distractor",
+      "distraction_level": 1,
+      "state": "completed",
+      "characters": ["Ashley"],
+      "activity": "make coffee using coffee_maker_1",
+      "details": [
+        {
+          "character": "Ashley",
+          "target_action": "use_coffee_maker",
+          "position": ["adjacent to coffee_maker_1"],
+          "orientation": ["look at coffee_maker_1"]
+        }
+      ]
+    },
+    {
+      "idx": 1,
+      "type": "distractor",
+      "distraction_level": 1,
+      "state": "ongoing",
+      "characters": ["Ashley", "James"],
+      "activity": "chat with each other in the kitchen",
+      "details": [
+        {
+          "character": "Ashley",
+          "target_action": "chat",
+          "position": ["sit on chair_2"],
+          "orientation": ["look at James"]
+        },
+        {
+          "character": "James",
+          "target_action": "chat",
+          "position": ["sit on chair_6"],
+          "orientation": ["look at Ashley"]
+        }
+      ]
+    },
+    {
+      "idx": 2,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "ongoing",
+      "characters": ["Brittney"],
+      "activity": "make coffee using coffee_maker_1",
+      "details": [
+        {
+          "character": "Brittney",
+          "target_action": "use_coffee_maker",
+          "position": ["adjacent to coffee_maker_1"],
+          "orientation": ["look at coffee_maker_1"]
+        }
+      ]
+    },
+    {
+      "idx": 3,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "completed",
+      "characters": ["Austin"],
+      "activity": "use smartphone close to potted_plant_2",
+      "details": [
+        {
+          "character": "Austin",
+          "target_action": "use_smartphone",
+          "position": ["close to potted_plant_2"],
+          "orientation": []
+        }
+      ]
+    }
+  ],
+  "current_states": [
+    {
+      "idx": 0,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "David",
+      "state": "idle",
+      "current_action": "idle",
+      "position": [],
+      "orientation": []
+    },
+    {
+      "idx": 1,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "Ashley",
+      "state": "interacting",
+      "current_action": "chat",
+      "position": ["sit on chair_2"],
+      "orientation": ["look at James"]
+    },
+    {
+      "idx": 2,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "James",
+      "state": "interacting",
+      "current_action": "chat",
+      "position": ["sit on chair_6"],
+      "orientation": ["look at Ashley"]
+    },
+    {
+      "idx": 3,
+      "type": "distractor",
+      "distraction_level": 2,
+      "name": "Brittney",
+      "state": "interacting",
+      "current_action": "use_coffee_maker",
+      "position": ["adjacent to coffee_maker_1"],
+      "orientation": ["look at coffee_maker_1"]
+    },
+    {
+      "idx": 4,
+      "type": "distractor",
+      "distraction_level": 2,
+      "name": "Austin",
+      "state": "idle",
+      "current_action": "idle",
+      "position": ["close to potted_plant_2"],
+      "orientation": []
+    }
+  ],
+  "expected_plans": [
+    {
+      "character": "David",
+      "target_action": null,
+      "relationships": "close to table_2",
+      "sampled_position": null
+    }
+  ],
+  "allow_null_plan": false
+}

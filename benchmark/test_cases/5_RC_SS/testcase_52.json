@@ -1,0 +1,253 @@
+{
+  "id": 52,
+  "tags": ["RC", "SS"],
+  "scene_name": "Office",
+  "action_labels": [
+    "idle",
+    "drink",
+    "chat",
+    "discuss",
+    "handshake",
+    "open_cabinet",
+    "close_cabinet",
+    "use_smartphone",
+    "use_water_dispenser",
+    "work_on_computer",
+    "attend_meeting",
+    "take_out_drink",
+    "take_out_document",
+    "take_out_book",
+    "clean_white_board",
+    "read_book"
+  ],
+  "user_instruction": "William joins the meeting in the conference room.",
+  "planning_history": [
+    {
+      "idx": 0,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "completed",
+      "characters": ["Zachary"],
+      "activity": "answer a phone call in the rest area",
+      "details": [
+        {
+          "character": "Zachary",
+          "target_action": "use_smartphone",
+          "position": ["sit on couch_1"],
+          "orientation": []
+        }
+      ]
+    },
+    {
+      "idx": 1,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "completed",
+      "characters": ["Amy"],
+      "activity": "take out a document for the meeting from the cabinet in the workspace",
+      "details": [
+        {
+          "character": "Amy",
+          "target_action": "take_out_document",
+          "position": ["adjacent to cabinet_1"],
+          "orientation": ["look at cabinet_1"]
+        }
+      ]
+    },
+    {
+      "idx": 2,
+      "type": "essential",
+      "distraction_level": 0,
+      "state": "ongoing",
+      "characters": ["Amy", "Nicholas", "Karen", "Todd", "Jennifer"],
+      "activity": "attend a meeting in the conference room",
+      "details": [
+        {
+          "character": "Amy",
+          "target_action": "attend_meeting",
+          "position": ["sit on chair_14"],
+          "orientation": []
+        },
+        {
+          "character": "Nicholas",
+          "target_action": "attend_meeting",
+          "position": ["sit on chair_15"],
+          "orientation": []
+        },
+        {
+          "character": "Karen",
+          "target_action": "attend_meeting",
+          "position": ["sit on chair_16"],
+          "orientation": []
+        },
+        {
+          "character": "Todd",
+          "target_action": "attend_meeting",
+          "position": ["sit on chair_7"],
+          "orientation": []
+        },
+        {
+          "character": "Jennifer",
+          "target_action": "attend_meeting",
+          "position": ["sit on chair_10"],
+          "orientation": []
+        }
+      ]
+    },
+    {
+      "idx": 3,
+      "type": "distractor",
+      "distraction_level": 1,
+      "state": "completed",
+      "characters": ["Thomas"],
+      "activity": "drink water from the dispenser",
+      "details": [
+        {
+          "character": "Thomas",
+          "target_action": "use_water_dispenser",
+          "position": ["adjacent to water_dispenser_1"],
+          "orientation": ["look at water_dispenser_1"]
+        }
+      ]
+    },
+    {
+      "idx": 4,
+      "type": "distractor",
+      "distraction_level": 1,
+      "state": "ongoing",
+      "characters": ["Thomas", "Caitlin"],
+      "activity": "chat with each other, sitting in the rest area",
+      "details": [
+        {
+          "character": "Thomas",
+          "target_action": "chat",
+          "position": ["sit on stool_1"],
+          "orientation": ["look at Caitlin"]
+        },
+        {
+          "character": "Caitlin",
+          "target_action": "chat",
+          "position": ["sit on couch_2"],
+          "orientation": ["look at Thomas"]
+        }
+      ]
+    },
+    {
+      "idx": 5,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "ongoing",
+      "characters": ["Zachary"],
+      "activity": "work on computer in the workspace",
+      "details": [
+        {
+          "character": "Zachary",
+          "target_action": "work_on_computer",
+          "position": ["sit on chair_9"],
+          "orientation": []
+        }
+      ]
+    }
+  ],
+  "current_states": [
+    {
+      "idx": 0,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "William",
+      "state": "idle",
+      "current_action": "idle",
+      "position": [],
+      "orientation": []
+    },
+    {
+      "idx": 1,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Amy",
+      "state": "interacting",
+      "current_action": "attend_meeting",
+      "position": ["sit on chair_14"],
+      "orientation": []
+    },
+    {
+      "idx": 2,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Nicholas",
+      "state": "interacting",
+      "current_action": "attend_meeting",
+      "position": ["sit on chair_15"],
+      "orientation": []
+    },
+    {
+      "idx": 3,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Karen",
+      "state": "interacting",
+      "current_action": "attend_meeting",
+      "position": ["sit on chair_16"],
+      "orientation": []
+    },
+    {
+      "idx": 4,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Todd",
+      "state": "interacting",
+      "current_action": "attend_meeting",
+      "position": ["sit on chair_7"],
+      "orientation": []
+    },
+    {
+      "idx": 5,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Jennifer",
+      "state": "interacting",
+      "current_action": "attend_meeting",
+      "position": ["sit on chair_10"],
+      "orientation": []
+    },
+    {
+      "idx": 6,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "Thomas",
+      "state": "interacting",
+      "current_action": "chat",
+      "position": ["sit on stool_1"],
+      "orientation": ["look at Caitlin"]
+    },
+    {
+      "idx": 7,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "Caitlin",
+      "state": "interacting",
+      "current_action": "chat",
+      "position": ["sit on couch_2"],
+      "orientation": ["look at Thomas"]
+    },
+    {
+      "idx": 8,
+      "type": "distractor",
+      "distraction_level": 2,
+      "name": "Zachary",
+      "state": "interacting",
+      "current_action": "work_on_computer",
+      "position": ["sit on chair_9"],
+      "orientation": []
+    }
+  ],
+  "expected_plans": [
+    {
+      "character": "William",
+      "target_action": "attend_meeting",
+      "relationships": "sit on chair_5 || sit on chair_12 || sit on chair_4",
+      "sampled_position": null
+    }
+  ],
+  "allow_null_plan": false
+}

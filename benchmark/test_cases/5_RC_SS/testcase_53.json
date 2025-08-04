@@ -1,0 +1,198 @@
+{
+  "id": 53,
+  "tags": ["RC", "SS"],
+  "scene_name": "Restaurant",
+  "action_labels": [
+    "idle",
+    "drink",
+    "eat",
+    "chat",
+    "handshake",
+    "use_smartphone",
+    "deliver_menu",
+    "take_order",
+    "serve_food",
+    "serve_drink",
+    "order_food",
+    "order_drink",
+    "pay_bill",
+    "clean_table",
+    "listen_to_music"
+  ],
+  "user_instruction": "Luis and Stefanie share a meal together at the same table in the dining area.",
+  "planning_history": [
+    {
+      "idx": 0,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "ongoing",
+      "characters": ["Nicholas"],
+      "activity": "listen to music right next to the bar table",
+      "details": [
+        {
+          "character": "Nicholas",
+          "target_action": "listen_to_music",
+          "position": ["adjacent to table_5"],
+          "orientation": []
+        }
+      ]
+    },
+    {
+      "idx": 1,
+      "type": "essential",
+      "distraction_level": 0,
+      "state": "ongoing",
+      "characters": ["Jesus", "Michelle"],
+      "activity": "have a meal together, sitting at the table_1",
+      "details": [
+        {
+          "character": "Jesus",
+          "target_action": "eat",
+          "position": ["sit on chair_10"],
+          "orientation": []
+        },
+        {
+          "character": "Michelle",
+          "target_action": "eat",
+          "position": ["sit on chair_4"],
+          "orientation": []
+        }
+      ]
+    },
+    {
+      "idx": 2,
+      "type": "distractor",
+      "distraction_level": 1,
+      "state": "completed",
+      "characters": ["Timothy"],
+      "activity": "order drinks from the bar",
+      "details": [
+        {
+          "character": "Timothy",
+          "target_action": "order_drink",
+          "position": ["close to bar_counter_1"],
+          "orientation": []
+        }
+      ]
+    },
+    {
+      "idx": 3,
+      "type": "distractor",
+      "distraction_level": 1,
+      "state": "ongoing",
+      "characters": ["Timothy", "Kelly"],
+      "activity": "enjoy a drink together in the bar area",
+      "details": [
+        {
+          "character": "Timothy",
+          "target_action": "drink",
+          "position": ["sit on chair_8"],
+          "orientation": []
+        },
+        {
+          "character": "Kelly",
+          "target_action": "drink",
+          "position": ["sit on chair_2"],
+          "orientation": []
+        }
+      ]
+    }
+  ],
+  "current_states": [
+    {
+      "idx": 0,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Luis",
+      "state": "idle",
+      "current_action": "idle",
+      "position": [],
+      "orientation": []
+    },
+    {
+      "idx": 1,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Stefanie",
+      "state": "idle",
+      "current_action": "idle",
+      "position": [],
+      "orientation": []
+    },
+    {
+      "idx": 2,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Jesus",
+      "state": "interacting",
+      "current_action": "eat",
+      "position": ["sit on chair_10"],
+      "orientation": []
+    },
+    {
+      "idx": 3,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Michelle",
+      "state": "interacting",
+      "current_action": "eat",
+      "position": ["sit on chair_4"],
+      "orientation": []
+    },
+    {
+      "idx": 4,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "Timothy",
+      "state": "interacting",
+      "current_action": "drink",
+      "position": ["sit on chair_8"],
+      "orientation": []
+    },
+    {
+      "idx": 5,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "Kelly",
+      "state": "interacting",
+      "current_action": "drink",
+      "position": ["sit on chair_2"],
+      "orientation": []
+    },
+    {
+      "idx": 6,
+      "type": "distractor",
+      "distraction_level": 2,
+      "name": "Nicholas",
+      "state": "interacting",
+      "current_action": "listen_to_music",
+      "position": ["adjacent to table_5"],
+      "orientation": []
+    },
+    {
+      "idx": 7,
+      "type": "distractor",
+      "distraction_level": 2,
+      "name": "Monica",
+      "state": "idle",
+      "current_action": "idle",
+      "position": [],
+      "orientation": []
+    }
+  ],
+  "expected_plans": [
+    {
+      "character": "Luis",
+      "target_action": "eat",
+      "relationships": "sit on chair_3 || sit on chair_9 || sit on chair_6",
+      "sampled_position": null
+    },
+    {
+      "character": "Stefanie",
+      "target_action": "eat",
+      "relationships": "sit on chair_3 || sit on chair_9 || sit on chair_6",
+      "sampled_position": null
+    }
+  ],
+  "allow_null_plan": false
+}

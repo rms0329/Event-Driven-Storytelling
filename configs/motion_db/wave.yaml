@@ -1,0 +1,106 @@
+# checked until motion idx 60/284
+
+human_scene_interaction: false
+human_human_interaction: true
+looping: false
+keyjoints:
+  - pelvis
+  - right_knee
+  - right_foot
+  - left_knee
+  - left_foot
+matching_features:
+  - relative_position
+  - relative_velocity
+  - relative_direction
+motions:
+  - dataset: inter_x
+    motion_file: G014T000A002R019
+    start_frame: 0
+    end_frame: 523
+    match_start_frame: 0
+    match_end_frame: 32
+  - dataset: inter_x
+    motion_file: G013T000A002R011
+    start_frame: 0
+    end_frame: 355
+    match_start_frame: 0
+    match_end_frame: 64
+  - dataset: inter_x
+    motion_file: G012T000A002R015
+    start_frame: 0
+    end_frame: 558
+    match_start_frame: 0
+    match_end_frame: 83
+  - dataset: inter_x
+    motion_file: G011T000A002R009
+    start_frame: 0
+    end_frame: 542
+    match_start_frame: 0
+    match_end_frame: 50
+  - dataset: inter_x
+    motion_file: G011T000A002R008
+    start_frame: 0
+    end_frame: 450
+    match_start_frame: 0
+    match_end_frame: 50
+  - dataset: inter_x
+    motion_file: G011T000A002R006
+    start_frame: 0
+    end_frame: 355
+    match_start_frame: 0
+    match_end_frame: 38
+  - dataset: inter_x
+    motion_file: G005T000A002R010
+    start_frame: 0
+    end_frame: 520
+    match_start_frame: 0
+    match_end_frame: 30
+  - dataset: inter_x
+    motion_file: G005T000A002R008
+    start_frame: 0
+    end_frame: 326
+    match_start_frame: 0
+    match_end_frame: 18
+  - dataset: inter_x
+    motion_file: G003T000A002R011
+    start_frame: 0
+    end_frame: 707
+    match_start_frame: 0
+    match_end_frame: 52
+  - dataset: inter_x
+    motion_file: G002T000A002R013
+    start_frame: 0
+    end_frame: 407
+    match_start_frame: 0
+    match_end_frame: 21
+  - dataset: inter_x
+    motion_file: G002T000A002R011
+    start_frame: 0
+    end_frame: 367
+    match_start_frame: 0
+    match_end_frame: 30
+  - dataset: inter_x
+    motion_file: G001T000A002R015
+    start_frame: 0
+    end_frame: 903
+    match_start_frame: 0
+    match_end_frame: 26
+  - dataset: inter_x
+    motion_file: G001T000A002R014
+    start_frame: 0
+    end_frame: 538
+    match_start_frame: 0
+    match_end_frame: 30
+  - dataset: inter_x
+    motion_file: G001T000A002R010
+    start_frame: 0
+    end_frame: 1075
+    match_start_frame: 0
+    match_end_frame: 134
+  - dataset: inter_x
+    motion_file: G001T000A002R012
+    start_frame: 0
+    end_frame: 587
+    match_start_frame: 0
+    match_end_frame: 105

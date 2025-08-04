@@ -1,0 +1,25 @@
+human_scene_interaction: false
+human_human_interaction: false
+looping: false
+keyjoints:
+  - pelvis
+  - right_wrist
+  - left_wrist
+  - right_foot
+  - left_foot
+matching_features:
+  - keyjoints
+  - future_directions
+motions:
+  - dataset: amass
+    motion_file: ACCAD/Male1General_c3d/General A1 - Stand_poses.npz
+    start_frame: 0
+    end_frame: 550
+    match_start_frame: 0
+    match_end_frame: 550
+  # - dataset: amass
+  #   motion_file: ACCAD/Male2General_c3d/A1- Stand_poses.npz
+  #   start_frame: 0
+  #   end_frame: 350
+  #   match_start_frame: 0
+  #   match_end_frame: 350

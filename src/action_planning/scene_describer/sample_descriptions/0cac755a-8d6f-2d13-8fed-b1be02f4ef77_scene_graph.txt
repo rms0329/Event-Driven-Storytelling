@@ -1,0 +1,160 @@
+{
+    "coffee_machine_1": {
+        "position": [2.21, 9.87, 1.16],
+        "size": [0.45, 1.07, 0.61],
+        "volume": 0.25,
+        "orientation": [0.05, -0.99, 0.0],
+        "relationships": [
+            "on commode_1"
+        ]
+    },
+    "column_1": {
+        "position": [0.51, 2.86, 0.98],
+        "size": [0.41, 0.52, 1.98],
+        "volume": 0.31,
+        "relationships": [
+            "close to sofa_2"
+        ]
+    },
+    "commode_1": {
+        "position": [2.94, 9.56, 0.45],
+        "size": [1.97, 0.76, 1.01],
+        "volume": 1.42,
+        "orientation": [0.02, -0.99, 0.0],
+        "relationships": [
+            "to the right of xbox_1",
+            "adjacent to xbox_1",
+            "adjacent to plant_2"
+        ]
+    },
+    "plant_1": {
+        "position": [5.24, 5.39, 0.9],
+        "size": [0.48, 0.48, 0.63],
+        "volume": 0.14,
+        "relationships": [
+            "to the left of sofa_1",
+            "close to stand_2",
+            "adjacent to stand_3"
+        ]
+    },
+    "plant_2": {
+        "position": [1.48, 9.44, 0.94],
+        "size": [0.78, 0.93, 0.87],
+        "volume": 0.4,
+        "relationships": [
+            "to the right of commode_1",
+            "adjacent to commode_1"
+        ]
+    },
+    "sofa_1": {
+        "position": [2.09, 5.2, 0.32],
+        "size": [2.62, 1.02, 0.67],
+        "volume": 1.57,
+        "orientation": [0.04, -0.99, 0.0],
+        "relationships": [
+            "close to table_2",
+            "adjacent to table_3"
+        ]
+    },
+    "sofa_2": {
+        "position": [2.25, 2.02, 0.32],
+        "size": [2.61, 0.94, 0.67],
+        "volume": 1.63,
+        "orientation": [0.0, 0.99, 0.0],
+        "relationships": [
+            "adjacent to table_1",
+            "adjacent to table_4",
+            "close to column_1"
+        ]
+    },
+    "stand_1": {
+        "position": [5.23, 8.0, 0.42],
+        "size": [0.86, 0.84, 0.94],
+        "volume": 0.31,
+        "relationships": [
+            "close to stand_2",
+            "close to xbox_1"
+        ]
+    },
+    "stand_2": {
+        "position": [5.29, 6.32, 0.38],
+        "size": [0.5, 0.57, 0.82],
+        "volume": 0.23,
+        "relationships": [
+            "close to stand_1",
+            "close to stand_3",
+            "close to plant_1"
+        ]
+    },
+    "stand_3": {
+        "position": [5.26, 4.68, 0.32],
+        "size": [0.9, 0.85, 0.75],
+        "volume": 0.26,
+        "relationships": [
+            "to the left of sofa_1",
+            "close to stand_2",
+            "adjacent to plant_1"
+        ]
+    },
+    "table_1": {
+        "position": [2.72, 3.04, 0.3],
+        "size": [0.7, 0.7, 0.37],
+        "volume": 0.09,
+        "relationships": [
+            "in front of sofa_1",
+            "in front of sofa_2",
+            "adjacent to sofa_2",
+            "close to table_2",
+            "adjacent to table_4"
+        ]
+    },
+    "table_2": {
+        "position": [2.48, 4.2, 0.29],
+        "size": [0.56, 0.52, 0.41],
+        "volume": 0.1,
+        "relationships": [
+            "in front of sofa_1",
+            "close to sofa_1",
+            "in front of sofa_2",
+            "close to table_1",
+            "close to table_3",
+            "close to table_4"
+        ]
+    },
+    "table_3": {
+        "position": [1.56, 4.2, 0.24],
+        "size": [0.69, 0.69, 0.5],
+        "volume": 0.13,
+        "relationships": [
+            "in front of sofa_1",
+            "adjacent to sofa_1",
+            "in front of sofa_2",
+            "close to table_2",
+            "close to table_4"
+        ]
+    },
+    "table_4": {
+        "position": [2.03, 3.01, 0.44],
+        "size": [0.58, 0.61, 0.09],
+        "volume": 0.02,
+        "relationships": [
+            "in front of sofa_1",
+            "in front of sofa_2",
+            "adjacent to sofa_2",
+            "adjacent to table_1",
+            "close to table_2",
+            "close to table_3"
+        ]
+    },
+    "xbox_1": {
+        "position": [4.55, 9.58, 0.87],
+        "size": [0.8, 0.73, 1.91],
+        "volume": 1.02,
+        "orientation": [0.05, -0.99, 0.0],
+        "relationships": [
+            "to the left of commode_1",
+            "adjacent to commode_1",
+            "close to stand_1"
+        ]
+    }
+}

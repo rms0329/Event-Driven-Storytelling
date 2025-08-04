@@ -1,0 +1,123 @@
+scene_name: "House"
+num_characters: 4
+device: "cuda"
+framerate: 30
+logging_level: "INFO"
+
+scene_describer:
+  model: "gpt-4o-2024-08-06"
+  provider: "openai"
+  temperature: 0.1
+  description_type: "narrative" # narrative, object_list, scene_graph, narrative_vlm, scene_image
+  use_pregenerated_description: true
+  use_examples: true
+  use_clustering: true
+  eps: 1.0 # for clustering
+  min_samples: 2 # for clustering
+
+narrator:
+  model: "gpt-4o-2024-08-06"
+  provider: "openai"
+  temperature: 0.0
+  use_JSON_mode: true
+  use_examples: true
+  use_self_feedback: true
+  max_self_feedback_count: 3
+  additional_guidelines: ""
+  disable_event_based_planning: false # for ablation study
+
+event_parser:
+  model: "gpt-4o-2024-08-06"
+  provider: "openai"
+  temperature: 0.0
+  use_JSON_mode: true
+  use_examples: true
+  use_self_feedback: true
+  max_self_feedback_count: 3
+  additional_guidelines: ""
+  disable_lcps: false # for ablation study
+
+state_manager:
+  far_threshold: 0.6
+  near_threshold: 0.3
+  hsi_matching_start_distance: 1.0
+  hsi_matching_threshold: 0.6
+  hsi_matching_done_root_distance: 0.15
+  hsi_transition_done_delay: 20 # in frames
+  hsi_grid_path_len_threshold: 6
+  height_threshold: 0.95
+  hhi_matching_start_distance: 2.0
+  hhi_matching_threshold: 1.0
+
+path_planner:
+  non_moving_cost: 0.3
+  min_planning_timesteps: 3
+  max_planning_timesteps: 100
+  oracle_timesteps: 20
+  collision_soft_threshold: 1.0
+  collision_hard_threshold: 1.5
+  soft_collision_cost: 0
+  hard_collision_cost: 10
+  collision_cost_scaler: 20
+
+scene_graph:
+  boundary_offset: 0.10
+  adjacent_threshold: 0.3
+  close_threshold: 1.0
+  relationship_xy_threshold: 2.0
+  relationship_z_threshold: 0.2
+  use_obj_positions: true
+  use_affordances: false
+
+position_sampler:
+  init_temperature: 1.0
+  final_temperature: 0.0001
+  cooling_rate: 0.9
+  cooling_interval: 1
+  move_std: 0.5
+  k: 1.0 # scaling factor for the cost function
+  r: 5.0 # scaling factor for the cost function
+  max_iter: 5000
+  convergence_threshold: 0.05
+  convergence_iteration: 20
+  avoidance_coefficient: 5.0
+  avoidance_threshold: 0.5
+  nearby_threshold: 1.5
+  multi_object_thresholds:
+    between:
+      aligned: 1.0
+      orthogonal: 0.5
+    aligned with:
+      aligned: 1.0
+      orthogonal: 0.3
+  distance_threshold:
+    on the side of: 0.5
+    adjacent to: 0.5
+    close to: 1.0
+  cost_weights:
+    directional: 1.0
+    distance: 1.0
+    multi_object: 1.0
+    interaction: 100.0
+    avoidance: 10.0
+    nearby: 1.0
+  collision_check_type: "cylinder" # "cylinder" or "bbox"
+
+motion_matching:
+  motion_update_frequency: 10
+  halflife_transl: 0.05
+  halflife_global_orient: 0.05
+  halflife_pose: 0.3
+  halflife_walk: 0.5 # lower -> faster adaptation
+  halflife_hhi: 0.5 # lower -> faster adaptation
+  halflife_hsi: 0.2 # lower -> faster adaptation
+  halflife_idle: 0.3 # lower -> faster adaptation
+  future_offsets: [0.3, 0.6, 1.0]
+  pose_feature_dim: 166
+
+motion_db:
+  recreate_db: false
+
+misc:
+  minimum_distance: 0.6 # don't move when new target is too close
+  root_height_offset: 0.2 # root target will be set to the surface of the object + offset

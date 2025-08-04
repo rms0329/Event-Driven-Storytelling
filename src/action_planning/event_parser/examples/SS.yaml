@@ -1,0 +1,77 @@
+scene_name: 4138585b-a238-2435-810b-9728fc989b2f # kitchen
+action_labels:
+  - idle
+  - handshake
+  - hug
+  - chat
+  - cook
+  - drink
+  - eat
+  - use_smartphone
+  - wash_dishes
+  - turn_on_lamp
+  - turn_off_lamp
+  - open_cabinet
+  - close_cabinet
+
+event:
+  characters: [Sara]
+  activity: share a meal together in the dining area
+
+characters:
+  - name: James
+    state: idle
+    current_action: idle
+    position: [sit on chair_1]
+    orientation: []
+  - name: Sara
+    state: idle
+    current_action: idle
+    position: [adjacent to oven_1]
+    orientation: []
+
+previous_events:
+  # event 0
+  - state: completed
+    characters: [Sara]
+    activity: makes some food using oven_1 in the cooking area
+    parsed:
+      - character: Sara
+        target_action: cook
+        position: [adjacent to oven_1]
+        orientation: [look at oven_1]
+  # event 1
+  - state: completed
+    characters: [James]
+    activity: sits at the table_1 in the dining area
+    parsed:
+      - character: James
+        target_action: idle
+        position: [sit on chair_1]
+        orientation: []
+
+response: |
+  ```python
+  def parse_event():
+    # The event involves a single character, 'Sara', who is sharing a meal together in the dining area.
+    sara = get_character("Sara")
+
+    # According to the scene description, the dining area has two chairs, chair_1 and chair_2, associated with table_1.
+    dining_area_chairs = get_objects_associated_with("table_1", label="chair")
+
+    # Sara should sit on the empty chair to share a meal with James
+    sara_position = dining_area_chairs[0]  # Initialize with an arbitrary chair
+    for chair in dining_area_chairs:
+        if not is_object_occupied(chair):
+            sara_position = get_area_to_sit_on(chair)
+            break
+    
+    # Since the event involves sharing a meal, the most appropriate action is 'eat'
+    sara_target_action = "eat"
+
+    # Return the parsed information
+    sara.set_position(sara_position)
+    sara.set_target_action(sara_target_action)
+    
+    return [sara]
+  ```

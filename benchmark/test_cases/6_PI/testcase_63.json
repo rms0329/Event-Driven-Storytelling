@@ -1,0 +1,46 @@
+{
+  "id": 63,
+  "tags": ["PI"],
+  "scene_name": "Office",
+  "action_labels": [
+    "idle",
+    "drink",
+    "eat",
+    "chat",
+    "discuss",
+    "handshake",
+    "open_cabinet",
+    "close_cabinet",
+    "use_smartphone",
+    "use_water_dispenser",
+    "work_on_computer",
+    "attend_meeting",
+    "take_out_drink",
+    "take_out_document",
+    "take_out_book",
+    "read_book"
+  ],
+  "user_instruction": "Douglas stands between the couch_1 and couch_3",
+  "planning_history": [],
+  "current_states": [
+    {
+      "idx": 0,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Douglas",
+      "state": "idle",
+      "current_action": "idle",
+      "position": [],
+      "orientation": []
+    }
+  ],
+  "expected_plans": [
+    {
+      "character": "Douglas",
+      "target_action": null,
+      "relationships": null,
+      "sampled_position": "(in front of couch_1 || in front of couch_2) && in front of couch_3"
+    }
+  ],
+  "allow_null_plan": false
+}

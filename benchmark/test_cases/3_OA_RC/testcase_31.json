@@ -1,0 +1,146 @@
+{
+  "id": 31,
+  "tags": ["OA", "RC"],
+  "scene_name": "Restaurant",
+  "action_labels": [
+    "idle",
+    "drink",
+    "eat",
+    "chat",
+    "handshake",
+    "use_smartphone",
+    "deliver_menu",
+    "take_order",
+    "serve_food",
+    "serve_drink",
+    "order_food",
+    "order_drink",
+    "pay_bill",
+    "clean_table",
+    "listen_to_music"
+  ],
+  "user_instruction": "Adam sits and has a meal in the dining table, which is farther from the reception desk.",
+  "planning_history": [
+    {
+      "idx": 0,
+      "type": "distractor",
+      "distraction_level": 1,
+      "state": "completed",
+      "characters": ["Ashley"],
+      "activity": "order drinks from the bar",
+      "details": [
+        {
+          "character": "Ashley",
+          "target_action": "order_drink",
+          "position": ["close to bar_counter_1"],
+          "orientation": []
+        }
+      ]
+    },
+    {
+      "idx": 1,
+      "type": "distractor",
+      "distraction_level": 1,
+      "state": "ongoing",
+      "characters": ["Ashley", "James"],
+      "activity": "enjoy a drink together",
+      "details": [
+        {
+          "character": "Ashley",
+          "target_action": "drink",
+          "position": ["adjacent to table_2"],
+          "orientation": ["look at James"]
+        },
+        {
+          "character": "James",
+          "target_action": "drink",
+          "position": ["adjacent to table_2"],
+          "orientation": ["look at Ashley"]
+        }
+      ]
+    },
+    {
+      "idx": 2,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "completed",
+      "characters": ["Melinda", "Charles"],
+      "activity": "greet each other",
+      "details": [
+        {
+          "character": "Melinda",
+          "target_action": "handshake",
+          "position": ["in front of reception_desk_1"],
+          "orientation": ["look at Charles"]
+        },
+        {
+          "character": "Charles",
+          "target_action": "handshake",
+          "position": ["in front of reception_desk_1"],
+          "orientation": ["look at Melinda"]
+        }
+      ]
+    }
+  ],
+  "current_states": [
+    {
+      "idx": 0,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Adam",
+      "state": "idle",
+      "current_action": "idle",
+      "position": [],
+      "orientation": []
+    },
+    {
+      "idx": 1,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "Ashley",
+      "state": "interacting",
+      "current_action": "drink",
+      "position": ["adjacent to table_2"],
+      "orientation": ["look at James"]
+    },
+    {
+      "idx": 2,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "James",
+      "state": "interacting",
+      "current_action": "drink",
+      "position": ["adjacent to table_2"],
+      "orientation": ["look at Ashley"]
+    },
+    {
+      "idx": 3,
+      "type": "distractor",
+      "distraction_level": 2,
+      "name": "Melinda",
+      "state": "idle",
+      "current_action": "idle",
+      "position": ["in front of reception_desk_1"],
+      "orientation": []
+    },
+    {
+      "idx": 4,
+      "type": "distractor",
+      "distraction_level": 2,
+      "name": "Charles",
+      "state": "idle",
+      "current_action": "idle",
+      "position": ["in front of reception_desk_1"],
+      "orientation": []
+    }
+  ],
+  "expected_plans": [
+    {
+      "character": "Adam",
+      "target_action": "eat",
+      "relationships": "sit on chair_3 || sit on chair_9 || sit on chair_6",
+      "sampled_position": null
+    }
+  ],
+  "allow_null_plan": false
+}

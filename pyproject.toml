@@ -1,0 +1,54 @@
+[project]
+name = "event-driven-storytelling"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "torch",
+    "torchaudio",
+    "torchvision",
+    "tqdm",
+    "trimesh",
+    "embreex; sys_platform == 'linux'",
+    "polyscope",
+    "python-dotenv",
+    "omegaconf",
+    "openai",
+    "pandas",
+    "scikit-learn",
+    "matplotlib",
+    "smplx",
+    "huggingface-hub",
+    "rtree",
+]
+
+[tool.uv.sources]
+torch = [
+  { index = "pytorch-cuda", marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
+  { index = "pytorch-cpu", marker = "sys_platform != 'linux' and sys_platform != 'win32'" },
+]
+torchvision = [
+  { index = "pytorch-cuda", marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
+  { index = "pytorch-cpu", marker = "sys_platform != 'linux' and sys_platform != 'win32'" },
+]
+torchaudio = [
+  { index = "pytorch-cuda", marker = "sys_platform == 'linux' or sys_platform == 'win32'" },
+  { index = "pytorch-cpu", marker = "sys_platform != 'linux' and sys_platform != 'win32'" },
+]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[[tool.uv.index]]
+name = "pytorch-cuda"
+url = "https://download.pytorch.org/whl/cu118"  # change to the appropriate CUDA version if needed
+explicit = true
+
+[dependency-groups]
+dev = [
+    "pdbpp>=0.11.7",
+]
+

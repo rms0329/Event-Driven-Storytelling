@@ -1,0 +1,188 @@
+{
+  "id": 43,
+  "tags": ["OA", "SS"],
+  "scene_name": "Restaurant",
+  "action_labels": [
+    "idle",
+    "drink",
+    "eat",
+    "chat",
+    "handshake",
+    "use_smartphone",
+    "deliver_menu",
+    "take_order",
+    "serve_food",
+    "serve_drink",
+    "order_food",
+    "order_drink",
+    "pay_bill",
+    "clean_table",
+    "listen_to_music"
+  ],
+  "user_instruction": "Melissa orders food in front of the reception desk.\nAfter the food is prepared, Melissa starts eating in the dining area first.\nThen, Andrew joins the same table to have a meal together.",
+  "planning_history": [
+    {
+      "idx": 0,
+      "type": "essential",
+      "distraction_level": 0,
+      "state": "completed",
+      "characters": ["Melissa"],
+      "activity": "order food in front of the reception desk",
+      "details": [
+        {
+          "character": "Melissa",
+          "target_action": "order_food",
+          "position": ["in front of reception_desk_1"],
+          "orientation": []
+        }
+      ]
+    },
+    {
+      "idx": 1,
+      "type": "essential",
+      "distraction_level": 0,
+      "state": "looping",
+      "characters": ["Melissa"],
+      "activity": "have a meal sitting at table_4",
+      "details": [
+        {
+          "character": "Melissa",
+          "target_action": "eat",
+          "position": ["sit on chair_3"],
+          "orientation": []
+        }
+      ]
+    },
+    {
+      "idx": 2,
+      "type": "distractor",
+      "distraction_level": 1,
+      "state": "completed",
+      "characters": ["Charles"],
+      "activity": "order drinks from the bar",
+      "details": [
+        {
+          "character": "Charles",
+          "target_action": "order_drink",
+          "position": ["close to bar_counter_1"],
+          "orientation": []
+        }
+      ]
+    },
+    {
+      "idx": 3,
+      "type": "distractor",
+      "distraction_level": 1,
+      "state": "ongoing",
+      "characters": ["Charles", "Julia"],
+      "activity": "enjoy a drink together in the bar area",
+      "details": [
+        {
+          "character": "Charles",
+          "target_action": "drink",
+          "position": ["adjacent to table_2"],
+          "orientation": ["look at Julia"]
+        },
+        {
+          "character": "Julia",
+          "target_action": "drink",
+          "position": ["adjacent to table_2"],
+          "orientation": ["look at Charles"]
+        }
+      ]
+    },
+    {
+      "idx": 4,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "completed",
+      "characters": ["Michael", "Rebecca"],
+      "activity": "greet each other in front of the reception desk",
+      "details": [
+        {
+          "character": "Michael",
+          "target_action": "handshake",
+          "position": ["in front of reception_desk_1"],
+          "orientation": ["look at Rebecca"]
+        },
+        {
+          "character": "Rebecca",
+          "target_action": "handshake",
+          "position": ["in front of reception_desk_1"],
+          "orientation": ["look at Michael"]
+        }
+      ]
+    }
+  ],
+  "current_states": [
+    {
+      "idx": 0,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Andrew",
+      "state": "idle",
+      "current_action": "idle",
+      "position": [],
+      "orientation": []
+    },
+    {
+      "idx": 1,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Melissa",
+      "state": "interacting",
+      "current_action": "eat",
+      "position": ["sit on chair_3"],
+      "orientation": []
+    },
+    {
+      "idx": 2,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "Charles",
+      "state": "interacting",
+      "current_action": "drink",
+      "position": ["adjacent to table_2"],
+      "orientation": ["look at Julia"]
+    },
+    {
+      "idx": 3,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "Julia",
+      "state": "interacting",
+      "current_action": "drink",
+      "position": ["adjacent to table_2"],
+      "orientation": ["look at Charles"]
+    },
+    {
+      "idx": 4,
+      "type": "distractor",
+      "distraction_level": 2,
+      "name": "Michael",
+      "state": "idle",
+      "current_action": "idle",
+      "position": ["in front of reception_desk_1"],
+      "orientation": []
+    },
+    {
+      "idx": 5,
+      "type": "distractor",
+      "distraction_level": 2,
+      "name": "Rebecca",
+      "state": "idle",
+      "current_action": "idle",
+      "position": ["in front of reception_desk_1"],
+      "orientation": []
+    }
+  ],
+  "expected_plans": [
+    {
+      "character": "Andrew",
+      "target_action": "eat",
+      "relationships": "sit on chair_9 || sit on chair_6",
+      "sampled_position": null
+    }
+  ],
+  "allow_null_plan": false
+}

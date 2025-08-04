@@ -1,0 +1,163 @@
+{
+  "id": 30,
+  "tags": ["OA", "RC"],
+  "scene_name": "House",
+  "action_labels": [
+    "idle",
+    "drink",
+    "eat",
+    "watch_tv",
+    "dance",
+    "chat",
+    "handshake",
+    "turn_on_record_player",
+    "turn_off_record_player",
+    "turn_on_tv",
+    "turn_off_tv",
+    "open_fridge",
+    "close_fridge",
+    "open_cabinet",
+    "close_cabinet",
+    "use_coffee_maker",
+    "use_toaster",
+    "use_microwave",
+    "use_dishwasher",
+    "use_smartphone",
+    "use_laptop",
+    "read_book"
+  ],
+  "user_instruction": "Joshua reads a book sitting on a seat in the living room. Two seats closer to the plant are fully occupied by clutters.",
+  "planning_history": [
+    {
+      "idx": 0,
+      "type": "distractor",
+      "distraction_level": 1,
+      "state": "completed",
+      "characters": ["Donna"],
+      "activity": "make coffee using coffee_maker_1",
+      "details": [
+        {
+          "character": "Donna",
+          "target_action": "use_coffee_maker",
+          "position": ["adjacent to coffee_maker_1"],
+          "orientation": ["look at coffee_maker_1"]
+        }
+      ]
+    },
+    {
+      "idx": 1,
+      "type": "distractor",
+      "distraction_level": 1,
+      "state": "ongoing",
+      "characters": ["Donna", "Alvin"],
+      "activity": "chat with each other in the kitchen",
+      "details": [
+        {
+          "character": "Donna",
+          "target_action": "chat",
+          "position": ["in front of fridge_1"],
+          "orientation": ["look at Alvin"]
+        },
+        {
+          "character": "Alvin",
+          "target_action": "chat",
+          "position": ["in front of fridge_1"],
+          "orientation": ["look at Donna"]
+        }
+      ]
+    },
+    {
+      "idx": 2,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "ongoing",
+      "characters": ["Martha"],
+      "activity": "make coffee using coffee_maker_1",
+      "details": [
+        {
+          "character": "Martha",
+          "target_action": "use_coffee_maker",
+          "position": ["adjacent to coffee_maker_1"],
+          "orientation": ["look at coffee_maker_1"]
+        }
+      ]
+    },
+    {
+      "idx": 3,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "completed",
+      "characters": ["Daniel"],
+      "activity": "use smartphone close to potted_plant_2",
+      "details": [
+        {
+          "character": "Daniel",
+          "target_action": "use_smartphone",
+          "position": ["close to potted_plant_2"],
+          "orientation": []
+        }
+      ]
+    }
+  ],
+  "current_states": [
+    {
+      "idx": 0,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Joshua",
+      "state": "idle",
+      "current_action": "idle",
+      "position": [],
+      "orientation": []
+    },
+    {
+      "idx": 1,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "Donna",
+      "state": "interacting",
+      "current_action": "chat",
+      "position": ["in front of fridge_1"],
+      "orientation": ["look at Alvin"]
+    },
+    {
+      "idx": 2,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "Alvin",
+      "state": "interacting",
+      "current_action": "chat",
+      "position": ["in front of fridge_1"],
+      "orientation": ["look at Donna"]
+    },
+    {
+      "idx": 3,
+      "type": "distractor",
+      "distraction_level": 2,
+      "name": "Martha",
+      "state": "interacting",
+      "current_action": "use_coffee_maker",
+      "position": ["adjacent to coffee_maker_1"],
+      "orientation": ["look at coffee_maker_1"]
+    },
+    {
+      "idx": 4,
+      "type": "distractor",
+      "distraction_level": 2,
+      "name": "Daniel",
+      "state": "idle",
+      "current_action": "idle",
+      "position": ["close to potted_plant_2"],
+      "orientation": []
+    }
+  ],
+  "expected_plans": [
+    {
+      "character": "Joshua",
+      "target_action": "read_book",
+      "relationships": "sit on chair_3",
+      "sampled_position": null
+    }
+  ],
+  "allow_null_plan": false
+}

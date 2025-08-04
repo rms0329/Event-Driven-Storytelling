@@ -1,0 +1,188 @@
+{
+  "id": 44,
+  "tags": ["OA", "SS"],
+  "scene_name": "Restaurant",
+  "action_labels": [
+    "idle",
+    "drink",
+    "eat",
+    "chat",
+    "handshake",
+    "use_smartphone",
+    "deliver_menu",
+    "take_order",
+    "serve_food",
+    "serve_drink",
+    "order_food",
+    "order_drink",
+    "pay_bill",
+    "clean_table",
+    "listen_to_music"
+  ],
+  "user_instruction": "Jason and Kimberly joins the table of their friends Scott to have a meal together.\nWhen they determine their positions, Jason sits on the chair closer to the potted plant.",
+  "planning_history": [
+    {
+      "idx": 0,
+      "type": "essential",
+      "distraction_level": 0,
+      "state": "ongoing",
+      "characters": ["Scott"],
+      "activity": "have a meal at the table_1",
+      "details": [
+        {
+          "character": "Scott",
+          "target_action": "eat",
+          "position": ["sit on chair_10"],
+          "orientation": []
+        }
+      ]
+    },
+    {
+      "idx": 1,
+      "type": "distractor",
+      "distraction_level": 1,
+      "state": "completed",
+      "characters": ["Cassandra"],
+      "activity": "order drinks from the bar",
+      "details": [
+        {
+          "character": "Cassandra",
+          "target_action": "order_drink",
+          "position": ["close to bar_counter_1"],
+          "orientation": []
+        }
+      ]
+    },
+    {
+      "idx": 2,
+      "type": "distractor",
+      "distraction_level": 1,
+      "state": "ongoing",
+      "characters": ["Cassandra", "Danny"],
+      "activity": "enjoy a drink together in the bar area",
+      "details": [
+        {
+          "character": "Cassandra",
+          "target_action": "drink",
+          "position": ["adjacent to table_2"],
+          "orientation": ["look at Danny"]
+        },
+        {
+          "character": "Danny",
+          "target_action": "drink",
+          "position": ["adjacent to table_2"],
+          "orientation": ["look at Cassandra"]
+        }
+      ]
+    },
+    {
+      "idx": 3,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "completed",
+      "characters": ["Alyssa"],
+      "activity": "order a drink from the bar",
+      "details": [
+        {
+          "character": "Alyssa",
+          "target_action": "order_drink",
+          "position": ["close to bar_counter_1"],
+          "orientation": []
+        }
+      ]
+    },
+    {
+      "idx": 4,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "ongoing",
+      "characters": ["Alyssa"],
+      "activity": "enjoy a drink in the bar area",
+      "details": [
+        {
+          "character": "Alyssa",
+          "target_action": "drink",
+          "position": ["sit on chair_8"],
+          "orientation": []
+        }
+      ]
+    }
+  ],
+  "current_states": [
+    {
+      "idx": 0,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Jason",
+      "state": "idle",
+      "current_action": "idle",
+      "position": [],
+      "orientation": []
+    },
+    {
+      "idx": 1,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Kimberly",
+      "state": "idle",
+      "current_action": "idle",
+      "position": [],
+      "orientation": []
+    },
+    {
+      "idx": 2,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Scott",
+      "state": "interacting",
+      "current_action": "eat",
+      "position": ["sit on chair_10"],
+      "orientation": []
+    },
+    {
+      "idx": 3,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "Cassandra",
+      "state": "interacting",
+      "current_action": "drink",
+      "position": ["adjacent to table_2"],
+      "orientation": ["look at Danny"]
+    },
+    {
+      "idx": 4,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "Danny",
+      "state": "interacting",
+      "current_action": "drink",
+      "position": ["adjacent to table_2"],
+      "orientation": ["look at Cassandra"]
+    },
+    {
+      "idx": 5,
+      "type": "distractor",
+      "distraction_level": 2,
+      "name": "Alyssa",
+      "state": "interacting",
+      "current_action": "drink",
+      "position": ["sit on chair_8"],
+      "orientation": []
+    }
+  ],
+  "expected_plans": [
+    {
+      "character": "Jason",
+      "target_action": "eat",
+      "relationships": "sit on chair_4",
+      "sampled_position": null
+    },
+    {
+      "character": "Kimberly",
+      "target_action": "eat",
+      "relationships": "sit on chair_5",
+      "sampled_position": null
+    }
+  ],
+  "allow_null_plan": false
+}

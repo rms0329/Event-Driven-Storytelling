@@ -1,0 +1,147 @@
+{
+  "id": 1,
+  "tags": ["OA"],
+  "scene_name": "Office",
+  "action_labels": [
+    "idle",
+    "drink",
+    "chat",
+    "discuss",
+    "handshake",
+    "open_cabinet",
+    "close_cabinet",
+    "use_smartphone",
+    "use_water_dispenser",
+    "work_on_computer",
+    "attend_meeting",
+    "take_out_drink",
+    "take_out_document",
+    "take_out_book",
+    "clean_white_board",
+    "read_book"
+  ],
+  "user_instruction": "Chad works on computer, sitting on a chair in the row closer to the cabinet",
+  "planning_history": [
+    {
+      "idx": 0,
+      "type": "distractor",
+      "distraction_level": 1,
+      "state": "ongoing",
+      "characters": ["Sarah", "Phillip"],
+      "activity": "chat with each other, sitting on couch_2 and stool_1 respectively",
+      "details": [
+        {
+          "character": "Sarah",
+          "target_action": "chat",
+          "position": ["sit on couch_2"],
+          "orientation": ["look at Phillip"]
+        },
+        {
+          "character": "Phillip",
+          "target_action": "chat",
+          "position": ["sit on stool_1"],
+          "orientation": ["look at Sarah"]
+        }
+      ]
+    },
+    {
+      "idx": 1,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "completed",
+      "characters": ["Dawn"],
+      "activity": "clean the white board",
+      "details": [
+        {
+          "character": "Dawn",
+          "target_action": "clean_white_board",
+          "position": ["adjacent to white_board_1"],
+          "orientation": ["look at white_board_1"]
+        }
+      ]
+    },
+    {
+      "idx": 2,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "ongoing",
+      "characters": ["Dawn", "Jon"],
+      "activity": "discuss together, sitting on chair_16 and chair_7 respectively",
+      "details": [
+        {
+          "character": "Dawn",
+          "target_action": "discuss",
+          "position": ["sit on chair_16"],
+          "orientation": ["look at Jon"]
+        },
+        {
+          "character": "Jon",
+          "target_action": "discuss",
+          "position": ["sit on chair_7"],
+          "orientation": ["look at Dawn"]
+        }
+      ]
+    }
+  ],
+  "current_states": [
+    {
+      "idx": 0,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Chad",
+      "state": "idle",
+      "current_action": "idle",
+      "position": [],
+      "orientation": []
+    },
+    {
+      "idx": 1,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "Sarah",
+      "state": "interacting",
+      "current_action": "chat",
+      "position": ["sit on couch_2"],
+      "orientation": ["look at Phillip"]
+    },
+    {
+      "idx": 2,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "Phillip",
+      "state": "interacting",
+      "current_action": "chat",
+      "position": ["sit on stool_1"],
+      "orientation": ["look at Sarah"]
+    },
+    {
+      "idx": 3,
+      "type": "distractor",
+      "distraction_level": 2,
+      "name": "Dawn",
+      "state": "interacting",
+      "current_action": "discuss",
+      "position": ["sit on chair_16"],
+      "orientation": []
+    },
+    {
+      "idx": 4,
+      "type": "distractor",
+      "distraction_level": 2,
+      "name": "Jon",
+      "state": "interacting",
+      "current_action": "discuss",
+      "position": ["sit on chair_7"],
+      "orientation": []
+    }
+  ],
+  "expected_plans": [
+    {
+      "character": "Chad",
+      "target_action": "work_on_computer",
+      "relationships": "sit on chair_9 || sit on chair_13 || sit on chair_3 || sit on chair_8",
+      "sampled_position": null
+    }
+  ],
+  "allow_null_plan": false
+}

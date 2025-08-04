@@ -1,0 +1,189 @@
+{
+  "id": 20,
+  "tags": ["SS"],
+  "scene_name": "House",
+  "action_labels": [
+    "idle",
+    "drink",
+    "eat",
+    "watch_tv",
+    "dance",
+    "chat",
+    "handshake",
+    "turn_on_record_player",
+    "turn_off_record_player",
+    "turn_on_tv",
+    "turn_off_tv",
+    "open_fridge",
+    "close_fridge",
+    "open_cabinet",
+    "close_cabinet",
+    "use_coffee_maker",
+    "use_toaster",
+    "use_microwave",
+    "use_dishwasher",
+    "use_smartphone",
+    "use_laptop",
+    "read_book"
+  ],
+  "user_instruction": "Melissa starts working on her laptop in the kitchen and Randall sits on one of the chairs in the living room.\nAmong the chair_1, chair_2, chair_3, and chair_4, Taylor sits on a empty chair and reads a book.",
+  "planning_history": [
+    {
+      "idx": 0,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "completed",
+      "characters": ["Madison"],
+      "activity": "answer a phone call sitting on the chair_2",
+      "details": [
+        {
+          "character": "Madison",
+          "target_action": "use_smartphone",
+          "position": ["sit on chair_2"],
+          "orientation": []
+        }
+      ]
+    },
+    {
+      "idx": 1,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "completed",
+      "characters": ["Madison"],
+      "activity": "make a coffee",
+      "details": [
+        {
+          "character": "Madison",
+          "target_action": "use_coffee_maker",
+          "position": ["adjacent to coffee_maker_1"],
+          "orientation": ["look at coffee_maker_1"]
+        }
+      ]
+    },
+    {
+      "idx": 2,
+      "type": "essential",
+      "distraction_level": 0,
+      "state": "ongoing",
+      "characters": ["Melissa"],
+      "activity": "do his work with the laptop, sitting in the kitchen",
+      "details": [
+        {
+          "character": "Melissa",
+          "target_action": "use_laptop",
+          "position": ["sit on chair_4"],
+          "orientation": []
+        }
+      ]
+    },
+    {
+      "idx": 3,
+      "type": "essential",
+      "distraction_level": 0,
+      "state": "completed",
+      "characters": ["Randall"],
+      "activity": "sit on a chair in the living room",
+      "details": [
+        {
+          "character": "Randall",
+          "target_action": "idle",
+          "position": ["sit on chair_1"],
+          "orientation": []
+        }
+      ]
+    },
+    {
+      "idx": 4,
+      "type": "distractor",
+      "distraction_level": 1,
+      "state": "ongoing",
+      "characters": ["Summer", "David"],
+      "activity": "chat with each other, sitting on couch_1",
+      "details": [
+        {
+          "character": "Summer",
+          "target_action": "chat",
+          "position": ["sit on couch_1"],
+          "orientation": ["look at David"]
+        },
+        {
+          "character": "David",
+          "target_action": "chat",
+          "position": ["sit on couch_1"],
+          "orientation": ["look at Summer"]
+        }
+      ]
+    }
+  ],
+  "current_states": [
+    {
+      "idx": 0,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Taylor",
+      "state": "idle",
+      "current_action": "idle",
+      "position": [],
+      "orientation": []
+    },
+    {
+      "idx": 1,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Melissa",
+      "state": "interacting",
+      "current_action": "use_laptop",
+      "position": ["sit on chair_4"],
+      "orientation": []
+    },
+    {
+      "idx": 2,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Randall",
+      "state": "idle",
+      "current_action": "idle",
+      "position": ["sit on chair_1"],
+      "orientation": []
+    },
+    {
+      "idx": 3,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "Summer",
+      "state": "interacting",
+      "current_action": "chat",
+      "position": ["sit on couch_1"],
+      "orientation": ["look at David"]
+    },
+    {
+      "idx": 4,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "David",
+      "state": "interacting",
+      "current_action": "chat",
+      "position": ["sit on couch_1"],
+      "orientation": ["look at Summer"]
+    },
+    {
+      "idx": 5,
+      "type": "distractor",
+      "distraction_level": 2,
+      "name": "Madison",
+      "state": "idle",
+      "current_action": "idle",
+      "position": ["adjacent to coffee_maker_1"],
+      "orientation": []
+    }
+  ],
+  "expected_plans": [
+    {
+      "character": "Taylor",
+      "target_action": "read_book",
+      "relationships": "sit on chair_2 || sit on chair_3",
+      "sampled_position": null
+    }
+  ],
+  "allow_null_plan": false
+}

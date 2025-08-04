@@ -1,0 +1,163 @@
+{
+  "id": 13,
+  "tags": ["RC"],
+  "scene_name": "House",
+  "action_labels": [
+    "idle",
+    "drink",
+    "eat",
+    "watch_tv",
+    "dance",
+    "chat",
+    "handshake",
+    "turn_on_record_player",
+    "turn_off_record_player",
+    "turn_on_tv",
+    "turn_off_tv",
+    "open_fridge",
+    "close_fridge",
+    "open_cabinet",
+    "close_cabinet",
+    "use_coffee_maker",
+    "use_toaster",
+    "use_microwave",
+    "use_dishwasher",
+    "use_smartphone",
+    "use_laptop",
+    "read_book"
+  ],
+  "user_instruction": "David eats a sandwich sitting in the kitchen.",
+  "planning_history": [
+    {
+      "idx": 0,
+      "type": "distractor",
+      "distraction_level": 1,
+      "state": "completed",
+      "characters": ["Melissa"],
+      "activity": "make coffee using coffee_maker_1",
+      "details": [
+        {
+          "character": "Melissa",
+          "target_action": "use_coffee_maker",
+          "position": ["adjacent to coffee_maker_1"],
+          "orientation": ["look at coffee_maker_1"]
+        }
+      ]
+    },
+    {
+      "idx": 1,
+      "type": "distractor",
+      "distraction_level": 1,
+      "state": "ongoing",
+      "characters": ["Melissa", "Michael"],
+      "activity": "chat with each other in the kitchen",
+      "details": [
+        {
+          "character": "Melissa",
+          "target_action": "chat",
+          "position": ["in front of fridge_1"],
+          "orientation": ["look at Michael"]
+        },
+        {
+          "character": "Michael",
+          "target_action": "chat",
+          "position": ["in front of fridge_1"],
+          "orientation": ["look at Melissa"]
+        }
+      ]
+    },
+    {
+      "idx": 2,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "ongoing",
+      "characters": ["Sarah"],
+      "activity": "make coffee using coffee_maker_1",
+      "details": [
+        {
+          "character": "Sarah",
+          "target_action": "use_coffee_maker",
+          "position": ["adjacent to coffee_maker_1"],
+          "orientation": ["look at coffee_maker_1"]
+        }
+      ]
+    },
+    {
+      "idx": 3,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "completed",
+      "characters": ["Cody"],
+      "activity": "use smartphone close to potted_plant_2",
+      "details": [
+        {
+          "character": "Cody",
+          "target_action": "use_smartphone",
+          "position": ["close to potted_plant_2"],
+          "orientation": []
+        }
+      ]
+    }
+  ],
+  "current_states": [
+    {
+      "idx": 0,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "David",
+      "state": "idle",
+      "current_action": "idle",
+      "position": [],
+      "orientation": []
+    },
+    {
+      "idx": 1,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "Melissa",
+      "state": "interacting",
+      "current_action": "chat",
+      "position": ["in front of fridge_1"],
+      "orientation": ["look at Michael"]
+    },
+    {
+      "idx": 2,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "Michael",
+      "state": "interacting",
+      "current_action": "chat",
+      "position": ["in front of fridge_1"],
+      "orientation": ["look at Melissa"]
+    },
+    {
+      "idx": 3,
+      "type": "distractor",
+      "distraction_level": 2,
+      "name": "Sarah",
+      "state": "interacting",
+      "current_action": "use_coffee_maker",
+      "position": ["adjacent to coffee_maker_1"],
+      "orientation": ["look at coffee_maker_1"]
+    },
+    {
+      "idx": 4,
+      "type": "distractor",
+      "distraction_level": 2,
+      "name": "Cody",
+      "state": "idle",
+      "current_action": "idle",
+      "position": ["close to potted_plant_2"],
+      "orientation": []
+    }
+  ],
+  "expected_plans": [
+    {
+      "character": "David",
+      "target_action": "eat",
+      "relationships": "sit on chair_2 || sit on chair_6 || sit on chair_4 || sit on chair_5",
+      "sampled_position": null
+    }
+  ],
+  "allow_null_plan": false
+}

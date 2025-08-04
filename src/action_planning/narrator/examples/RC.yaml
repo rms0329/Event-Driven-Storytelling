@@ -1,0 +1,102 @@
+scene_name: ba6fda9a-a4c1-2dca-8264-792c15aa9ef9 # hotel room
+action_labels:
+  - idle
+  - handshake
+  - hug
+  - chat
+  - use_smartphone
+  - use_laptop
+  - drink
+  - eat
+  - read_book
+  - open_window
+  - close_window
+
+user_instruction: |
+  Alice lies on the bed reading a book, while Bella sits at a desk suitable for work and works on her laptop.
+  As time passes, they sit together in an area conducive to conversation and talk with each other.
+
+characters:
+  - name: Alice
+    state: idle # interacting
+    current_action: idle # read_book
+    position: [lie on bed_1]
+    orientation: []
+  - name: Bella
+    state: idle # interacting
+    current_action: idle # use_laptop
+    position: [sit on chair_1]
+    orientation: []
+
+previous_events:
+  # event 0
+  - state: completed # looping
+    characters: [Alice]
+    activity: reads a book while lying on a bed
+    parsed:
+      - character: Alice
+        target_action: read_book
+        position: [lie on bed_1]
+        orientation: []
+  # event 1
+  - state: completed # looping
+    characters: [Bella]
+    activity: works on her laptop at desk_1, which is in workspace area
+    parsed:
+      - character: Bella
+        target_action: use_laptop
+        position: [sit on chair_1]
+        orientation: []
+
+response:
+  reasoning: |
+    Since the user instruction is given, we need to determine how much of the instruction has been fulfilled by the previous event/plans and generate the next event/plan accordingly.
+    Given that Alice has already read a book while lying on the bed and Bella has worked on her laptop,
+    the next event/plan should involve both characters sitting and chatting together in a space conducive to conversation.
+    Considering the 'in an area conducive to conversation' condition in the user instruction, it would be most appropriate to use coffee_table_1 in the social and conversational area for sitting together and having a conversation.
+
+  characters: [Alice, Bella]
+  activity: chat with each other sitting at coffee_table_1 together
+
+  parsed:
+    - character: Alice
+      target_action: chat
+      position: [sit on chair_2]
+      orientation: [look at Bella]
+    - character: Bella
+      target_action: chat
+      position: [sit on chair_3]
+      orientation: [look at Alice]
+
+response_wo_event: |
+  ```python
+  def generate_next_plan():
+    # Since the user instruction is given, we need to determine how much of the instruction has been fulfilled by the previous plans and generate the next plan accordingly.
+    # Given that Alice has already read a book while lying on the bed and Bella has worked on her laptop,
+    # the next plan should involve both characters sitting and chatting together in a space conducive to conversation.
+    alice = get_character("Alice")
+    bella = get_character("Bella")
+
+    # Since we cannot use 'sit on' relationship for a table, we need to find the most suitable positions for both characters to sit and chat with each other.
+    # According to the scene description, the coffee_table_1 is associated with chair_2 and chair_3 in the social and conversational area.
+    chairs_associated_with_coffee_table_1 = get_objects_associated_with("coffee_table_1", label="chair")
+
+    # Therefore, the most suitable positions for both characters are 'sit on chair_2' and 'sit on chair_3' respectively.
+    alice_position = get_area_to_sit_on(chairs_associated_with_coffee_table_1[0])
+    bella_position = get_area_to_sit_on(chairs_associated_with_coffee_table_1[1])
+
+    # Among the available action labels, the 'chat' action is the most appropriate for both characters.
+    alice_target_action = "chat"
+    bella_target_action = "chat"
+
+    # Return the parsed information
+    alice.set_position(alice_position)
+    alice.set_orientation("Bella")
+    alice.set_target_action(alice_target_action)
+
+    bella.set_position(bella_position)
+    bella.set_orientation("Alice")
+    bella.set_target_action(bella_target_action)
+    
+    return [alice, bella]
+  ```

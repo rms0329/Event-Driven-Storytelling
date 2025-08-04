@@ -1,0 +1,109 @@
+scene_name: 4138585b-a238-2435-810b-9728fc989b2f # kitchen
+action_labels:
+  - idle
+  - handshake
+  - hug
+  - chat
+  - cook
+  - drink
+  - eat
+  - use_smartphone
+  - wash_dishes
+  - turn_on_lamp
+  - turn_off_lamp
+  - open_cabinet
+  - close_cabinet
+
+user_instruction: |
+  Sara makes some food in the kitchen while James sits on the dining area.
+  After the food is ready, Sara sits on the empty chair in the dining area and they share a meal together.
+
+characters:
+  - name: James
+    state: idle
+    current_action: idle
+    position: [sit on chair_1]
+    orientation: []
+  - name: Sara
+    state: idle
+    current_action: idle
+    position: [adjacent to oven_1]
+    orientation: []
+
+previous_events:
+  # event 0
+  - state: completed
+    characters: [Sara]
+    activity: makes some food using oven_1 in the cooking area
+    parsed:
+      - character: Sara
+        target_action: cook
+        position: [adjacent to oven_1]
+        orientation: [look at oven_1]
+  # event 1
+  - state: completed
+    characters: [James]
+    activity: sits at the table_1 in the dining area
+    parsed:
+      - character: James
+        target_action: idle
+        position: [sit on chair_1]
+        orientation: []
+
+response:
+  reasoning: |
+    Since the user instruction is given, we need to determine how much of the instruction has been fulfilled by the previous event/plans and generate the next event/plan accordingly.
+    Given that Sara has already made some food using oven_1 in the cooking area and James has sat on chair_1 in the dining area,
+    the next event/plan should involve Sara sitting on the empty chair in the dining area and both characters sharing a meal together.    
+    Since the exact presence of the empty chair in the dining area will be determined by the Event Parser,
+    we only need to narrow down the possible chairs in the dining area (associated with table_1) and provide the necessary information for Sara to sit on the empty chair.
+
+  characters: [James, Sara]
+  activity: share a meal together at table_1, Sara sitting on an empty chair
+
+  parsed:
+    - character: James
+      target_action: eat
+      position: [sit on chair_1]
+      orientation: []
+    - character: Sara
+      target_action: eat
+      position: [sit on chair_2]
+      orientation: []
+
+response_wo_event: |
+  ```python
+  def generate_next_plan():
+    # Since the user instruction is given, we need to determine how much of the instruction has been fulfilled by the previous plans and generate the next plan accordingly.
+    # Given that Sara has already made some food using oven_1 in the cooking area and James has sat on chair_1 in the dining area,
+    # the next plan should involve Sara sitting on an empty chair in the dining area and both characters sharing a meal together.
+    james = get_character("James")
+    sara = get_character("Sara")
+
+    # Since we cannot use 'sit on' relationship for a table, we need to find the most suitable positions for both characters to sit and eat.
+    # According to the scene description, the dining area has two chairs, chair_1 and chair_2, associated with table_1.
+    dining_area_chairs = get_objects_associated_with("table_1", label="chair")
+
+    # According to the previous plans, James is already sitting on chair_1
+    james_position = get_area_to_sit_on("chair_1")
+
+    # Sara should sit on the empty chair to share a meal with James
+    sara_position = dining_area_chairs[0]  # Initialize with an arbitrary chair
+    for chair in dining_area_chairs:
+        if not is_object_occupied(chair):
+            sara_position = get_area_to_sit_on(chair)            
+            break
+    
+    # Since the event involves sharing a meal, the most appropriate action is 'eat'
+    james_target_action = "eat"
+    sara_target_action = "eat"
+
+    # Return the parsed information
+    james.set_position(james_position)
+    james.set_target_action(james_target_action)
+    
+    sara.set_position(sara_position)
+    sara.set_target_action(sara_target_action)
+    
+    return [james, sara]
+  ```

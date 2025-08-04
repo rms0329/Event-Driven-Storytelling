@@ -1,0 +1,146 @@
+{
+  "id": 2,
+  "tags": ["OA"],
+  "scene_name": "Restaurant",
+  "action_labels": [
+    "idle",
+    "drink",
+    "eat",
+    "chat",
+    "handshake",
+    "use_smartphone",
+    "deliver_menu",
+    "take_order",
+    "serve_food",
+    "serve_drink",
+    "order_food",
+    "order_drink",
+    "pay_bill",
+    "clean_table",
+    "listen_to_music"
+  ],
+  "user_instruction": "Tyler sits and has a meal in the table, which is closer to the potted_plant_2.",
+  "planning_history": [
+    {
+      "idx": 0,
+      "type": "distractor",
+      "distraction_level": 1,
+      "state": "completed",
+      "characters": ["Theresa"],
+      "activity": "order drinks from the bar",
+      "details": [
+        {
+          "character": "Theresa",
+          "target_action": "order_drink",
+          "position": ["close to bar_counter_1"],
+          "orientation": []
+        }
+      ]
+    },
+    {
+      "idx": 1,
+      "type": "distractor",
+      "distraction_level": 1,
+      "state": "ongoing",
+      "characters": ["Theresa", "Anthony"],
+      "activity": "enjoy a drink together",
+      "details": [
+        {
+          "character": "Theresa",
+          "target_action": "drink",
+          "position": ["adjacent to table_2"],
+          "orientation": ["look at Anthony"]
+        },
+        {
+          "character": "Anthony",
+          "target_action": "drink",
+          "position": ["adjacent to table_2"],
+          "orientation": ["look at Theresa"]
+        }
+      ]
+    },
+    {
+      "idx": 2,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "completed",
+      "characters": ["Angela", "Russell"],
+      "activity": "greet each other",
+      "details": [
+        {
+          "character": "Angela",
+          "target_action": "handshake",
+          "position": ["in front of reception_desk_1"],
+          "orientation": ["look at Russell"]
+        },
+        {
+          "character": "Russell",
+          "target_action": "handshake",
+          "position": ["in front of reception_desk_1"],
+          "orientation": ["look at Angela"]
+        }
+      ]
+    }
+  ],
+  "current_states": [
+    {
+      "idx": 0,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Tyler",
+      "state": "idle",
+      "current_action": "idle",
+      "position": [],
+      "orientation": []
+    },
+    {
+      "idx": 1,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "Theresa",
+      "state": "interacting",
+      "current_action": "drink",
+      "position": ["adjacent to table_2"],
+      "orientation": ["look at Anthony"]
+    },
+    {
+      "idx": 2,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "Anthony",
+      "state": "interacting",
+      "current_action": "drink",
+      "position": ["adjacent to table_2"],
+      "orientation": ["look at Theresa"]
+    },
+    {
+      "idx": 3,
+      "type": "distractor",
+      "distraction_level": 2,
+      "name": "Angela",
+      "state": "idle",
+      "current_action": "idle",
+      "position": ["in front of reception_desk_1"],
+      "orientation": []
+    },
+    {
+      "idx": 4,
+      "type": "distractor",
+      "distraction_level": 2,
+      "name": "Russell",
+      "state": "idle",
+      "current_action": "idle",
+      "position": ["in front of reception_desk_1"],
+      "orientation": []
+    }
+  ],
+  "expected_plans": [
+    {
+      "character": "Tyler",
+      "target_action": "eat",
+      "relationships": "sit on chair_10 || sit on chair_4 || sit on chair_5",
+      "sampled_position": null
+    }
+  ],
+  "allow_null_plan": false
+}

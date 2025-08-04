@@ -1,0 +1,182 @@
+{
+  "id": 24,
+  "tags": ["SS"],
+  "scene_name": "Restaurant",
+  "action_labels": [
+    "idle",
+    "drink",
+    "eat",
+    "chat",
+    "handshake",
+    "use_smartphone",
+    "deliver_menu",
+    "take_order",
+    "serve_food",
+    "serve_drink",
+    "order_food",
+    "order_drink",
+    "pay_bill",
+    "clean_table",
+    "listen_to_music"
+  ],
+  "user_instruction": "Sara makes an order sitting in the bar area.\nAfter being served, Sara drinks beer at a standing table in the bar area.\nMichael joins the table of his friend, Sara, to drink beer together.",
+  "planning_history": [
+    {
+      "idx": 0,
+      "type": "essential",
+      "distraction_level": 0,
+      "state": "completed",
+      "characters": ["Sara"],
+      "activity": "orders a drink sitting in the bar area",
+      "details": [
+        {
+          "character": "Sara",
+          "target_action": "order_drink",
+          "position": ["sit on chair_8"],
+          "orientation": []
+        }
+      ]
+    },
+    {
+      "idx": 1,
+      "type": "essential",
+      "distraction_level": 0,
+      "state": "ongoing",
+      "characters": ["Sara"],
+      "activity": "drinks beer at a standing table in the bar area",
+      "details": [
+        {
+          "character": "Sara",
+          "target_action": "drink",
+          "position": ["adjacent to table_2"],
+          "orientation": []
+        }
+      ]
+    },
+    {
+      "idx": 2,
+      "type": "distractor",
+      "distraction_level": 1,
+      "state": "ongoing",
+      "characters": ["Clayton", "Yvette"],
+      "activity": "eat dinner together sitting in the dining area",
+      "details": [
+        {
+          "character": "Clayton",
+          "target_action": "eat",
+          "position": ["sit on chair_10"],
+          "orientation": []
+        },
+        {
+          "character": "Yvette",
+          "target_action": "eat",
+          "position": ["sit on chair_4"],
+          "orientation": []
+        }
+      ]
+    },
+    {
+      "idx": 3,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "completed",
+      "characters": ["Cory"],
+      "activity": "takes an empty table in the bar area and orders a drink",
+      "details": [
+        {
+          "character": "Cory",
+          "target_action": "order_drink",
+          "position": ["adjacent to table_5"],
+          "orientation": []
+        }
+      ]
+    },
+    {
+      "idx": 4,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "ongoing",
+      "characters": ["Cory"],
+      "activity": "enjoys the drink in the same table",
+      "details": [
+        {
+          "character": "Cory",
+          "target_action": "drink",
+          "position": ["adjacent to table_5"],
+          "orientation": []
+        }
+      ]
+    }
+  ],
+  "current_states": [
+    {
+      "idx": 0,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Michael",
+      "state": "idle",
+      "current_action": "idle",
+      "position": [],
+      "orientation": []
+    },
+    {
+      "idx": 1,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Sara",
+      "state": "interacting",
+      "current_action": "drink",
+      "position": ["adjacent to table_2"],
+      "orientation": []
+    },
+    {
+      "idx": 2,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "Clayton",
+      "state": "interacting",
+      "current_action": "eat",
+      "position": ["sit on chair_10"],
+      "orientation": []
+    },
+    {
+      "idx": 3,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "Yvette",
+      "state": "interacting",
+      "current_action": "eat",
+      "position": ["sit on chair_4"],
+      "orientation": []
+    },
+    {
+      "idx": 4,
+      "type": "distractor",
+      "distraction_level": 2,
+      "name": "Cory",
+      "state": "interacting",
+      "current_action": "drink",
+      "position": ["adjacent to table_5"],
+      "orientation": []
+    },
+    {
+      "idx": 5,
+      "type": "distractor",
+      "distraction_level": 2,
+      "name": "Megan",
+      "state": "idle",
+      "current_action": "idle",
+      "position": [],
+      "orientation": []
+    }
+  ],
+  "expected_plans": [
+    {
+      "character": "Michael",
+      "target_action": "drink",
+      "relationships": "close to table_2",
+      "sampled_position": null
+    }
+  ],
+  "allow_null_plan": false
+}

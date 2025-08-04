@@ -1,0 +1,40 @@
+scene_name: 0cac755a-8d6f-2d13-8fed-b1be02f4ef77 # lounge
+action_labels:
+  - idle
+  - handshake
+  - hug
+  - chat
+  - use_smartphone
+  - use_laptop
+  - make_coffee
+  - drink
+  - eat
+  - read_book
+  - open_commode
+  - close_commode
+  - take_out_drink
+  - take_out_snack
+
+user_instruction: |
+  James stands behind the sofa_1.
+
+characters:
+  - name: James
+    state: idle
+    current_action: idle
+    position: []
+    orientation: []
+
+previous_events: []
+
+response:
+  reasoning: The user instruction specifies that James should stand behind sofa_1.
+
+  characters: [James]
+  activity: stand idly behind sofa_1
+
+  parsed:
+    - character: James
+      target_action: idle
+      position: [behind sofa_1]
+      orientation: []

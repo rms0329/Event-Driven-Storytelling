@@ -1,0 +1,163 @@
+{
+  "id": 0,
+  "tags": ["OA"],
+  "scene_name": "House",
+  "action_labels": [
+    "idle",
+    "drink",
+    "eat",
+    "watch_tv",
+    "dance",
+    "chat",
+    "handshake",
+    "turn_on_record_player",
+    "turn_off_record_player",
+    "turn_on_tv",
+    "turn_off_tv",
+    "open_fridge",
+    "close_fridge",
+    "open_cabinet",
+    "close_cabinet",
+    "use_coffee_maker",
+    "use_toaster",
+    "use_microwave",
+    "use_dishwasher",
+    "use_smartphone",
+    "use_laptop",
+    "read_book"
+  ],
+  "user_instruction": "Ryan sends a text message with his phone right next to the table, which is between two armchairs facing each other.",
+  "planning_history": [
+    {
+      "idx": 0,
+      "type": "distractor",
+      "distraction_level": 1,
+      "state": "completed",
+      "characters": ["Norma"],
+      "activity": "make coffee using coffee_maker_1",
+      "details": [
+        {
+          "character": "Norma",
+          "target_action": "use_coffee_maker",
+          "position": ["adjacent to coffee_maker_1"],
+          "orientation": ["look at coffee_maker_1"]
+        }
+      ]
+    },
+    {
+      "idx": 1,
+      "type": "distractor",
+      "distraction_level": 1,
+      "state": "ongoing",
+      "characters": ["Norma", "Jason"],
+      "activity": "chat with each other in the kitchen",
+      "details": [
+        {
+          "character": "Norma",
+          "target_action": "chat",
+          "position": ["sit on chair_2"],
+          "orientation": ["look at Jason"]
+        },
+        {
+          "character": "Jason",
+          "target_action": "chat",
+          "position": ["sit on chair_6"],
+          "orientation": ["look at Norma"]
+        }
+      ]
+    },
+    {
+      "idx": 2,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "ongoing",
+      "characters": ["Deanna"],
+      "activity": "make coffee using coffee_maker_1",
+      "details": [
+        {
+          "character": "Deanna",
+          "target_action": "use_coffee_maker",
+          "position": ["adjacent to coffee_maker_1"],
+          "orientation": ["look at coffee_maker_1"]
+        }
+      ]
+    },
+    {
+      "idx": 3,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "completed",
+      "characters": ["Jorge"],
+      "activity": "use smartphone close to potted_plant_2",
+      "details": [
+        {
+          "character": "Jorge",
+          "target_action": "use_smartphone",
+          "position": ["close to potted_plant_2"],
+          "orientation": []
+        }
+      ]
+    }
+  ],
+  "current_states": [
+    {
+      "idx": 0,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Ryan",
+      "state": "idle",
+      "current_action": "idle",
+      "position": [],
+      "orientation": []
+    },
+    {
+      "idx": 1,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "Norma",
+      "state": "interacting",
+      "current_action": "chat",
+      "position": ["sit on chair_2"],
+      "orientation": ["look at Jason"]
+    },
+    {
+      "idx": 2,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "Jason",
+      "state": "interacting",
+      "current_action": "chat",
+      "position": ["sit on chair_6"],
+      "orientation": ["look at Norma"]
+    },
+    {
+      "idx": 3,
+      "type": "distractor",
+      "distraction_level": 2,
+      "name": "Deanna",
+      "state": "interacting",
+      "current_action": "use_coffee_maker",
+      "position": ["adjacent to coffee_maker_1"],
+      "orientation": ["look at coffee_maker_1"]
+    },
+    {
+      "idx": 4,
+      "type": "distractor",
+      "distraction_level": 2,
+      "name": "Jorge",
+      "state": "idle",
+      "current_action": "idle",
+      "position": ["close to potted_plant_2"],
+      "orientation": []
+    }
+  ],
+  "expected_plans": [
+    {
+      "character": "Ryan",
+      "target_action": "use_smartphone",
+      "relationships": "close to table_3 || between chair_1 and chair_3",
+      "sampled_position": null
+    }
+  ],
+  "allow_null_plan": false
+}

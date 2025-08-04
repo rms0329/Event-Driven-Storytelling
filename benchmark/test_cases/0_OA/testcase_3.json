@@ -1,0 +1,146 @@
+{
+  "id": 3,
+  "tags": ["OA"],
+  "scene_name": "Restaurant",
+  "action_labels": [
+    "idle",
+    "drink",
+    "eat",
+    "chat",
+    "handshake",
+    "use_smartphone",
+    "deliver_menu",
+    "take_order",
+    "serve_food",
+    "serve_drink",
+    "order_food",
+    "order_drink",
+    "pay_bill",
+    "clean_table",
+    "listen_to_music"
+  ],
+  "user_instruction": "David eats dinner sitting at the table that is associated with the chair_3. The chair_3 is currently unavailable as it is broken, so David should sit on another chair at the table.",
+  "planning_history": [
+    {
+      "idx": 0,
+      "type": "distractor",
+      "distraction_level": 1,
+      "state": "completed",
+      "characters": ["Kimberly"],
+      "activity": "order drinks from the bar",
+      "details": [
+        {
+          "character": "Kimberly",
+          "target_action": "order_drink",
+          "position": ["close to bar_counter_1"],
+          "orientation": []
+        }
+      ]
+    },
+    {
+      "idx": 1,
+      "type": "distractor",
+      "distraction_level": 1,
+      "state": "ongoing",
+      "characters": ["Kimberly", "Jacob"],
+      "activity": "enjoy a drink together",
+      "details": [
+        {
+          "character": "Kimberly",
+          "target_action": "drink",
+          "position": ["adjacent to table_2"],
+          "orientation": ["look at Jacob"]
+        },
+        {
+          "character": "Jacob",
+          "target_action": "drink",
+          "position": ["adjacent to table_2"],
+          "orientation": ["look at Kimberly"]
+        }
+      ]
+    },
+    {
+      "idx": 2,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "completed",
+      "characters": ["Lindsey", "Mario"],
+      "activity": "greet each other",
+      "details": [
+        {
+          "character": "Lindsey",
+          "target_action": "handshake",
+          "position": ["in front of reception_desk_1"],
+          "orientation": ["look at Mario"]
+        },
+        {
+          "character": "Mario",
+          "target_action": "handshake",
+          "position": ["in front of reception_desk_1"],
+          "orientation": ["look at Lindsey"]
+        }
+      ]
+    }
+  ],
+  "current_states": [
+    {
+      "idx": 0,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "David",
+      "state": "idle",
+      "current_action": "idle",
+      "position": [],
+      "orientation": []
+    },
+    {
+      "idx": 1,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "Kimberly",
+      "state": "interacting",
+      "current_action": "drink",
+      "position": ["adjacent to table_2"],
+      "orientation": ["look at Jacob"]
+    },
+    {
+      "idx": 2,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "Jacob",
+      "state": "interacting",
+      "current_action": "drink",
+      "position": ["adjacent to table_2"],
+      "orientation": ["look at Kimberly"]
+    },
+    {
+      "idx": 3,
+      "type": "distractor",
+      "distraction_level": 2,
+      "name": "Lindsey",
+      "state": "idle",
+      "current_action": "idle",
+      "position": ["in front of reception_desk_1"],
+      "orientation": []
+    },
+    {
+      "idx": 4,
+      "type": "distractor",
+      "distraction_level": 2,
+      "name": "Mario",
+      "state": "idle",
+      "current_action": "idle",
+      "position": ["in front of reception_desk_1"],
+      "orientation": []
+    }
+  ],
+  "expected_plans": [
+    {
+      "character": "David",
+      "target_action": "eat",
+      "relationships": "sit on chair_9 || sit on chair_6",
+      "sampled_position": null
+    }
+  ],
+  "allow_null_plan": false
+}

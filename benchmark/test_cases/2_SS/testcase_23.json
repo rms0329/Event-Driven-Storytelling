@@ -1,0 +1,228 @@
+{
+  "id": 23,
+  "tags": ["SS"],
+  "scene_name": "Office",
+  "action_labels": [
+    "idle",
+    "drink",
+    "chat",
+    "discuss",
+    "handshake",
+    "open_cabinet",
+    "close_cabinet",
+    "use_smartphone",
+    "use_water_dispenser",
+    "work_on_computer",
+    "attend_meeting",
+    "take_out_drink",
+    "take_out_document",
+    "take_out_book",
+    "write_on_white_board",
+    "clean_white_board",
+    "read_book"
+  ],
+  "user_instruction": "After the discussion with his colleagues, Tim goes back to workspace to work on the computer.\nBefore going back to work, Tim should cleans the white board if it needs to be cleaned.",
+  "planning_history": [
+    {
+      "idx": 0,
+      "type": "distractor",
+      "distraction_level": 1,
+      "state": "completed",
+      "characters": ["Angela"],
+      "activity": "cleans the white board",
+      "details": [
+        {
+          "character": "Angela",
+          "target_action": "clean_white_board",
+          "position": ["adjacent to white_board_1"],
+          "orientation": ["look at white_board_1"]
+        }
+      ]
+    },
+    {
+      "idx": 1,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "completed",
+      "characters": ["Jessica"],
+      "activity": "open the cabinet_3",
+      "details": [
+        {
+          "character": "Jessica",
+          "target_action": "open_cabinet",
+          "position": ["adjacent to cabinet_3"],
+          "orientation": ["look at cabinet_3"]
+        }
+      ]
+    },
+    {
+      "idx": 2,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "completed",
+      "characters": ["Jessica"],
+      "activity": "take out a drink from the cabinet_3",
+      "details": [
+        {
+          "character": "Jessica",
+          "target_action": "take_out_drink",
+          "position": ["adjacent to cabinet_3"],
+          "orientation": ["look at cabinet_3"]
+        }
+      ]
+    },
+    {
+      "idx": 3,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "ongoing",
+      "characters": ["Jessica"],
+      "activity": "back to his seat to work on the computer",
+      "details": [
+        {
+          "character": "Jessica",
+          "target_action": "work_on_computer",
+          "position": ["sit on chair_11"],
+          "orientation": ["look at laptop_8"]
+        }
+      ]
+    },
+    {
+      "idx": 4,
+      "type": "essential",
+      "distraction_level": 0,
+      "state": "completed",
+      "characters": ["Tiffany"],
+      "activity": "write something on the white board",
+      "details": [
+        {
+          "character": "Tiffany",
+          "target_action": "write_on_white_board",
+          "position": ["adjacent to white_board_1"],
+          "orientation": ["look at white_board_1"]
+        }
+      ]
+    },
+    {
+      "idx": 5,
+      "type": "essential",
+      "distraction_level": 0,
+      "state": "completed",
+      "characters": ["Tim", "Tiffany", "Steven"],
+      "activity": "discuss about the project in the meeting room",
+      "details": [
+        {
+          "character": "Tim",
+          "target_action": "discuss",
+          "position": ["sit on chair_10"],
+          "orientation": []
+        },
+        {
+          "character": "Tiffany",
+          "target_action": "discuss",
+          "position": ["sit on chair_12"],
+          "orientation": []
+        },
+        {
+          "character": "Steven",
+          "target_action": "discuss",
+          "position": ["sit on chair_4"],
+          "orientation": []
+        }
+      ]
+    },
+    {
+      "idx": 6,
+      "type": "distractor",
+      "distraction_level": 1,
+      "state": "ongoing",
+      "characters": ["Angela", "Kevin"],
+      "activity": "chat with each other, sitting on the rest area",
+      "details": [
+        {
+          "character": "Angela",
+          "target_action": "chat",
+          "position": ["sit on stool_3"],
+          "orientation": ["look at Kevin"]
+        },
+        {
+          "character": "Kevin",
+          "target_action": "chat",
+          "position": ["sit on couch_3"],
+          "orientation": ["look at Angela"]
+        }
+      ]
+    }
+  ],
+  "current_states": [
+    {
+      "idx": 0,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Tim",
+      "state": "idle",
+      "current_action": "idle",
+      "position": ["sit on chair_10"],
+      "orientation": []
+    },
+    {
+      "idx": 1,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Tiffany",
+      "state": "idle",
+      "current_action": "idle",
+      "position": ["sit on chair_12"],
+      "orientation": []
+    },
+    {
+      "idx": 2,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Steven",
+      "state": "idle",
+      "current_action": "idle",
+      "position": ["sit on chair_4"],
+      "orientation": []
+    },
+    {
+      "idx": 3,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "Angela",
+      "state": "interacting",
+      "current_action": "chat",
+      "position": ["sit on stool_3"],
+      "orientation": ["look at Kevin"]
+    },
+    {
+      "idx": 4,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "Kevin",
+      "state": "interacting",
+      "current_action": "chat",
+      "position": ["sit on couch_3"],
+      "orientation": ["look at Angela"]
+    },
+    {
+      "idx": 5,
+      "type": "distractor",
+      "distraction_level": 2,
+      "name": "Jessica",
+      "state": "interacting",
+      "current_action": "work_on_computer",
+      "position": ["sit on chair_11"],
+      "orientation": ["look at laptop_8"]
+    }
+  ],
+  "expected_plans": [
+    {
+      "character": "Tim",
+      "target_action": "clean_white_board",
+      "relationships": "adjacent to white_board_1 || in front of white_board_1",
+      "sampled_position": null
+    }
+  ],
+  "allow_null_plan": false
+}

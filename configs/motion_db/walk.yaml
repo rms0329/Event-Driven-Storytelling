@@ -1,0 +1,205 @@
+human_scene_interaction: false
+human_human_interaction: false
+looping: false
+keyjoints:
+  - pelvis
+  - spine3
+  - right_foot
+  - left_foot
+matching_features:
+  - keyjoints
+  - future_positions
+  - future_directions
+motions:
+  - dataset: amass
+    motion_file: HDM05/dg/HDM_dg_01-01_04_120_poses.npz
+    start_frame: 4182
+    end_frame: 4846
+    match_start_frame: 4182
+    match_end_frame: 4846
+  - dataset: amass
+    motion_file: KIT/1721/RecoveryStepping_30_90_03_poses.npz
+    start_frame: 0
+    end_frame: 311
+    match_start_frame: 0
+    match_end_frame: 311
+  - dataset: amass
+    motion_file: CMU/123/123_09_poses.npz
+    start_frame: 329
+    end_frame: 839
+    match_start_frame: 329
+    match_end_frame: 839
+  - dataset: amass
+    motion_file: CMU/105/105_36_poses.npz
+    start_frame: 0
+    end_frame: 840
+    match_start_frame: 0
+    match_end_frame: 840
+  - dataset: amass
+    motion_file: BMLmovi/Subject_65_F_MoSh/Subject_65_F_18_poses.npz
+    start_frame: 0
+    end_frame: 1092
+    match_start_frame: 0
+    match_end_frame: 1092
+  - dataset: amass
+    motion_file: KIT/8/RightTurn10_poses.npz
+    start_frame: 0
+    end_frame: 513
+    match_start_frame: 0
+    match_end_frame: 513
+  - dataset: amass
+    motion_file: KIT/314/step_over_gap05_poses.npz
+    start_frame: 0
+    end_frame: 447
+    match_start_frame: 0
+    match_end_frame: 447
+  - dataset: amass
+    motion_file: KIT/3/bend_right10_poses.npz
+    start_frame: 0
+    end_frame: 550
+    match_start_frame: 0
+    match_end_frame: 550
+  - dataset: amass
+    motion_file: KIT/205/walking_run08_poses.npz
+    start_frame: 130
+    end_frame: 434
+    match_start_frame: 130
+    match_end_frame: 434
+  - dataset: amass
+    motion_file: BMLmovi/Subject_80_F_MoSh/Subject_80_F_18_poses.npz
+    start_frame: 0
+    end_frame: 960
+    match_start_frame: 0
+    match_end_frame: 960
+  - dataset: amass
+    motion_file: KIT/1721/RecoveryStepping_30_120_03_poses.npz
+    start_frame: 0
+    end_frame: 384
+    match_start_frame: 0
+    match_end_frame: 384
+  - dataset: amass
+    motion_file: KIT/183/turn_left10_poses.npz
+    start_frame: 0
+    end_frame: 476
+    match_start_frame: 0
+    match_end_frame: 476
+  - dataset: amass
+    motion_file: KIT/424/parkour01_poses.npz
+    start_frame: 30
+    end_frame: 100
+    match_start_frame: 30
+    match_end_frame: 100
+  - dataset: amass
+    motion_file: KIT/424/parkour02_poses.npz
+    start_frame: 30
+    end_frame: 1400
+    match_start_frame: 30
+    match_end_frame: 1400
+  - dataset: amass
+    motion_file: BMLmovi/Subject_85_F_MoSh/Subject_85_F_17_poses.npz
+    start_frame: 732
+    end_frame: 1864
+    match_start_frame: 732
+    match_end_frame: 1864
+  - dataset: amass
+    motion_file: BMLmovi/Subject_61_F_MoSh/Subject_61_F_3_poses.npz
+    start_frame: 84
+    end_frame: 1284
+    match_start_frame: 84
+    match_end_frame: 1284
+  - dataset: amass
+    motion_file: KIT/314/turn_left06_poses.npz
+    start_frame: 0
+    end_frame: 477
+    match_start_frame: 0
+    match_end_frame: 477
+  - dataset: amass
+    motion_file: KIT/425/turn_right01_poses.npz
+    start_frame: 0
+    end_frame: 565
+    match_start_frame: 0
+    match_end_frame: 565
+  - dataset: amass
+    motion_file: KIT/424/turn_right06_poses.npz
+    start_frame: 0
+    end_frame: 599
+    match_start_frame: 0
+    match_end_frame: 599
+  - dataset: amass
+    motion_file: KIT/314/turn_left08_poses.npz
+    start_frame: 0
+    end_frame: 400
+    match_start_frame: 0
+    match_end_frame: 400
+  - dataset: amass
+    motion_file: KIT/167/turn_right01_poses.npz
+    start_frame: 0
+    end_frame: 680
+    match_start_frame: 0
+    match_end_frame: 680
+  - dataset: amass
+    motion_file: KIT/183/turn_right09_poses.npz
+    start_frame: 0
+    end_frame: 589
+    match_start_frame: 0
+    match_end_frame: 589
+  - dataset: amass
+    motion_file: KIT/314/turn_right02_poses.npz
+    start_frame: 0
+    end_frame: 607
+    match_start_frame: 0
+    match_end_frame: 607
+  - dataset: amass
+    motion_file: CMU/38/38_04_poses.npz
+    start_frame: 0
+    end_frame: 8600
+    match_start_frame: 0
+    match_end_frame: 8600
+  - dataset: amass
+    motion_file: CMU/91/91_03_poses.npz
+    start_frame: 0
+    end_frame: 1700
+    match_start_frame: 0
+    match_end_frame: 1700
+  - dataset: amass
+    motion_file: KIT/314/bend_left03_poses.npz
+    start_frame: 118
+    end_frame: 500
+    match_start_frame: 118
+    match_end_frame: 500
+  - dataset: amass
+    motion_file: KIT/10/LeftTurn01_poses.npz
+    start_frame: 0
+    end_frame: 376
+    match_start_frame: 0
+    match_end_frame: 376
+  - dataset: amass
+    motion_file: Transitions/mazen_c3d/walkbackwards_turntwist180_poses.npz
+    start_frame: 41
+    end_frame: 800
+    match_start_frame: 41
+    match_end_frame: 800
+  - dataset: amass
+    motion_file: KIT/6/WalkingStraightBackwards01_poses.npz
+    start_frame: 0
+    end_frame: 457
+    match_start_frame: 0
+    match_end_frame: 457
+  - dataset: amass
+    motion_file: KIT/11/WalkingStraightBackwards03_1_poses.npz
+    start_frame: 0
+    end_frame: 547
+    match_start_frame: 0
+    match_end_frame: 547
+  - dataset: amass
+    motion_file: KIT/421/push_recovery_front09_poses.npz
+    start_frame: 0
+    end_frame: 700
+    match_start_frame: 0
+    match_end_frame: 700
+  - dataset: amass
+    motion_file: HDM05/mm/HDM_mm_03-01_02_120_poses.npz
+    start_frame: 0
+    end_frame: 1700
+    match_start_frame: 0
+    match_end_frame: 1700

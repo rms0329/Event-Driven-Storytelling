@@ -1,0 +1,45 @@
+{
+  "id": 67,
+  "tags": ["PI"],
+  "scene_name": "Restaurant",
+  "action_labels": [
+    "idle",
+    "drink",
+    "eat",
+    "chat",
+    "handshake",
+    "use_smartphone",
+    "deliver_menu",
+    "take_order",
+    "serve_food",
+    "serve_drink",
+    "order_food",
+    "order_drink",
+    "pay_bill",
+    "clean_table",
+    "listen_to_music"
+  ],
+  "user_instruction": "Robert stands behind the reception desk.",
+  "planning_history": [],
+  "current_states": [
+    {
+      "idx": 0,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Robert",
+      "state": "idle",
+      "current_action": "idle",
+      "position": [],
+      "orientation": []
+    }
+  ],
+  "expected_plans": [
+    {
+      "character": "Robert",
+      "target_action": null,
+      "relationships": null,
+      "sampled_position": "behind reception_desk_1"
+    }
+  ],
+  "allow_null_plan": false
+}

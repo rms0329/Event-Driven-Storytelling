@@ -1,0 +1,157 @@
+{
+  "id": 14,
+  "tags": ["RC"],
+  "scene_name": "Office",
+  "action_labels": [
+    "idle",
+    "drink",
+    "chat",
+    "discuss",
+    "handshake",
+    "open_cabinet",
+    "close_cabinet",
+    "use_smartphone",
+    "use_water_dispenser",
+    "work_on_computer",
+    "attend_meeting",
+    "take_out_drink",
+    "take_out_document",
+    "take_out_book",
+    "clean_white_board",
+    "read_book"
+  ],
+  "user_instruction": "Brian sits in the area designated for attending a conference.",
+  "planning_history": [
+    {
+      "idx": 0,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "completed",
+      "characters": ["Brian"],
+      "activity": "use smart phone right next to the chair_1",
+      "details": [
+        {
+          "character": "Brian",
+          "target_action": "use_smartphone",
+          "position": ["adjacent to chair_1"],
+          "orientation": []
+        }
+      ]
+    },
+    {
+      "idx": 1,
+      "type": "distractor",
+      "distraction_level": 1,
+      "state": "ongoing",
+      "characters": ["Michele", "Matthew"],
+      "activity": "chat with each other, sitting on couch_2 and stool_1 respectively",
+      "details": [
+        {
+          "character": "Michele",
+          "target_action": "chat",
+          "position": ["sit on couch_2"],
+          "orientation": ["look at Matthew"]
+        },
+        {
+          "character": "Matthew",
+          "target_action": "chat",
+          "position": ["sit on stool_1"],
+          "orientation": ["look at Michele"]
+        }
+      ]
+    },
+    {
+      "idx": 2,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "ongoing",
+      "characters": ["Teresa"],
+      "activity": "work on computer sitting on chair_6",
+      "details": [
+        {
+          "character": "Teresa",
+          "target_action": "work_on_computer",
+          "position": ["sit on chair_6"],
+          "orientation": []
+        }
+      ]
+    },
+    {
+      "idx": 3,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "ongoing",
+      "characters": ["Devin"],
+      "activity": "work on computer sitting on chair_11",
+      "details": [
+        {
+          "character": "Devin",
+          "target_action": "work_on_computer",
+          "position": ["sit on chair_11"],
+          "orientation": []
+        }
+      ]
+    }
+  ],
+  "current_states": [
+    {
+      "idx": 0,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Brian",
+      "state": "idle",
+      "current_action": "idle",
+      "position": ["adjacent to chair_1"],
+      "orientation": []
+    },
+    {
+      "idx": 1,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "Michele",
+      "state": "interacting",
+      "current_action": "chat",
+      "position": ["sit on couch_2"],
+      "orientation": ["look at Matthew"]
+    },
+    {
+      "idx": 2,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "Matthew",
+      "state": "interacting",
+      "current_action": "chat",
+      "position": ["sit on stool_1"],
+      "orientation": ["look at Michele"]
+    },
+    {
+      "idx": 3,
+      "type": "distractor",
+      "distraction_level": 2,
+      "name": "Teresa",
+      "state": "interacting",
+      "current_action": "work_on_computer",
+      "position": ["sit on chair_6"],
+      "orientation": []
+    },
+    {
+      "idx": 4,
+      "type": "distractor",
+      "distraction_level": 2,
+      "name": "Devin",
+      "state": "interacting",
+      "current_action": "work_on_computer",
+      "position": ["sit on chair_11"],
+      "orientation": []
+    }
+  ],
+  "expected_plans": [
+    {
+      "character": "Brian",
+      "target_action": null,
+      "relationships": "sit on chair_14 || sit on chair_15 || sit on chair_16 || sit on chair_7 || sit on chair_10 || sit on chair_5 || sit on chair_12 || sit on chair_4",
+      "sampled_position": null
+    }
+  ],
+  "allow_null_plan": false
+}

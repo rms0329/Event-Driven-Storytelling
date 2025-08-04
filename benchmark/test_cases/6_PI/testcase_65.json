@@ -1,0 +1,46 @@
+{
+  "id": 65,
+  "tags": ["PI"],
+  "scene_name": "Office",
+  "action_labels": [
+    "idle",
+    "drink",
+    "eat",
+    "chat",
+    "discuss",
+    "handshake",
+    "open_cabinet",
+    "close_cabinet",
+    "use_smartphone",
+    "use_water_dispenser",
+    "work_on_computer",
+    "attend_meeting",
+    "take_out_drink",
+    "take_out_document",
+    "take_out_book",
+    "read_book"
+  ],
+  "user_instruction": "Jerry stands right to the cabinet_2.",
+  "planning_history": [],
+  "current_states": [
+    {
+      "idx": 0,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Jerry",
+      "state": "idle",
+      "current_action": "idle",
+      "position": [],
+      "orientation": []
+    }
+  ],
+  "expected_plans": [
+    {
+      "character": "Jerry",
+      "target_action": null,
+      "relationships": null,
+      "sampled_position": "to the right of cabinet_2"
+    }
+  ],
+  "allow_null_plan": false
+}

@@ -1,0 +1,45 @@
+{
+  "id": 66,
+  "tags": ["PI"],
+  "scene_name": "Restaurant",
+  "action_labels": [
+    "idle",
+    "drink",
+    "eat",
+    "chat",
+    "handshake",
+    "use_smartphone",
+    "deliver_menu",
+    "take_order",
+    "serve_food",
+    "serve_drink",
+    "order_food",
+    "order_drink",
+    "pay_bill",
+    "clean_table",
+    "listen_to_music"
+  ],
+  "user_instruction": "Jacob stands to the left of the bar counter.",
+  "planning_history": [],
+  "current_states": [
+    {
+      "idx": 0,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Jacob",
+      "state": "idle",
+      "current_action": "idle",
+      "position": [],
+      "orientation": []
+    }
+  ],
+  "expected_plans": [
+    {
+      "character": "Jacob",
+      "target_action": null,
+      "relationships": null,
+      "sampled_position": "to the left of bar_counter_1"
+    }
+  ],
+  "allow_null_plan": false
+}

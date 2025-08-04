@@ -1,0 +1,1 @@
+['coffee_machine_1', 'column_1', 'commode_1', 'plant_1', 'plant_2', 'sofa_1', 'sofa_2', 'stand_1', 'stand_2', 'stand_3', 'table_1', 'table_2', 'table_3', 'table_4', 'xbox_1']

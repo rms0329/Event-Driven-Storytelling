@@ -1,0 +1,24 @@
+human_scene_interaction: false
+human_human_interaction: false
+looping: true
+keyjoints:
+  - pelvis
+  - right_wrist
+  - left_wrist
+  - right_foot
+  - left_foot
+matching_features:
+  - keyjoints
+motions:
+  - dataset: amass
+    motion_file: TCDHands/ExperimentDatabase/Typing01_B_poses.npz
+    start_frame: 0
+    end_frame: 550
+    match_start_frame: 0
+    match_end_frame: 20
+  - dataset: amass
+    motion_file: TCDHands/ExperimentDatabase/Typing01_A_poses.npz
+    start_frame: 0
+    end_frame: 550
+    match_start_frame: 0
+    match_end_frame: 20

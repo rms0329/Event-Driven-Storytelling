@@ -1,0 +1,69 @@
+scene_name: 0cac755a-8d6f-2d13-8fed-b1be02f4ef77 # lounge
+action_labels:
+  - idle
+  - handshake
+  - hug
+  - chat
+  - use_smartphone
+  - make_coffee
+  - drink
+  - eat
+  - play_game
+  - read_book
+  - open_commode
+  - close_commode
+  - take_out_drink
+  - take_out_snack
+
+event:
+  characters: [James]
+  activity: stand between sofa_1 and sofa_2
+
+characters:
+  - name: James
+    state: idle
+    current_action: idle
+    position: []
+    orientation: []
+
+previous_events: []
+
+response: |
+  ```python
+  def parse_event():
+    # The event involves 'James' standing between sofa_1 and sofa_2.
+    james = get_character("James")
+
+    # The target location is described as being between the two sofas, 'sofa_1' and 'sofa_2'.
+    # To specify a position between the sofas, we should use 'between' relationship.
+    james_position = get_area_between("sofa_1", "sofa_2")
+
+    # Among the available action labels, the most appropriate action to represent simply standing is 'idle'.
+    james_action = "idle"
+
+    # Return the parsed information
+    james.set_position(james_position)
+    james.set_target_action(james_action)
+
+    return [james]
+  ```
+
+response_wo_lcps: |
+  ```python
+  def parse_event():
+    # The event involves 'James' standing between sofa_1 and sofa_2.
+    james = get_character("James")
+
+    # Since the sofa_1 is at (2.09, 5.2) and the sofa_2 is at (2.25, 2.02), their middle point is at (2.17, 3.61).
+    # For the position between the sofas, we can use the position near the middle point of the sofas.
+    james_position = [2.17, 3.61]
+
+    # Among the available action labels, the most appropriate action to represent simply standing is 'idle'.
+    james_action = "idle"
+
+    # Return the parsed information
+    james.set_position(james_position)
+    james.set_target_action(james_action)
+
+    return [james]
+  ```

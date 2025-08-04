@@ -1,0 +1,217 @@
+{
+  "id": 51,
+  "tags": ["RC", "SS"],
+  "scene_name": "House",
+  "action_labels": [
+    "idle",
+    "drink",
+    "eat",
+    "watch_tv",
+    "dance",
+    "chat",
+    "handshake",
+    "turn_on_record_player",
+    "turn_off_record_player",
+    "turn_on_tv",
+    "turn_off_tv",
+    "open_fridge",
+    "close_fridge",
+    "open_cabinet",
+    "close_cabinet",
+    "use_coffee_maker",
+    "use_toaster",
+    "use_microwave",
+    "use_dishwasher",
+    "use_smartphone",
+    "use_laptop",
+    "read_book"
+  ],
+  "user_instruction": "Kathryn and Christopher chat with each other in front of the TV and watch TV together in the living room.\nMeanwhile, David first makes coffee using the coffee maker and then reads a book sitting on a seat in the living room.",
+  "planning_history": [
+    {
+      "idx": 0,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "completed",
+      "characters": ["Tammy"],
+      "activity": "make toast using the toaster",
+      "details": [
+        {
+          "character": "Tammy",
+          "target_action": "use_toaster",
+          "position": ["adjacent to toaster_1"],
+          "orientation": ["look at toaster_1"]
+        }
+      ]
+    },
+    {
+      "idx": 1,
+      "type": "essential",
+      "distraction_level": 0,
+      "state": "completed",
+      "characters": ["Kathryn", "Christopher"],
+      "activity": "chat with each other in front of the TV",
+      "details": [
+        {
+          "character": "Kathryn",
+          "target_action": "chat",
+          "position": ["in front of tv_1"],
+          "orientation": ["look at Christopher"]
+        },
+        {
+          "character": "Christopher",
+          "target_action": "chat",
+          "position": ["in front of tv_1"],
+          "orientation": ["look at Kathryn"]
+        }
+      ]
+    },
+    {
+      "idx": 2,
+      "type": "essential",
+      "distraction_level": 0,
+      "state": "ongoing",
+      "characters": ["Kathryn", "Christopher"],
+      "activity": "watch TV together in the living room",
+      "details": [
+        {
+          "character": "Kathryn",
+          "target_action": "watch_tv",
+          "position": ["lie on couch_1"],
+          "orientation": ["look at tv_1"]
+        },
+        {
+          "character": "Christopher",
+          "target_action": "watch_tv",
+          "position": ["sit on chair_1"],
+          "orientation": ["look at tv_1"]
+        }
+      ]
+    },
+    {
+      "idx": 3,
+      "type": "essential",
+      "distraction_level": 0,
+      "state": "completed",
+      "characters": ["David"],
+      "activity": "make coffee using the coffee maker",
+      "details": [
+        {
+          "character": "David",
+          "target_action": "use_coffee_maker",
+          "position": ["adjacent to coffee_maker_1"],
+          "orientation": ["look at coffee_maker_1"]
+        }
+      ]
+    },
+    {
+      "idx": 4,
+      "type": "distractor",
+      "distraction_level": 1,
+      "state": "ongoing",
+      "characters": ["Samantha", "Juan"],
+      "activity": "chat with each other in the kitchen",
+      "details": [
+        {
+          "character": "Samantha",
+          "target_action": "chat",
+          "position": ["sit on chair_4"],
+          "orientation": ["look at Juan"]
+        },
+        {
+          "character": "Juan",
+          "target_action": "chat",
+          "position": ["sit on chair_5"],
+          "orientation": ["look at Samantha"]
+        }
+      ]
+    },
+    {
+      "idx": 5,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "completed",
+      "characters": ["Tammy"],
+      "activity": "make coffee using the coffee maker",
+      "details": [
+        {
+          "character": "Tammy",
+          "target_action": "use_coffee_maker",
+          "position": ["adjacent to coffee_maker_1"],
+          "orientation": ["look at coffee_maker_1"]
+        }
+      ]
+    }
+  ],
+  "current_states": [
+    {
+      "idx": 0,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "David",
+      "state": "idle",
+      "current_action": "idle",
+      "position": ["adjacent to coffee_maker_1"],
+      "orientation": []
+    },
+    {
+      "idx": 1,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Kathryn",
+      "state": "interacting",
+      "current_action": "watch_tv",
+      "position": ["lie on couch_1"],
+      "orientation": ["look at tv_1"]
+    },
+    {
+      "idx": 2,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "Christopher",
+      "state": "interacting",
+      "current_action": "watch_tv",
+      "position": ["sit on chair_1"],
+      "orientation": ["look at tv_1"]
+    },
+    {
+      "idx": 3,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "Samantha",
+      "state": "interacting",
+      "current_action": "chat",
+      "position": ["sit on chair_4"],
+      "orientation": ["look at Juan"]
+    },
+    {
+      "idx": 4,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "Juan",
+      "state": "interacting",
+      "current_action": "chat",
+      "position": ["sit on chair_5"],
+      "orientation": ["look at Samantha"]
+    },
+    {
+      "idx": 5,
+      "type": "distractor",
+      "distraction_level": 2,
+      "name": "Tammy",
+      "state": "idle",
+      "current_action": "idle",
+      "position": ["adjacent to coffee_maker_1"],
+      "orientation": []
+    }
+  ],
+  "expected_plans": [
+    {
+      "character": "David",
+      "target_action": "read_book",
+      "relationships": "sit on chair_3",
+      "sampled_position": null
+    }
+  ],
+  "allow_null_plan": false
+}

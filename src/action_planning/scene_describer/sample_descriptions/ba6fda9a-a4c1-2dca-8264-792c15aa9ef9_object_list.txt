@@ -1,0 +1,1 @@
+['backpack_1', 'bag_1', 'bed_1', 'bed_2', 'bench_1', 'blanket_1', 'blanket_2', 'chair_1', 'chair_2', 'chair_3', 'closet_1', 'coffee_table_1', 'desk_1', 'door_1', 'luggage_1', 'monitor_1', 'nightstand_1', 'nightstand_2', 'partition_1', 'picture_1', 'radiator_1', 'trash_can_1', 'wardrobe_1', 'window_1']

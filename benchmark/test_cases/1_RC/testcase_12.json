@@ -1,0 +1,146 @@
+{
+  "id": 12,
+  "tags": ["RC"],
+  "scene_name": "Restaurant",
+  "action_labels": [
+    "idle",
+    "drink",
+    "eat",
+    "chat",
+    "handshake",
+    "use_smartphone",
+    "deliver_menu",
+    "take_order",
+    "serve_food",
+    "serve_drink",
+    "order_food",
+    "order_drink",
+    "pay_bill",
+    "clean_table",
+    "listen_to_music"
+  ],
+  "user_instruction": "John sits and orders food in the dining area for dinner.",
+  "planning_history": [
+    {
+      "idx": 0,
+      "type": "distractor",
+      "distraction_level": 1,
+      "state": "completed",
+      "characters": ["Mary"],
+      "activity": "order drinks from the bar",
+      "details": [
+        {
+          "character": "Mary",
+          "target_action": "order_drink",
+          "position": ["close to bar_counter_1"],
+          "orientation": []
+        }
+      ]
+    },
+    {
+      "idx": 1,
+      "type": "distractor",
+      "distraction_level": 1,
+      "state": "ongoing",
+      "characters": ["Mary", "Melvin"],
+      "activity": "enjoy a drink together",
+      "details": [
+        {
+          "character": "Mary",
+          "target_action": "drink",
+          "position": ["adjacent to table_2"],
+          "orientation": ["look at Melvin"]
+        },
+        {
+          "character": "Melvin",
+          "target_action": "drink",
+          "position": ["adjacent to table_2"],
+          "orientation": ["look at Mary"]
+        }
+      ]
+    },
+    {
+      "idx": 2,
+      "type": "distractor",
+      "distraction_level": 2,
+      "state": "completed",
+      "characters": ["Brenda", "Adam"],
+      "activity": "greet each other",
+      "details": [
+        {
+          "character": "Brenda",
+          "target_action": "handshake",
+          "position": ["in front of reception_desk_1"],
+          "orientation": ["look at Adam"]
+        },
+        {
+          "character": "Adam",
+          "target_action": "handshake",
+          "position": ["in front of reception_desk_1"],
+          "orientation": ["look at Brenda"]
+        }
+      ]
+    }
+  ],
+  "current_states": [
+    {
+      "idx": 0,
+      "type": "essential",
+      "distraction_level": 0,
+      "name": "John",
+      "state": "idle",
+      "current_action": "idle",
+      "position": [],
+      "orientation": []
+    },
+    {
+      "idx": 1,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "Mary",
+      "state": "interacting",
+      "current_action": "drink",
+      "position": ["adjacent to table_2"],
+      "orientation": ["look at Melvin"]
+    },
+    {
+      "idx": 2,
+      "type": "distractor",
+      "distraction_level": 1,
+      "name": "Melvin",
+      "state": "interacting",
+      "current_action": "drink",
+      "position": ["adjacent to table_2"],
+      "orientation": ["look at Mary"]
+    },
+    {
+      "idx": 3,
+      "type": "distractor",
+      "distraction_level": 2,
+      "name": "Brenda",
+      "state": "idle",
+      "current_action": "idle",
+      "position": ["in front of reception_desk_1"],
+      "orientation": []
+    },
+    {
+      "idx": 4,
+      "type": "distractor",
+      "distraction_level": 2,
+      "name": "Adam",
+      "state": "idle",
+      "current_action": "idle",
+      "position": ["in front of reception_desk_1"],
+      "orientation": []
+    }
+  ],
+  "expected_plans": [
+    {
+      "character": "John",
+      "target_action": "order_food || order_drink",
+      "relationships": "sit on chair_10 || sit on chair_4 || sit on chair_5 || sit on chair_3 || sit on chair_9 || sit on chair_6",
+      "sampled_position": null
+    }
+  ],
+  "allow_null_plan": false
+}
