@@ -1,5 +1,5 @@
 scene_name: "House"
-num_characters: 4
+num_characters: 2
 device: "cuda"
 framerate: 30
 logging_level: "INFO"

@@ -23,7 +23,6 @@ _DEFAULT_STORY = """
 Amir makes coffee in the kitchen.
 On the other hand, Benjamin works with his laptop sitting on the sofa.
 After making coffee, Amir sits in a near chair to Benjamin and drinks coffee.
-Charles and David are having a conversation in the dining area.
 """
 
 
