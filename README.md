@@ -75,6 +75,7 @@ To run the demo, you need to download the motion datasets used in our motion mat
 - [SAMP](https://samp.is.tue.mpg.de/): human-scene interaction motions (e.g., sit)
 - [Inter-X](https://liangxuy.github.io/inter-x/): human-human interaction motions (e.g., chat, hug, etc.)
 
+For the AMASS dataset, our code was developed with the `SMPL+H G` version.\
 Our demo with default settings requires only the AMASS and SAMP datasets, but you need to download the Inter-X dataset to enable the human-human interaction motions. After downloading each dataset, you should organize them in the following structure:
 ```
 ${PROJECT_ROOT}$/
@@ -94,6 +95,25 @@ ${PROJECT_ROOT}$/
     │       ├── annots/
     │       └── ...
     └── ...
+```
+
+### SMPL Model (only when running the demo)
+For SMPL model, please download the SMPL-X model from [SMPL-X official website](https://smpl-x.is.tue.mpg.de/).
+Our code was developed with the `SMPL-X v1.1` release (the first one in the download page).\
+After downloading the model, please locate the `smplx/` folder as follows:
+```
+${PROJECT_ROOT}$/
+├── data/
+│   ├── AMASS/
+│   ├── SAMP/
+│   ├── INTER-X/ (optional)
+│   └── SMPL/
+│       └── smplx/
+│           ├── SMPLX_FEMALE.npz
+│           ├── SMPLX_FEMALE.pkl
+│           ├── SMPLX_MALE.npz
+│           └── ...
+└── ...
 ```
 
 ## Running the Code
