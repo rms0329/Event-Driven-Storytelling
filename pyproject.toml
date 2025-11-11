@@ -11,7 +11,7 @@ dependencies = [
     "tqdm",
     "trimesh",
     "embreex; sys_platform == 'linux'",
-    "polyscope",
+    "polyscope>=2.5.0",
     "python-dotenv",
     "omegaconf",
     "openai",

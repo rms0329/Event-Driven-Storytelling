@@ -140,11 +140,11 @@ class PolyscopeApp:
     # https://github.com/ocornut/imgui/blob/4f9ba19e520bea478f5cb654d37ef45e6404bd52/imgui.h#L1322
     def is_key_pressed(self, key: str) -> bool:
         imgui_key = getattr(psim, f"ImGuiKey_{key}")
-        return psim.IsKeyPressed(psim.GetKeyIndex(imgui_key))
+        return psim.IsKeyPressed(imgui_key)
 
     def is_key_down(self, key: str) -> bool:
         imgui_key = getattr(psim, f"ImGuiKey_{key}")
-        return psim.IsKeyDown(psim.GetKeyIndex(imgui_key))
+        return psim.IsKeyDown(imgui_key)
 
     def _user_callback(self):
         self.ui_callback()
